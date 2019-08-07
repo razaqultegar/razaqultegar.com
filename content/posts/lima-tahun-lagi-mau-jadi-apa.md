@@ -7,7 +7,7 @@ slug: lima-tahun-lagi-mau-jadi-apa
 
 “Apa tujuan 5 atau 10 tahun ke depan?“ Ini pertanyaan yang biasa dilempar untuk ngelihat seseorang ‘visioner’ apa ngga (mungkin..). Tapi semoga ini bukan jadi tolak ukur yang valid ya, saya sendiri bingung soalnya ditanya akan jadi apa di waktu yang akan datang.
 
-Meskipun susah membentuk kalimat dan membayangkan kongkritnya saya jadi apa, tapi ada pekerjaan yang sangat penting dan saya berharap untuk bisa terjun ke ‘dunia ini’. Pekerjaan yang kini menyibukkan abang Bill Gates. Serius menginvestasikan waktu dan uang untuk membasmi penyakit yang mematikan, mengurus energi, mengedukasi orang-orang dan mengatasi kemiskinan Gates Notes
+Meskipun susah membentuk kalimat dan membayangkan kongkritnya saya jadi apa, tapi ada pekerjaan yang sangat penting dan saya berharap untuk bisa terjun ke ‘dunia ini’. Pekerjaan yang kini menyibukkan abang Bill Gates. Serius menginvestasikan waktu dan uang untuk membasmi penyakit yang mematikan, mengurus energi, mengedukasi orang-orang dan mengatasi kemiskinan [Gates Notes](https://www.gatesnotes.com/)
 
 Semoga saya dan pembaca bisa menghabiskan waktunya untuk mengurusi orang-orang miskin. Pekerjaan yang mungkin ngga populer di anak muda, kegiatan yang mungkin ngga menarik diulas di media. Jadi inget kata Bill Gates: “Media covers what’s new and million people die.. nothing’s new“. Saya sendiri ngerasa kita lebih miskin dari orang miskin kalo belum mikirin orang miskin.
 
