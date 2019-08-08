@@ -19,22 +19,14 @@ export default class PostTemplate extends Component {
         <Helmet>
           <title>{`${post.title} – ${config.siteTitle}`}</title>
         </Helmet>
-        <section id="main">
-          <h1 id="title">{post.title}</h1>
-          <span id="date">{post.date}</span>
-          <div>
-            <article
-              id="content"
-              dangerouslySetInnerHTML={{ __html: postNode.html }}
-            />
+        <main className="post">
+          <div className="entry-title">
+            <h1 className="post-title">{post.title}</h1>
+            <span>{post.date}</span>
           </div>
-        </section>
-        <aside id="meta">
-          <section>
-            <h4 id="date">{post.date}</h4>
-          </section>
-        </aside>
-        <hr/><br/>
+          <article id="content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        </main>
+        <br/>
         <a href="/">&lt;&lt; Kembali ke Halaman Awal</a>
       </Layout>
     );
@@ -50,12 +42,12 @@ export const postQuery = graphql`
       frontmatter {
         title
         slug
-        date(formatString: "dddd, MMMM DD, YYYY")
+        date(formatString: "dddd, DD MMMM YYYY", locale: "id")
         template
       }
       fields {
         slug
-        date(formatString: "dddd, MMMM DD, YYYY")
+        date(formatString: "dddd, DD MMMM YYYY", locale: "id")
       }
     }
   }

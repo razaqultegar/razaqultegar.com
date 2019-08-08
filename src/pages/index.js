@@ -1,34 +1,35 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import PageHeader from "../components/PageHeader";
-import PostListing from "../components/PostListing";
 import Layout from "../layout";
+import PageListing from "../components/PageListing";
+import PostListing from "../components/PostListing";
 import config from "../utils/SiteConfig";
+import profile from "../../content/uploads/foto.jpg";
 
 export default class Index extends Component {
   state = {
-    posts: this.props.data.posts.edges,
-    filteredPosts: this.props.data.posts.edges
+    filteredPosts: this.props.data.index.edges,
+    filteredPages: this.props.data.index.edges
   };
 
   render() {
-    const { filteredPosts } = this.state;
+    const { filteredPosts, filteredPages } = this.state;
 
     return (
       <Layout>
         <Helmet title={`${config.siteTitle} – Full Stack Developer`} />
-        <PageHeader>
-          <h1>Halo, saya Razaqul Tegar </h1>
-          <h2>Saya seorang Full Stack Developer, perokok aktif, kutu buku musiman, kerap berkegiatan di alam terbuka dan sesekali menangkap gerak dengan kamera ponselnya.</h2>
-        </PageHeader>
-        <hr />
-        <div className="columns">
-          <div className="">
-            <h3>Artikel</h3>
-            <PostListing postEdges={filteredPosts} />
-          </div>
-        </div>
+        <header>
+          <h1>RAZAQUL TEGAR</h1>
+          <img src={profile} width="150" height="150" className="avatar" align="left" />
+          <p className="header">Saya adalah pengembang dari <a href="https://www.panda.id">Panda SID</a>, Full Stack Developer & CTO di <a href="https://www.puskomedia.id">Puskomedia Indonesia</a>, perokok aktif, kutu buku musiman, dan kerap berkegiatan di alam terbuka dan sesekali menangkap gerak dengan kamera ponselnya.</p>
+        </header>
+        <main>
+          <p>Anda dapat menemukan saya di <a href="https://github/razaqultegar/">GitHub</a>, <a href="https://www.instagram.com/razaqultegar/">Instagram</a>, <a href="https://twitter.com/razaqultegar">Twitter</a> atau bisa mengirimkan <a href="mailto:myrazaqul@gmail.com">email</a>.</p>
+          <h2>Artikel</h2>
+          <PostListing postEdges={filteredPosts} />
+          <h2>Halaman</h2>
+          <PageListing pageEdges={filteredPages} />
+        </main>
       </Layout>
     );
   }
@@ -36,7 +37,7 @@ export default class Index extends Component {
 
 export const query = graphql`
   query IndexQuery {
-    posts: allMarkdownRemark(
+    index: allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
     ) {
@@ -45,11 +46,11 @@ export const query = graphql`
           excerpt(pruneLength: 180)
           fields {
             slug
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY", locale: "id")
           }
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY", locale: "id")
             template
           }
         }

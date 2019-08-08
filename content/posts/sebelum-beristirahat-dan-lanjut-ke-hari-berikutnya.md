@@ -2,7 +2,7 @@
 date: 2019-08-06
 title: 'Sebelum istirahat dan lanjut ke hari berikutnya'
 template: post
-slug: Sebelum-istirahat-dan-lanjut-ke-hari-berikutnya
+slug: sebelum-istirahat-dan-lanjut-ke-hari-berikutnya
 ---
 
 Kalau ada kesempatan jangan lupa untuk menanyakan beberapa hal ini ke diri sendiri:

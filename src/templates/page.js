@@ -7,8 +7,8 @@ import config from "../utils/SiteConfig";
 export default class PageTemplate extends Component {
   render() {
     const { slug } = this.props.pageContext;
-    const postNode = this.props.data.markdownRemark;
-    const page = postNode.frontmatter;
+    const pageNode = this.props.data.markdownRemark;
+    const page = pageNode.frontmatter;
 
     if (!page.id) {
       page.id = slug;
@@ -19,31 +19,23 @@ export default class PageTemplate extends Component {
         <Helmet>
           <title>{`${page.title} – ${config.siteTitle}`}</title>
         </Helmet>
-        <section id="main">
-          <h1 id="title">{page.title}</h1>
-          <div>
-            <article
-              id="content"
-              dangerouslySetInnerHTML={{ __html: postNode.html }}
-            />
+        <main className="post">
+          <div className="entry-title">
+            <h1 className="post-title">{page.title}</h1>
           </div>
-        </section>
-        <aside id="meta">
-          <section>
-            <h4 id="date">{page.date}</h4>
-          </section>
-        </aside>
-        <hr/><br/>
+          <article id="content" dangerouslySetInnerHTML={{ __html: pageNode.html }} />
+        </main>
+        <br />
         <a href="/">&lt;&lt; Kembali ke Halaman Awal</a>
       </Layout>
     );
   }
 }
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query PageBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
       html
       excerpt
       frontmatter {

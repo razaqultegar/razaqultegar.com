@@ -4,7 +4,7 @@ const config = {
   siteTitleAlt: "Razaqul Tegar",
   siteLogo: "/logos/razaqultegar.jpg",
   siteUrl: "https://razaqultegar.com",
-  repo: "https://github.com/razaqultegar/razaqultegarcom",
+  repo: "https://github.com/razaqultegar/razaqultegar.com",
   pathPrefix: "",
   siteDescription: "Razaqul Tegar adalah seorang pemuda beruntung kelahiran Banyumas, 30 Januari. Sekarang sedang menempuh karir profesionalnya sebagai Full Stack Developer sekaligus CTO di Puskomedia Indonesia",
   siteRss: "/rss.xml",
@@ -16,12 +16,6 @@ const config = {
   userLocation: "Purwokerto, ID",
   userAvatar: "https://api.adorable.io/avatars/150/razaqultegar.png",
   userDescription: "Saya sering membuat aplikasi/program dan menulis semua yang saya ketahui.",
-  menuLinks: [
-    {
-      name: "Tool",
-      link: "/tool/"
-    }
-  ],
   themeColor: "#484848",
   backgroundColor: "#F6F5ED"
 };
