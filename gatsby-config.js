@@ -70,7 +70,7 @@ module.exports = {
         query: `
         {
           site {
-            rssMetadata {
+            siteMetadata {
               title
               description
               siteUrl
