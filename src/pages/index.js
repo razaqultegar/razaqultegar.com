@@ -40,7 +40,7 @@ export default class Index extends Component {
         <main>
           <p>
             Anda dapat menemukan saya di{" "}
-            <a href="https://github/razaqultegar/">GitHub</a>,{" "}
+            <a href="https://github.com/razaqultegar/">GitHub</a>,{" "}
             <a href="https://www.instagram.com/razaqultegar/">Instagram</a>,{" "}
             <a href="https://twitter.com/razaqultegar">Twitter</a> atau bisa
             mengirimkan <a href="mailto:myrazaqul@gmail.com">email</a>.

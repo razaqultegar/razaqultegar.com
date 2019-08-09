@@ -27,6 +27,7 @@ export default class PageListing extends Component {
             </li>
           );
         })}
+        <li><a href="https://anchor.fm/skod">Podcast</a></li>
       </ul>
     );
   }
