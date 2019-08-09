@@ -1,6 +1,11 @@
 const config = require("./src/utils/SiteConfig");
 
 module.exports = {
+  siteMetadata: {
+    title: config.siteTitle,
+    description: config.siteDescription,
+    author: "Razaqul Tegar"
+  },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
