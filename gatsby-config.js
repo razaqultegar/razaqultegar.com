@@ -1,14 +1,6 @@
-const urljoin = require("url-join");
 const config = require("./src/utils/SiteConfig");
 
 module.exports = {
-  rssMetadata: {
-    site_url: config.siteUrl,
-    feed_url: urljoin(config.siteUrl, config.siteRss),
-    title: config.siteTitle,
-    description: config.siteDescription,
-    image_url: `${config.siteUrl}/logos/logo-48.png`
-  },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
@@ -75,40 +67,34 @@ module.exports = {
     {
       resolve: "gatsby-plugin-feed",
       options: {
-        setup(ref) {
-          const ret = ref.query.site.rssMetadata;
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "Razaqul Tegar";
-          return ret;
-        },
         query: `
         {
           site {
             rssMetadata {
-              site_url
-              feed_url
               title
               description
-              image_url
+              siteUrl
+              site_url: siteUrl
             }
           }
         }
       `,
         feeds: [
           {
-            serialize(ctx) {
-              const { rssMetadata } = ctx.query.site;
-              return ctx.query.allMarkdownRemark.edges.map(edge => ({
-                date: edge.node.fields.date,
-                title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [
-                  { "content:encoded": edge.node.html },
-                  { author: config.userEmail }
-                ]
-              }));
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  date: edge.node.frontmatter.date,
+                  title: edge.node.frontmatter.title,
+                  description: edge.node.excerpt,
+                  url: site.siteMetadata.site_url + edge.node.fields.slug,
+                  guid: site.siteMetadata.site_url + edge.node.fields.slug,
+                  custom_elements: [
+                    { "content:encoded": edge.node.html },
+                    { author: config.author }
+                  ]
+                });
+              });
             },
             query: `
             {
@@ -134,7 +120,8 @@ module.exports = {
               }
             }
           `,
-            output: config.siteRss
+            output: config.siteRss,
+            title: config.author
           }
         ]
       }
