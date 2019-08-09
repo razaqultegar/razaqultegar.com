@@ -6,13 +6,8 @@ import config from "../utils/SiteConfig";
 
 export default class PageTemplate extends Component {
   render() {
-    const { slug } = this.props.pageContext;
     const pageNode = this.props.data.markdownRemark;
     const page = pageNode.frontmatter;
-
-    if (!page.id) {
-      page.id = slug;
-    }
 
     return (
       <Layout>
@@ -22,6 +17,7 @@ export default class PageTemplate extends Component {
         <main className="post">
           <div className="entry-title">
             <h1 className="post-title">{page.title}</h1>
+            <p>{page.desc}</p>
           </div>
           <article id="content" dangerouslySetInnerHTML={{ __html: pageNode.html }} />
         </main>
@@ -35,11 +31,11 @@ export default class PageTemplate extends Component {
 export const pageQuery = graphql`
   query PageBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
       html
       excerpt
       frontmatter {
         title
+        desc
         template
         date(formatString: "dddd, MMMM DD, YYYY")
       }

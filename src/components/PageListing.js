@@ -10,6 +10,7 @@ export default class PageListing extends Component {
         return {
           path: pageEdges.node.fields.slug,
           title: pageEdges.node.frontmatter.title,
+          desc: pageEdges.node.frontmatter.desc
         };
       });
     return pageList;
@@ -24,10 +25,13 @@ export default class PageListing extends Component {
           return (
             <li key={page.title}>
               <Link to={page.path}>{page.title}</Link>
+              <span> - {page.desc}</span>
             </li>
           );
         })}
-        <li><a href="https://anchor.fm/skod">Podcast</a></li>
+        <li>
+          <a href="https://anchor.fm/skod">Podcast SKOD</a><span> - Kanal podcast tongkrongan saya</span>
+        </li>
       </ul>
     );
   }

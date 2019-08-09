@@ -1,6 +1,6 @@
 ---
 title: Tool
-date: 2018-11-14
+desc: Daftar tool yang saya gunakan
 slug: tool
 template: page
 ---
