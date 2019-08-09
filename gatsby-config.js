@@ -2,14 +2,12 @@ const urljoin = require("url-join");
 const config = require("./src/utils/SiteConfig");
 
 module.exports = {
-  siteMetadata: {
-    rssMetadata: {
-      site_url: config.siteUrl,
-      feed_url: urljoin(config.siteUrl, config.siteRss),
-      title: config.siteTitle,
-      description: config.siteDescription,
-      image_url: `${config.siteUrl}/logos/logo-48.png`
-    }
+  rssMetadata: {
+    site_url: config.siteUrl,
+    feed_url: urljoin(config.siteUrl, config.siteRss),
+    title: config.siteTitle,
+    description: config.siteDescription,
+    image_url: `${config.siteUrl}/logos/logo-48.png`
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -78,7 +76,7 @@ module.exports = {
       resolve: "gatsby-plugin-feed",
       options: {
         setup(ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata;
+          const ret = ref.query.site.rssMetadata;
           ret.allMarkdownRemark = ref.query.allMarkdownRemark;
           ret.generator = "Razaqul Tegar";
           return ret;
@@ -86,14 +84,12 @@ module.exports = {
         query: `
         {
           site {
-            siteMetadata {
-              rssMetadata {
-                site_url
-                feed_url
-                title
-                description
-                image_url
-              }
+            rssMetadata {
+              site_url
+              feed_url
+              title
+              description
+              image_url
             }
           }
         }
@@ -101,7 +97,7 @@ module.exports = {
         feeds: [
           {
             serialize(ctx) {
-              const { rssMetadata } = ctx.query.site.siteMetadata;
+              const { rssMetadata } = ctx.query.site.rssMetadata;
               return ctx.query.allMarkdownRemark.edges.map(edge => ({
                 date: edge.node.fields.date,
                 title: edge.node.frontmatter.title,
