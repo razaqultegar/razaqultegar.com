@@ -1,8 +1,8 @@
 ---
 date: 2019-08-06
-title: 'Sebelum istirahat dan lanjut ke hari berikutnya'
+title: 'Sebelum beristirahat dan lanjut ke hari berikutnya'
 template: post
-slug: sebelum-istirahat-dan-lanjut-ke-hari-berikutnya
+slug: sebelum-beristirahat-dan-lanjut-ke-hari-berikutnya
 ---
 
 Kalau ada kesempatan jangan lupa untuk menanyakan beberapa hal ini ke diri sendiri:
