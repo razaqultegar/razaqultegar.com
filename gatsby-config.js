@@ -2,10 +2,14 @@ const config = require("./src/utils/SiteConfig");
 
 module.exports = {
   siteMetadata: {
-    site_url: config.siteUrl,
-    title: config.siteTitle,
-    description: config.siteDescription,
-    author: "Razaqul Tegar"
+    siteUrl: config.siteUrl,
+    rssMetadata: {
+      site_url: config.siteUrl,
+      feed_url: config.siteRss,
+      title: config.siteTitle,
+      description: config.siteDescription,
+      image_url: `${config.siteUrl}/logos/logo-48.png`
+    }
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -73,56 +77,71 @@ module.exports = {
     {
       resolve: "gatsby-plugin-feed",
       options: {
+        setup(ref) {
+          const ret = ref.query.site.siteMetadata.rssMetadata;
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
+          ret.generator = "Razaqul Tegar";
+          return ret;
+        },
         query: `
           {
             site {
               siteMetadata {
-                site_url
-                title
-                description
+                rssMetadata {
+                  site_url
+                  feed_url
+                  title
+                  description
+                  image_url
+                }
               }
             }
           }
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  date: edge.node.frontmatter.date,
-                  title: edge.node.frontmatter.title,
-                  description: edge.node.excerpt,
-                  url: site.siteMetadata.site_url + edge.node.fields.slug,
-                  guid: site.siteMetadata.site_url + edge.node.fields.slug,
-                  custom_elements: [
-                    { "content:encoded": edge.node.html },
-                    { author: config.userEmail }
-                  ]
-                });
-              });
+            serialize(ctx) {
+              const { rssMetadata } = ctx.query.site.siteMetadata;
+              return ctx.query.allMarkdownRemark.edges.map(edge => ({
+                date: edge.node.fields.date,
+                title: edge.node.frontmatter.title,
+                description: edge.node.excerpt,
+                url: rssMetadata.site_url + edge.node.fields.slug,
+                guid: rssMetadata.site_url + edge.node.fields.slug,
+                custom_elements: [
+                  { "content:encoded": edge.node.html },
+                  { author: config.userEmail }
+                ]
+              }));
             },
             query: `
-              {
-                allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      excerpt(pruneLength: 180)
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
+            {
+              allMarkdownRemark(
+                limit: 1000,
+                sort: { order: DESC, fields: [fields___date] },
+              ) {
+                edges {
+                  node {
+                    excerpt(pruneLength: 180)
+                    html
+                    timeToRead
+                    fields {
+                      slug
+                      date
+                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
+                    }
+                    frontmatter {
+                      title
+                      date
+                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
+                      template
                     }
                   }
                 }
               }
-            `,
-            output: config.siteRss,
-            title: config.siteTitle
+            }
+          `,
+            output: config.siteRss
           }
         ]
       }
