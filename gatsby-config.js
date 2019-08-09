@@ -2,6 +2,7 @@ const config = require("./src/utils/SiteConfig");
 
 module.exports = {
   siteMetadata: {
+    site_url: config.siteUrl,
     title: config.siteTitle,
     description: config.siteDescription,
     author: "Razaqul Tegar"
@@ -76,10 +77,9 @@ module.exports = {
           {
             site {
               siteMetadata {
+                site_url
                 title
                 description
-                siteUrl
-                site_url: siteUrl
               }
             }
           }
