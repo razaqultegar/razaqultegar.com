@@ -128,12 +128,12 @@ module.exports = {
                     fields {
                       slug
                       date
-                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
+                      date
                     }
                     frontmatter {
                       title
                       date
-                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
+                      date
                       template
                     }
                   }
