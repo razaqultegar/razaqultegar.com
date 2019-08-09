@@ -68,17 +68,17 @@ module.exports = {
       resolve: "gatsby-plugin-feed",
       options: {
         query: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
-              site_url: siteUrl
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
             }
           }
-        }
-      `,
+        `,
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -87,41 +87,37 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   title: edge.node.frontmatter.title,
                   description: edge.node.excerpt,
-                  url: site.siteMetadata.siteUrl  + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl  + edge.node.fields.slug,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [
                     { "content:encoded": edge.node.html },
-                    { author: config.author }
+                    { author: config.userEmail }
                   ]
                 });
               });
             },
             query: `
-            {
-              allMarkdownRemark(
-                limit: 1000,
-                sort: { order: DESC, fields: [fields___date] },
-              ) {
-                edges {
-                  node {
-                    excerpt(pruneLength: 180)
-                    html
-                    fields {
-                      slug
-                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
-                    }
-                    frontmatter {
-                      title
-                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
-                      template
+              {
+                allMarkdownRemark(
+                  limit: 1000,
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt(pruneLength: 180)
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
                     }
                   }
                 }
               }
-            }
-          `,
+            `,
             output: config.siteRss,
-            title: config.author
+            title: config.siteTitle
           }
         ]
       }
