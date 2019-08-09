@@ -2,18 +2,13 @@ const urljoin = require("url-join");
 const config = require("./src/utils/SiteConfig");
 
 module.exports = {
-  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
-    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
     rssMetadata: {
-      site_url: urljoin(config.siteUrl, config.pathPrefix),
-      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
+      site_url: config.siteUrl,
+      feed_url: urljoin(config.siteUrl, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${urljoin(
-        config.siteUrl,
-        config.pathPrefix
-      )}/logos/logo-48.png`
+      image_url: `${config.siteUrl}/logos/logo-48.png`
     }
   },
   plugins: [
@@ -129,14 +124,13 @@ module.exports = {
                   node {
                     excerpt(pruneLength: 180)
                     html
-                    timeToRead
                     fields {
                       slug
-                      date
+                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
                     }
                     frontmatter {
                       title
-                      date
+                      date(formatString: "dddd, DD MMMM YYYY", locale: "id")
                       template
                     }
                   }
