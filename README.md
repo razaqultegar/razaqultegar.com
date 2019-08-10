@@ -1,9 +1,6 @@
-<p align="center">
-  <img alt="the Journey" src="static/logos/logo-1024.png" width="150" style="border-radius:100px;" />
-</p>
-<h1 align="center">
-  Razaqul Tegar site
-</h1>
+# Razaqul Tegar site
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/375818a7-c883-4301-a4f6-e7cbc7a236fc/deploy-status)](https://app.netlify.com/sites/razaqultegar/deploys)
 
 This website for my documentation. Made with the Gatsby framework one of the factors why your website can be accessed very quickly and lightly. Begin documenting your journey from now on.
 
