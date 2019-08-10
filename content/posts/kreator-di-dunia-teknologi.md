@@ -1,4 +1,4 @@
----
+﻿---
 date: 2019-02-26
 title: 'Kreator di Dunia Teknologi'
 template: post
@@ -23,6 +23,6 @@ Lebih baik hidup cukup dan bisa membantu banyak orang, dibanding hidup serba leb
 
 Bagaimana dengan membuat teknologi yang ada di waktu yang tepat? bukan lagi ada setiap saat menggangu aktivitas utama seseorang.
 
-> ”A life lived with integrity, even if it lacks the trappings of fame and fortune, is a shining star in whose light others may follow in the years to come.” <cite>– **Denis Waitley**</cite
+> ”A life lived with integrity, even if it lacks the trappings of fame and fortune, is a shining star in whose light others may follow in the years to come.” <cite>– **Denis Waitley**</cite>
 
 Ada tanggapan atau komentar? [silahkan balas disini](https://twitter.com/razaqultegar/status/1101275410925404160)
