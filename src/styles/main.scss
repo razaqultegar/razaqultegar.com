@@ -1,7 +1,6 @@
 body {
   margin: 60px auto;
   font-family: "Open Sans", sans-serif;
-  background-color: #f6f5ed;
   color: #484848;
   width: 600px;
   font-size: 18px;
@@ -88,6 +87,14 @@ header {
 
   h1.post-title {
     margin: 0px;
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   blockquote {

@@ -5,6 +5,8 @@ template: post
 slug: kreator-di-dunia-teknologi
 ---
 
+![](../uploads/content-creator.jpg)
+
 Superman dikenal sebagai penyelamat dunia, tapi tidak sedikit yang melihatnya sebagai ancaman, kekuatannya yang berlebihan tidak bisa dicegah oleh tangan manusia, kalau suatu saat Superman memilih untuk melakukan sebaliknya.
 
 Suka atau tidak, teknologi menjadi gajah yang harus dibicarakan di ruangan ini, pura-pura tidak melihatnya, akan sulit. Skill yang kamu punya dan berkontribusi besar di bidang teknologi langsung atau tidak (desainer, copywriter, bisnis, dll.) bisa menjadi penyelamat atau sebaliknya. Sebagai programmer, ada banyak area yang bisa menjadi pilihan saya untuk ditekuni, mau membuat aplikasi sosial media, mau membantu bekerja membesarkan perusahaan toko online atau membuat game yang paling laku sedunia. Sekarang pertanyaannya.. apa yang harus saya (atau kamu) pilih?
@@ -21,6 +23,6 @@ Lebih baik hidup cukup dan bisa membantu banyak orang, dibanding hidup serba leb
 
 Bagaimana dengan membuat teknologi yang ada di waktu yang tepat? bukan lagi ada setiap saat menggangu aktivitas utama seseorang.
 
-”A life lived with integrity, even if it lacks the trappings of fame and fortune, is a shining star in whose light others may follow in the years to come.” – **Denis Waitley**
+> ”A life lived with integrity, even if it lacks the trappings of fame and fortune, is a shining star in whose light others may follow in the years to come.” <cite>– **Denis Waitley**</cite
 
 Ada tanggapan atau komentar? [silahkan balas disini](https://twitter.com/razaqultegar/status/1101275410925404160)
