@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import config from "../utils/SiteConfig";
+import "prismjs/themes/prism-solarizedlight.css"
 
 export default class PostTemplate extends Component {
   render() {
