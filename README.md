@@ -1,6 +1,6 @@
 # Razaqul Tegar site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/375818a7-c883-4301-a4f6-e7cbc7a236fc/deploy-status)](https://app.netlify.com/sites/razaqultegar/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/375818a7-c883-4301-a4f6-e7cbc7a236fc/deploy-status)](https://app.netlify.com/sites/razaqultegar/deploys) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This website for my documentation. Made with the Gatsby framework one of the factors why your website can be accessed very quickly and lightly. Begin documenting your journey from now on.
 
