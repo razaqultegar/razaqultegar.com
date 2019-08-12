@@ -12,7 +12,6 @@ export default class MainLayout extends Component {
       <>
         <Helmet>
           <meta name="description" content={config.siteDescription} />
-          <meta name="google-site-verification" content={config.googleSiteVerification} />
         </Helmet>
         {children}
         <Footer />
