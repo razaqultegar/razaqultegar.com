@@ -11,7 +11,7 @@ module.exports = {
       description: config.siteDescription,
       image_url: `${urljoin(
         config.siteUrl
-      )}logos/logo-1024.png`
+      )}/logos/logo-1024.png`
     }
   },
   plugins: [
