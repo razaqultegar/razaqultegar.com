@@ -17,9 +17,6 @@ export default class SEO extends Component {
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt;
-      if (postMeta.thumbnail) {
-        image = postMeta.thumbnail.childImageSharp.fixed.src;
-      }
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
       title = config.siteTitle;
