@@ -1,14 +1,19 @@
+const urljoin = require("url-join");
 const config = require("./src/utils/SiteConfig");
 
 module.exports = {
+  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
-    siteUrl: config.siteUrl,
+    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
     rssMetadata: {
-      site_url: config.siteUrl,
-      feed_url: config.siteRss,
+      site_url: urljoin(config.siteUrl, config.pathPrefix),
+      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${config.siteUrl}/logos/logo-48.png`
+      image_url: `${urljoin(
+        config.siteUrl,
+        config.pathPrefix
+      )}/logos/logo-1024.png`
     }
   },
   plugins: [
@@ -83,20 +88,20 @@ module.exports = {
           return ret;
         },
         query: `
-          {
-            site {
-              siteMetadata {
-                rssMetadata {
-                  site_url
-                  feed_url
-                  title
-                  description
-                  image_url
-                }
+        {
+          site {
+            siteMetadata {
+              rssMetadata {
+                site_url
+                feed_url
+                title
+                description
+                image_url
               }
             }
           }
-        `,
+        }
+      `,
         feeds: [
           {
             serialize(ctx) {
@@ -118,6 +123,7 @@ module.exports = {
               allMarkdownRemark(
                 limit: 1000,
                 sort: { order: DESC, fields: [fields___date] },
+                filter: { frontmatter: { template: { eq: "post" } } }
               ) {
                 edges {
                   node {
