@@ -2,17 +2,15 @@ const urljoin = require("url-join");
 const config = require("./src/utils/SiteConfig");
 
 module.exports = {
-  pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
   siteMetadata: {
     siteUrl: config.siteUrl,
     rssMetadata: {
       site_url: config.siteUrl,
-      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
+      feed_url: urljoin(config.siteUrl, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
       image_url: `${urljoin(
-        config.siteUrl,
-        config.pathPrefix
+        config.siteUrl
       )}logos/logo-1024.png`
     }
   },
@@ -71,7 +69,7 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        start_url: config.pathPrefix,
+        start_url: "",
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "minimal-ui",
