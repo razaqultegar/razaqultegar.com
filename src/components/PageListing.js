@@ -29,9 +29,6 @@ export default class PageListing extends Component {
             </li>
           );
         })}
-        <li>
-          <a href="https://anchor.fm/skod">Podcast SKOD</a><span> - Kanal podcast tongkrongan saya</span>
-        </li>
       </ul>
     );
   }
