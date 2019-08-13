@@ -1,6 +1,6 @@
 ---
-date: 2019-03-29
-title: Cinta dan Indomie
+date: 2019-03-29T08:12:46+07:00
+title: "Cinta dan Indomie"
 template: post
 slug: cinta-dan-indomie
 ---

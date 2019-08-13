@@ -1,6 +1,6 @@
 ---
-date: 2019-07-25
-title: 'Lima tahun lagi mau jadi apa'
+date: 2019-07-25T21:42:46+07:00
+title: "Lima tahun lagi mau jadi apa"
 template: post
 slug: lima-tahun-lagi-mau-jadi-apa
 ---

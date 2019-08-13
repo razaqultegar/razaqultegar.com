@@ -10,7 +10,7 @@ Seperti biasa, ini tool pilihan saya, kamu tidak harus pakai tool yang sama, dit
 ### **Personal**
 
 Text Editor  
-Normalnya [Atom](http://atom.io/), kadang [Visual Studio Code](https://code.visualstudio.com/), sangat jarang [Sublime](https://www.sublimetext.com/3)
+Normalnya [Visual Studio Code](https://code.visualstudio.com/), kadang [Atom](http://atom.io/), sangat jarang [Sublime](https://www.sublimetext.com/3)
 
 [Simplenote](https://simplenote.com/)  
 Tempat saya menulis, saya menulis saaaangat banyaaaak, semua ide kasar ditampung disini. Saya suka Simplenote, karena mengorganisir file mudah dengan hashtag, tempat menulis bersih dari yang tidak penting.

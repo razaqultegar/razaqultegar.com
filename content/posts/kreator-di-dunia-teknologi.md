@@ -1,6 +1,6 @@
 ﻿---
-date: 2019-02-26
-title: 'Kreator di Dunia Teknologi'
+date: 2019-02-26T12:30:16+07:00
+title: "Kreator di Dunia Teknologi"
 template: post
 slug: kreator-di-dunia-teknologi
 ---

@@ -1,6 +1,6 @@
 ---
-date: 2019-03-04
-title: 'Menulis untuk Menulis'
+date: 2019-03-04T16:08:27+07:00
+title: "Menulis untuk Menulis"
 template: post
 slug: menulis-untuk-menulis
 ---
