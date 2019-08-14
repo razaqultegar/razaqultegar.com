@@ -5,13 +5,13 @@ template: post
 slug: solved-ireport-tidak-fungsi-di-mode-jar
 ---
 
-### **Apa itu iReport?**
+## Apa itu iReport?
 
 iReport adalah plugin tambahan pada pemograman Java yang digunakan untuk mendesain laporan secara visual. Melalui antar muka yang simple namun kaya akan fitur, iReport menyediakan banyak sekali fungsi penting untuk membuat laporan yang kompleks dengan mudah, sehingga memudahkan para developer/programmer untuk mengembangkan aplikasinya secara singkat.
 
 Salah satu fitur yang paling menonjol dari iReport yakni bisa terhubung langsung dengan database apapun dan export laporan ke berbagai ekstensi seperti PDF, XHTML, OpenOffice, MS. Word, MS. Excel, XML, Text, dll.
 
-### **Inti Permasalahan**
+## Inti Permasalahan
 
 ```java
 try{
@@ -33,7 +33,7 @@ Ketika aplikasi/program di jalankan melalui Netbeans, script pemanggilan itu ber
 
 ![](../uploads/Capture7.PNG)
 
-## **Pemecahan Masalah**
+## Pemecahan Masalah
 
 Pesan error tersbut mengatakan bahwa `java.io.FileNotFoundException` yang berarti file jasper kamu tidak ditemukan. Untuk mengatasi permasalahan tersebut kamu harus mengganti bagian yang fatal itu menjadi seperti berikut.
 
