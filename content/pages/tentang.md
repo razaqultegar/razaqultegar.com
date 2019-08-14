@@ -20,11 +20,7 @@ Selain bekerja, saya juga kerap berkegiatan alam terbuka dan sesekali menangkap 
 * [KPU Banyumas](http://kab-banyumas.kpu.go.id/) - Web Development KPU Kab. Banyumas
 * [Inovasi Desa](https://inovasidesa.kemendesa.go.id/) - Web Development Inovasi Desa dari Kemendesa
 * [Alzheimer Indonesia](https://www.alzi.or.id/) - Web Development Organisasi penderita Dementia/Alzheimer Indonesia
-* [Desa Dermaji](https://www.dermaji.desa.id/) - Web Development Desa Dermaji, Banyumas
-* [Desa Wlahar Wetan](https://www.wlaharwetan.desa.id/) - Web Development Desa Wlahar Wetan, Banyumas
-* [Gedhe Foundation](https://www.dermaji.desa.id/) - Web Development Yayasan Gedhe Nusantara
 * [Navis Galeri](https://navis.co.id/) - Web Development E-Commerce busana muslim
-* [Ranti](https://www.ranti.co.id/) - Custom checkout design and function
 
 ## Sedang Menggunakan
 
