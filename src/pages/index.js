@@ -23,28 +23,9 @@ export default class Index extends Component {
         <SEO />
         <header>
           <h1>RAZAQUL TEGAR</h1>
-          <img
-            src={profile}
-            width="150"
-            height="150"
-            alt="Razaqul Tegar"
-            className="avatar"
-            align="left"
-          />
-          <p className="header">
-            Saya adalah pengembang dari{" "}
-            <a href="https://www.panda.id">Panda SID</a>, Junior Full Stack
-            Developer, perokok aktif, kutu buku musiman, dan kerap berkegiatan
-            di alam terbuka dan sesekali menangkap gerak dengan kamera
-            ponselnya.
-          </p>
-          <p>
-            Anda dapat menemukan saya di{" "}
-            <a href="https://github.com/razaqultegar/">GitHub</a>,{" "}
-            <a href="https://www.instagram.com/razaqultegar/">Instagram</a>,{" "}
-            <a href="https://twitter.com/razaqultegar">Twitter</a> atau bisa
-            mengirimkan <a href="mailto:myrazaqul@gmail.com">email</a>.
-          </p>
+          <img src={profile} width="150" height="150" alt="Razaqul Tegar" className="avatar" align="left" />
+          <p className="header">Saya adalah pengembang dari <a href="https://www.panda.id">Panda SID</a>, Junior Full Stack Developer, perokok aktif, kutu buku musiman, dan kerap berkegiatan di alam terbuka dan sesekali menangkap gerak dengan kamera ponselnya.</p>
+          <p>Anda dapat menemukan saya di <a href="https://github.com/razaqultegar/">GitHub</a>, <a href="https://www.instagram.com/razaqultegar/">Instagram</a>, <a href="https://twitter.com/razaqultegar">Twitter</a> atau bisa mengirimkan <a href="mailto:myrazaqul@gmail.com">Email</a>.</p>
         </header>
         <main>
           <h2>Artikel</h2>

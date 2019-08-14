@@ -26,10 +26,7 @@ export default class PostTemplate extends Component {
             <h1 className="post-title">{post.title}</h1>
             <p>{post.date}</p>
           </div>
-          <article
-            id="content"
-            dangerouslySetInnerHTML={{ __html: postNode.html }}
-          />
+          <article id="content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
         </main>
         <br />
         <a href="/">⤌ Kembali</a>

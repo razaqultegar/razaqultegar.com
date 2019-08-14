@@ -13,10 +13,7 @@ export default class Index extends Component {
           <h1>Halaman tidak ditemukan</h1>
         </header>
         <main>
-          <p>
-            Halaman yang Anda cari tidak dapat ditemukan. Cobalah mengganti
-            pencarian Anda, atau <a href="/">⤌ Kembali ke halaman awal</a>.
-          </p>
+          <p>Halaman yang Anda cari tidak dapat ditemukan. Cobalah mengganti pencarian Anda, atau <a href="/">⤌ Kembali ke halaman awal</a>.</p>
         </main>
       </Layout>
     );

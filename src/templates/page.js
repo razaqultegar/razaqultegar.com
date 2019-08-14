@@ -26,10 +26,7 @@ export default class PageTemplate extends Component {
             <h1 className="post-title">{page.title}</h1>
             <p>{page.desc}</p>
           </div>
-          <article
-            id="content"
-            dangerouslySetInnerHTML={{ __html: postNode.html }}
-          />
+          <article id="content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
         </main>
         <br />
         <a href="/">⤌ Kembali</a>
