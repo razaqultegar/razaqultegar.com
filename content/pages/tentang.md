@@ -5,7 +5,7 @@ slug: tentang
 template: page
 ---
 
-![](../uploads/tentang.jpg)
+![](../uploads/tentang.png)
 
 Saya merupakan seorang lelaki beruntung kelahiran Banyumas, 30 Januari dengan nama asli Razaqul Akli Tegar Ardiansyah. Lulusan Rekayasa Perangkat Lunak di salah satu sekolah kejuruan negeri yang ada di Purwokerto, dan sekarang saya sedang menempuh karir profesional sebagai Junior Full Stack Developer.
 
