@@ -6,7 +6,6 @@ import SEO from "../components/SEO";
 import PageListing from "../components/PageListing";
 import PostListing from "../components/PostListing";
 import config from "../utils/SiteConfig";
-import profile from "../../content/uploads/foto.jpg";
 
 export default class Index extends Component {
   state = {
@@ -23,7 +22,6 @@ export default class Index extends Component {
         <SEO />
         <header>
           <h1>RAZAQUL TEGAR</h1>
-          <img src={profile} width="150" height="150" alt="Razaqul Tegar" className="avatar" align="left" />
           <p className="header">Saya adalah pengembang dari <a href="https://www.panda.id">Panda SID</a>, Junior Full Stack Developer, perokok aktif, kutu buku musiman, dan kerap berkegiatan di alam terbuka dan sesekali menangkap gerak dengan kamera ponselnya.</p>
           <p>Anda dapat menemukan saya di <a href="https://github.com/razaqultegar/" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://www.instagram.com/razaqultegar/" target="_blank" rel="noopener noreferrer">Instagram</a>, <a href="https://twitter.com/razaqultegar" target="_blank" rel="noopener noreferrer">Twitter</a> atau bisa mengirimkan <a href="mailto:myrazaqul@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>.</p>
         </header>
