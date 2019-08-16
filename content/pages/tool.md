@@ -7,7 +7,7 @@ template: page
 
 Seperti biasa, ini tool pilihan saya, kamu tidak harus pakai tool yang sama, ditulis karena sering ditanyakan atau saya ingin membantu mempromosikan sebagai terima kasih karena toolnya sudah membantu saya.
 
-### **Personal**
+### Personal
 
 Text Editor  
 Normalnya [Visual Studio Code](https://code.visualstudio.com/), kadang [Atom](http://atom.io/), sangat jarang [Sublime](https://www.sublimetext.com/3)
@@ -32,7 +32,7 @@ Extention di chrome untuk setiap membuka tab baru, kamu tidak akan terdistraksi 
 [Noisli](https://chrome.google.com/webstore/detail/noisli/klejemegaoblahjdpcajmpcnjjmkmkkf?hl=en)  
 Mendengarkan suara hujan, angin, air atau suara alam lainnya dengan konstan bisa bikin kamu lebih mudah berkonsentrasi saat kerja. DIbanding mencampurkan dengan musik yang bisa bikin kamu ikut nyanyi 😛
 
-### **Extra**
+### Extra
 
 Database Management  
 Urusan database localhost ataupun live saya memakai [SequelPro](https://www.sequelpro.com/) atau [SQLYog](https://www.webyog.com/product/sqlyog)
