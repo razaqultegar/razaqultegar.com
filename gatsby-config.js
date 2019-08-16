@@ -11,7 +11,7 @@ module.exports = {
       description: config.siteDescription,
       image_url: `${urljoin(
         config.siteUrl
-      )}/logos/logo-1024.png`
+      )}/logos/logo.png`
     }
   },
   plugins: [
@@ -64,6 +64,7 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -74,7 +75,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "minimal-ui",
-        icon: "static/logos/logo-1024.png"
+        icon: "static/logos/logo.png"
       }
     },
     {
