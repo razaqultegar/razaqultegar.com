@@ -1,0 +1,8 @@
+# Redirects from what the browser requests to what we serve
+# https://www.netlify.com/docs/redirects/
+/kontak/        /tentang/
+/portfolio/     /tentang/
+/blog/          /
+/artikel/       /
+/admin/         /
+/wp-admin/      /

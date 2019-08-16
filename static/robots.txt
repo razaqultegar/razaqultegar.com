@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://razaqultegar.com/sitemap.xml
