@@ -1,5 +1,5 @@
 ---
-date: 2019-06-07T14:50:46+07:00
+date: 2019-06-21T14:50:46+07:00
 title: "Programmer : Bahagia, Tersiksa, atau Mati?"
 template: post
 slug: programmer-bahagia-tersiksa-atau-mati

@@ -1,5 +1,5 @@
 ---
-date: 2019-03-04T16:08:27+07:00
+date: 2018-11-05T16:08:27+07:00
 title: "Menulis untuk Menulis"
 template: post
 slug: menulis-untuk-menulis
