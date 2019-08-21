@@ -1,23 +1,23 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 export default class PageListing extends Component {
   getPageList() {
-    const { pageEdges } = this.props;
+    const { pageEdges } = this.props
     const pageList = pageEdges
-      .filter(pageEdges => pageEdges.node.frontmatter.template === "page")
+      .filter(pageEdges => pageEdges.node.frontmatter.template === 'page')
       .map(pageEdges => {
         return {
           path: pageEdges.node.fields.slug,
           title: pageEdges.node.frontmatter.title,
-          desc: pageEdges.node.frontmatter.desc
-        };
-      });
-    return pageList;
+          desc: pageEdges.node.frontmatter.desc,
+        }
+      })
+    return pageList
   }
 
   render() {
-    const pageList = this.getPageList();
+    const pageList = this.getPageList()
 
     return (
       <ul>
@@ -27,9 +27,9 @@ export default class PageListing extends Component {
               <Link to={page.path}>{page.title}</Link>
               <span> - {page.desc}</span>
             </li>
-          );
+          )
         })}
       </ul>
-    );
+    )
   }
 }

@@ -1,6 +1,6 @@
 body {
   margin: 60px auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #484848;
   width: 600px;
   font-size: 18px;
@@ -87,7 +87,9 @@ header {
     font-weight: normal;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-weight: bold;
   }
 
@@ -99,7 +101,7 @@ header {
     color: #555;
     position: relative;
     &:before {
-      content: "“";
+      content: '“';
       display: block;
       font-size: 142px;
       position: absolute;
@@ -125,7 +127,7 @@ header {
   pre.language-terminal code.language-terminal {
     position: relative;
     padding: 1rem;
-    font-family: Menlo, "Roboto Mono", Courier New, monospace;
+    font-family: Menlo, 'Roboto Mono', Courier New, monospace;
     border: 1px solid #d8d9da;
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.16);
     border-radius: 6px;
@@ -136,7 +138,7 @@ header {
     color: #333;
 
     &::before {
-      content: "\2022 \2022 \2022";
+      content: '\2022 \2022 \2022';
       position: absolute;
       top: 0;
       left: 0;
@@ -153,10 +155,10 @@ header {
     }
   }
 
-  code[class*="language-"],
-  pre[class*="language-"],
+  code[class*='language-'],
+  pre[class*='language-'],
   pre code {
-    font-family: Menlo, "Roboto Mono", Courier New, monospace;
+    font-family: Menlo, 'Roboto Mono', Courier New, monospace;
     font-size: 13px;
     color: #b3b9c5;
     direction: ltr;
@@ -197,7 +199,7 @@ header {
     font-size: 14px;
   }
 
-  :not(pre) > code[class*="language-"] {
+  :not(pre) > code[class*='language-'] {
     padding: 3px 5px;
     color: #111111;
   }
@@ -205,17 +207,17 @@ header {
   :not(pre) > code {
     padding: 3px 5px;
     border: none;
-    font-family: "Oxygen", sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 400;
     color: #111111;
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.06);
   }
 
-  code[class*="language-css"],
-  code[class*="language-scss"],
-  code[class*="language-less"],
-  code[class*="language-sass"] {
+  code[class*='language-css'],
+  code[class*='language-scss'],
+  code[class*='language-less'],
+  code[class*='language-sass'] {
     color: #cc99cc;
   }
 
@@ -396,19 +398,19 @@ header {
     background: rgba(150, 150, 150, 0.3) !important;
   }
 
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection,
-  code[class*="language-"] ::-moz-selection {
+  pre[class*='language-']::-moz-selection,
+  pre[class*='language-']::-moz-selection,
+  code[class*='language-'] ::-moz-selection,
+  code[class*='language-'] ::-moz-selection {
     text-shadow: none;
     color: inherit;
     background: rgba(150, 150, 150, 0.3) !important;
   }
 
-  pre[class*="language-"]::selection,
-  pre[class*="language-"]::selection,
-  code[class*="language-"] ::selection,
-  code[class*="language-"] ::selection {
+  pre[class*='language-']::selection,
+  pre[class*='language-']::selection,
+  code[class*='language-'] ::selection,
+  code[class*='language-'] ::selection {
     text-shadow: none;
     color: inherit;
     background: rgba(150, 150, 150, 0.3) !important;

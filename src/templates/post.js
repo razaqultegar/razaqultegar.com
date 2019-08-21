@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import SEO from "../components/SEO";
-import config from "../utils/SiteConfig";
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import config from '../utils/SiteConfig'
 
 export default class PostTemplate extends Component {
   render() {
     const { slug } = this.props.pageContext
-    const postNode = this.props.data.markdownRemark;
-    const post = postNode.frontmatter;
+    const postNode = this.props.data.markdownRemark
+    const post = postNode.frontmatter
 
     if (!post.id) {
       post.id = slug
@@ -26,12 +26,15 @@ export default class PostTemplate extends Component {
             <h1 className="post-title">{post.title}</h1>
             <p>{post.date}</p>
           </div>
-          <article id="content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          <article
+            id="content"
+            dangerouslySetInnerHTML={{ __html: postNode.html }}
+          />
         </main>
         <br />
         <a href="/">⤌ Kembali</a>
       </Layout>
-    );
+    )
   }
 }
 
@@ -53,4 +56,4 @@ export const postQuery = graphql`
       }
     }
   }
-`;
+`

@@ -1,23 +1,23 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
 
 export default class PostListing extends Component {
   getPostList() {
-    const { postEdges } = this.props;
+    const { postEdges } = this.props
     const postList = postEdges
-      .filter(postEdge => postEdge.node.frontmatter.template === "post")
+      .filter(postEdge => postEdge.node.frontmatter.template === 'post')
       .map(postEdge => {
         return {
           path: postEdge.node.fields.slug,
           title: postEdge.node.frontmatter.title,
-          date: postEdge.node.fields.date
-        };
-      });
-    return postList;
+          date: postEdge.node.fields.date,
+        }
+      })
+    return postList
   }
 
   render() {
-    const postList = this.getPostList();
+    const postList = this.getPostList()
 
     return (
       <ul>
@@ -27,9 +27,9 @@ export default class PostListing extends Component {
               <Link to={post.path}>{post.title}</Link>
               <span> - {post.date}</span>
             </li>
-          );
+          )
         })}
       </ul>
-    );
+    )
   }
 }

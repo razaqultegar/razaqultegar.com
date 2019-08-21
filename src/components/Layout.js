@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Helmet from "react-helmet";
-import config from "../utils/SiteConfig";
-import Footer from "./Footer";
-import "../styles/main.scss";
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import config from '../utils/SiteConfig'
+import Footer from './Footer'
+import '../styles/main.scss'
 
 export default class MainLayout extends Component {
   render() {
-    const { children } = this.props;
+    const { children } = this.props
 
     return (
       <>
@@ -16,6 +16,6 @@ export default class MainLayout extends Component {
         {children}
         <Footer />
       </>
-    );
+    )
   }
 }

@@ -1,5 +1,5 @@
-const urljoin = require("url-join");
-const config = require("./src/utils/SiteConfig");
+const urljoin = require('url-join')
+const config = require('./src/utils/SiteConfig')
 
 module.exports = {
   siteMetadata: {
@@ -9,83 +9,82 @@ module.exports = {
       feed_url: urljoin(config.siteUrl, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${urljoin(
-        config.siteUrl
-      )}/logos/logo.png`
-    }
+      image_url: `${urljoin(config.siteUrl)}/logos/logo.png`,
+    },
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/*.js": ["cache-control: public, max-age=31536000, immutable"],
-          "/*.css": ["cache-control: public, max-age=31536000, immutable"],
-          "/sw.js": ["cache-control: public, max-age=0, must-revalidate"]
-        }
-      }
+          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
+          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
+          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
+        },
+      },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "assets",
-        path: `${__dirname}/static/`
-      }
+        name: 'assets',
+        path: `${__dirname}/static/`,
+      },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "posts",
-        path: `${__dirname}/content/`
-      }
+        name: 'posts',
+        path: `${__dirname}/content/`,
+      },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 850,
-              linkImagesToOriginal: false
-            }
+              linkImagesToOriginal: false,
+            },
           },
-          "gatsby-remark-prismjs"
-        ]
-      }
+          'gatsby-remark-prismjs',
+          'gatsby-remark-images-zoom',
+        ],
+      },
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: config.googleAnalyticsID
-      }
+        trackingId: config.googleAnalyticsID,
+      },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        start_url: "",
+        start_url: '',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "minimal-ui",
-        icon: "static/logos/logo.png"
-      }
+        display: 'minimal-ui',
+        icon: 'static/logos/logo.png',
+      },
     },
     {
-      resolve: "gatsby-plugin-feed",
+      resolve: 'gatsby-plugin-feed',
       options: {
         setup(ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata;
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "Razaqul Tegar";
-          return ret;
+          const ret = ref.query.site.siteMetadata.rssMetadata
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark
+          ret.generator = 'Razaqul Tegar'
+          return ret
         },
         query: `
         {
@@ -105,7 +104,7 @@ module.exports = {
         feeds: [
           {
             serialize(ctx) {
-              const { rssMetadata } = ctx.query.site.siteMetadata;
+              const { rssMetadata } = ctx.query.site.siteMetadata
               return ctx.query.allMarkdownRemark.edges.map(edge => ({
                 date: edge.node.fields.date,
                 title: edge.node.frontmatter.title,
@@ -113,10 +112,10 @@ module.exports = {
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + edge.node.fields.slug,
                 custom_elements: [
-                  { "content:encoded": edge.node.html },
-                  { author: config.userEmail }
-                ]
-              }));
+                  { 'content:encoded': edge.node.html },
+                  { author: config.userEmail },
+                ],
+              }))
             },
             query: `
             {
@@ -144,10 +143,10 @@ module.exports = {
               }
             }
           `,
-            output: config.siteRss
-          }
-        ]
-      }
-    }
-  ]
-};
+            output: config.siteRss,
+          },
+        ],
+      },
+    },
+  ],
+}

@@ -1,20 +1,20 @@
-import React, { Component } from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import SEO from "../components/SEO";
-import PageListing from "../components/PageListing";
-import PostListing from "../components/PostListing";
-import config from "../utils/SiteConfig";
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import PageListing from '../components/PageListing'
+import PostListing from '../components/PostListing'
+import config from '../utils/SiteConfig'
 
 export default class Index extends Component {
   state = {
     filteredPosts: this.props.data.index.edges,
-    filteredPages: this.props.data.index.edges
-  };
+    filteredPages: this.props.data.index.edges,
+  }
 
   render() {
-    const { filteredPosts, filteredPages } = this.state;
+    const { filteredPosts, filteredPages } = this.state
 
     return (
       <Layout>
@@ -32,7 +32,7 @@ export default class Index extends Component {
           <PageListing pageEdges={filteredPages} />
         </main>
       </Layout>
-    );
+    )
   }
 }
 
@@ -59,4 +59,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
