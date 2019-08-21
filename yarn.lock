@@ -5204,13 +5204,6 @@ gatsby-react-router-scroll@^2.1.4:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-remark-images-zoom@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images-zoom/-/gatsby-remark-images-zoom-1.1.0.tgz#8e42d463891cd0c84a4f70ec8df4b41965b22996"
-  integrity sha512-VYuSEH0tg3WJh8DpMKeMm5G/K6DDInA+tPySzdsakDLPDU1dh8VjCDg4q45Rdu1xcnICISn9tXCjOdQ3cryKCQ==
-  dependencies:
-    medium-zoom "^1.0.4"
-
 gatsby-remark-images@3.1.13:
   version "3.1.13"
   resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.1.13.tgz#ff32bb0c3364d996978d1e43ced96d727aa5543c"
