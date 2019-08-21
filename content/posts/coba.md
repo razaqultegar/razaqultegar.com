@@ -7,9 +7,9 @@ slug: coba
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius odio sed augue semper posuere. Donec nec ex quis sapien porta placerat a nec nibh. Proin neque erat, congue vitae elementum a, mattis feugiat mi. Curabitur sollicitudin mi ac libero volutpat, at consequat massa efficitur. Quisque commodo fermentum erat ut fringilla. Aenean ac ante quis augue euismod mattis vitae non dolor. Nunc elementum, sapien placerat pulvinar lobortis, leo velit venenatis eros, non pulvinar nisi est sed ligula.
 
-![](/static/lorem-ipsum.png)
-
 Suspendisse ut sapien ipsum. In hac habitasse platea dictumst. Donec semper at justo id semper. Donec et velit nec erat faucibus auctor vitae a sem. Etiam sapien libero, placerat et laoreet eu, scelerisque non mauris. Maecenas hendrerit sodales dolor, ut varius nisi porta et. Phasellus eget mi quis enim mollis commodo. Donec ligula lacus, vulputate ac erat vitae, viverra sodales lectus. Mauris tristique orci metus, vel scelerisque mauris scelerisque pretium. Aliquam elementum facilisis risus ullamcorper porta.
+
+![](../uploads/lorem-ipsum.png)
 
 Donec lacinia iaculis sapien. Vivamus posuere a sem eget dictum. Phasellus sagittis ac diam vel rhoncus. Morbi accumsan aliquet dui, sit amet malesuada ex. Aliquam erat volutpat. Vivamus pretium dolor a volutpat finibus. Fusce eget semper ligula.
 
