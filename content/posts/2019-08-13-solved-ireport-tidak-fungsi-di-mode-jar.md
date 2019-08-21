@@ -31,7 +31,7 @@ Kode diatas merupakan kode standart untuk pemanggilan iReport di Java Netbeans, 
 
 Ketika aplikasi/program di jalankan melalui Netbeans, script pemanggilan itu berfungsi dengan baik. Namun, ketika aplikasi/program kamu sudah diexectuble menjadi Jar, script itu tidak berfungsi sama sekali dan muncul pesan error seperti berikut.
 
-![](../uploads/Capture7.PNG)
+![](../uploads/solved-ireport.png)
 
 ## Pemecahan Masalah
 
