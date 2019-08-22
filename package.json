@@ -47,7 +47,7 @@
     "serve": "gatsby serve",
     "build": "gatsby build",
     "clean": "rm -rf public && rm -rf .cache",
-    "format": "prettier '**/*.{js,jsx}' --write",
+    "format": "prettier --write \"**/*.{js,jsx}\"",
     "check": "npx npm-check-updates -u"
   }
 }
