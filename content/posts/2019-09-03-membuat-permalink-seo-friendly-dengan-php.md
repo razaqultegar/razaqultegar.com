@@ -13,8 +13,7 @@ Tujuan dari SEO adalah menempatkan sebuah situs web pada posisi teratas, atau se
 
 ## Contoh Permalink SEO Friendly
 
-1. `https://razaqultegar.com/index.php?page=tentang`
-2. `https://razaqultegar.com/tentang` atau `https://razaqultegar.com/membuat-permalink-seo-friendly-dengan-php`
+![](../uploads/contoh-seo-friendly.png)
 
 Keterangan : pada contoh nomor satu itu merupakan permalink yang salah atau tidak SEO Friendly, sedangkan contoh nomor dua itu adalah contoh permalink SEO Friendly.
 
@@ -24,16 +23,13 @@ Berikut saya kasih contoh bagaimana membuat sebuah permalink yang SEO Friendly m
 
 ```php
 function SefLink($str){
-  // Convert text to lowercase and to UTF-8 format.
+  // Mengubah teks menjadi huruf kecil dan ke format UTF-8.
   $str = mb_strtolower($str, 'UTF-8');
-
-  // Convert non-normal characters to hyphens.
+  // Mengubah karakter yang tidak normal menjadi tanda hubung.
   $str = preg_replace('/[^a-z0-9]/','-',$str);
-
-  // Prevents receiving multiple hyphens
+  // Mencegah menerima beberapa tanda hubung
   $str = preg_replace('/-+/','-',$str);
-
-  // Delete right and left hyphens
+  // Hapus tanda hubung kanan dan kiri
   return trim($str, '-');
 }
 ```
