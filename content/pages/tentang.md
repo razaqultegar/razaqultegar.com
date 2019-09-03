@@ -28,3 +28,5 @@ Selain bekerja, saya juga kerap berkegiatan alam terbuka dan sesekali menangkap 
 * Hosting: [Netlify](https://netlify.com/)
 * Static Site Generator:  [Gatsby](https://gatsbyjs.org/)
 * Daftar tool yang saya pakai bisa di lihat [disini](/tool/)
+
+## [Download Resume](/resume.pdf)
