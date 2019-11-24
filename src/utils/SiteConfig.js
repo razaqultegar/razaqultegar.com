@@ -9,7 +9,6 @@ const config = {
   siteDescription:
     'Razaqul Tegar adalah seorang pemuda beruntung kelahiran Banyumas, 30 Januari. Sekarang sedang menempuh karir profesionalnya sebagai Full Stack Developer sekaligus CTO di Puskomedia Indonesia',
   siteRss: '/rss.xml',
-  googleAnalyticsID: 'UA-126104041-3',
   userEmail: 'myrazaqul@gmail.com',
   themeColor: '#484848',
   backgroundColor: '#F6F5ED',
