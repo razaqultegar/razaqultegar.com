@@ -1,6 +1,7 @@
 body {
   margin: 60px auto;
   font-family: 'Open Sans', sans-serif;
+  background-color: #f6f5ed;
   color: #484848;
   width: 600px;
   font-size: 18px;
@@ -16,14 +17,14 @@ h1 {
 
 h2 {
   margin-top: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 2ex;
   font-size: 24px;
   font-weight: normal;
 }
 
 h3 {
   margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 2ex;
   font-size: 20px;
   font-weight: bold;
 }
@@ -53,11 +54,6 @@ ol {
 li {
   margin: 0 0 0 20px;
   padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 header {
@@ -439,10 +435,5 @@ footer {
     h1 {
       font-size: 30px;
     }
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
   }
 }
