@@ -1,5 +1,5 @@
 ---
-date: 2019-02-12T08:12:46+07:00
+date: 2019-02-12
 title: "Cinta dan Indomie"
 template: post
 slug: cinta-dan-indomie

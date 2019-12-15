@@ -1,5 +1,5 @@
 ---
-date: 2019-08-06T09:30:27+07:00
+date: 2019-08-06
 title: "Sebelum beristirahat dan lanjut ke hari berikutnya"
 template: post
 slug: sebelum-beristirahat-dan-lanjut-ke-hari-berikutnya

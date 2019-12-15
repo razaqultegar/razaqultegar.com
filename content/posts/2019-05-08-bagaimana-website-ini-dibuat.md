@@ -1,5 +1,5 @@
 ---
-date: 2019-05-08T03:46:07+07:00
+date: 2019-05-08
 title: "Bagaimana Website Ini Dibuat"
 template: post
 slug: bagaimana-website-ini-dibuat

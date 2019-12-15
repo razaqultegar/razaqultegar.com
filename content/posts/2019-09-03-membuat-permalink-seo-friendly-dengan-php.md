@@ -1,5 +1,5 @@
 ---
-date: 2019-09-03T14:18:11+07:00
+date: 2019-09-03
 title: "Membuat Permalink SEO Friendly Dengan PHP"
 template: post
 slug: membuat-permalink-seo-friendly-dengan-php

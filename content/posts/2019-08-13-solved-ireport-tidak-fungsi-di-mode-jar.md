@@ -1,5 +1,5 @@
 ---
-date: 2019-08-13T07:50:20+07:00
+date: 2019-08-13
 title: "Solved! iReport tidak berfungsi dimode Jar"
 template: post
 slug: solved-ireport-tidak-fungsi-di-mode-jar
