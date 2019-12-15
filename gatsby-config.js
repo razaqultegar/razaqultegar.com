@@ -16,16 +16,6 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {
-          '/*.js': ['cache-control: public, max-age=31536000, immutable'],
-          '/*.css': ['cache-control: public, max-age=31536000, immutable'],
-          '/sw.js': ['cache-control: public, max-age=0, must-revalidate'],
-        },
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
