@@ -1,24 +1,21 @@
 {
   "name": "razaqultegar",
   "description": "Personal site using Gatsbyjs",
-  "version": "0.1.0",
-  "author": "Razaqul Tegar <hello@razaqultegar.com>",
+  "version": "1.1.0",
+  "author": "Razaqul Tegar <myrazaqul@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.18.12",
-    "gatsby-image": "^2.2.36",
+    "gatsby": "^2.18.17",
+    "gatsby-image": "^2.2.37",
     "gatsby-plugin-feed": "^2.3.25",
-    "gatsby-plugin-manifest": "^2.2.33",
-    "gatsby-plugin-netlify": "^2.1.30",
-    "gatsby-plugin-nprogress": "^2.1.17",
-    "gatsby-plugin-offline": "^3.0.29",
+    "gatsby-plugin-manifest": "^2.2.34",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sass": "^2.1.26",
-    "gatsby-plugin-sharp": "^2.3.7",
+    "gatsby-plugin-sharp": "^2.3.10",
     "gatsby-plugin-sitemap": "^2.2.24",
-    "gatsby-remark-images": "3.1.38",
-    "gatsby-remark-prismjs": "^3.3.27",
-    "gatsby-source-filesystem": "^2.1.42",
-    "gatsby-transformer-remark": "^2.6.42",
+    "gatsby-remark-images": "3.1.39",
+    "gatsby-remark-prismjs": "^3.3.28",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-remark": "^2.6.45",
     "gatsby-transformer-sharp": "2.3.9",
     "lodash.kebabcase": "^4.1.1",
     "node-sass": "^4.13.0",
@@ -28,7 +25,6 @@
     "url-join": "^4.0.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
     "prismjs": "^1.17.1"
   },
   "keywords": [
@@ -45,7 +41,6 @@
     "serve": "gatsby serve",
     "build": "gatsby build",
     "clean": "rm -rf public && rm -rf .cache",
-    "format": "prettier --write \"**/*.{js,jsx}\"",
     "check": "npx npm-check-updates -u"
   }
 }
