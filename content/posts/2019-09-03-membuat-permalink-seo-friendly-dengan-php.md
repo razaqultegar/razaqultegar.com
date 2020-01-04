@@ -11,8 +11,6 @@ Optimisasi mesin pencari atau Search Engine Optimization, biasa disingkat "SEO" 
 
 Tujuan dari SEO adalah menempatkan sebuah situs web pada posisi teratas, atau setidaknya halaman pertama hasil pencarian berdasarkan kata kunci tertentu yang ditargetkan. Secara logis, situs web yang menempati posisi teratas pada hasil pencarian memiliki peluang lebih besar untuk mendapatkan pengunjung.
 
-## Contoh Permalink SEO Friendly
-
 ![](../uploads/contoh-seo-friendly.png)
 
 Keterangan : pada contoh nomor satu itu merupakan permalink yang salah atau tidak SEO Friendly, sedangkan contoh nomor dua itu adalah contoh permalink SEO Friendly.
