@@ -5,23 +5,15 @@ template: post
 slug: siapa-pemeran-utamanya
 ---
 
-Aktor atau Pemeran (Menurut KBBI) adalah Orang yang memerankan sesuatu dalam film, sandiwara;
-
-DAN definisi kedua: Orang yang menjalankan peranan tertentu dalam suatu peristiwa;
+Aktor atau Pemeran (Menurut KBBI) adalah Orang yang memerankan sesuatu dalam film, sandiwara; dan definisi kedua: Orang yang menjalankan peranan tertentu dalam suatu peristiwa;
 
 Kalau setiap hidup kita adalah peristiwa.. siapa sebenarnya pemeran utama di dunia ini ?.. dunia yang seperti film singkat tanpa tahu kapan episode terakhirnya.
 
 Kembali ke pertanyaan sebelumnya.. “siapa sebenarnya pemeran utama di kehidupan kita?” orang-orang hebat seperti Bill Gates? Elon Musk? atau jawaban yang cukup klise.. yaitu diri kita sendiri? Saya yakin dalam hati kita semua setuju dengan jawaban kedua.. yaitu pemeran utamanya adalah diri kita masing-masing.
 
-Kalau setiap dari kita adalah pemeran utama… (lebih dari satu?)
+Kalau setiap dari kita adalah pemeran utama… (lebih dari satu?), mungkin memang tidak ada pemeran utama di dunia nyata. Atau lebih tepatnya.. analogi film tidak bisa kita gunakan untuk kehidupan asli ini. Dengan begitu, kita bisa berhenti memperlakukan diri sendiri sebagai seorang aktor utama.
 
-Mungkin memang tidak ada pemeran utama di dunia nyata.
-
-Atau lebih tepatnya.. analogi film tidak bisa kita gunakan untuk kehidupan asli ini.
-
-Dengan begitu.. Kita bisa berhenti memperlakukan diri sendiri sebagai seorang aktor utama..
-
-dimana kehidupan pemeran lain hanya bumbu tambahan alias tidak begitu penting selama aktor utamanya bisa menyelesaikan misi dan dikagumi oleh semua penonton.
+Dimana kehidupan pemeran lain hanya bumbu tambahan alias tidak begitu penting selama aktor utamanya bisa menyelesaikan misi dan dikagumi oleh semua penonton.
 
 Kita sering melihat orang lain sebatas “pemain figuran” dimana jatah dialognya hanya satu baris kalimat. Tidak berkontribusi banyak di adegan apalagi keseluruhan film. Selama dia bilang “terima kasih” kalau kita berbuat baik.. atau dia “minta maaf” saat berbuat salah.. tugasnya selesai.. hanya satu kalimat.
 

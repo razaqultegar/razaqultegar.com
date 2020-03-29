@@ -21,6 +21,7 @@ Selain duduk di depan laptop, saya juga kerap berkegiatan alam terbuka dan sesek
 * Inovasi Desa - 2018
 * Panda SID - 2019
 * Dumoro - 2019
+* The Jakmania Purwokerto - 2019
 * BTPN Syariah - 2019
 * Sensus Penduduk Online - 2020
 * Hooligans Indonesia Store - 2020
@@ -29,7 +30,7 @@ Selain duduk di depan laptop, saya juga kerap berkegiatan alam terbuka dan sesek
 
 ## Sedang Menggunakan
 
-* Laptop: Acer Aspire E14 (Intel® Core™ i3, 6 GB DDR3 Memory, dan HDD 500 GB)
+* Laptop: Acer Aspire E14 (Intel Core i3, RAM 6GB, dan HDD 500GB)
 * Hosting: [Netlify](https://netlify.com/) dan [Domainesia](https://domainesia.com/)
 * Generator Situs Statis:  [Gatsby](https://gatsbyjs.org/)
 * Daftar tool yang saya pakai bisa di lihat [disini](/tool/)

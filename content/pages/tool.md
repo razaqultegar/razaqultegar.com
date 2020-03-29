@@ -12,9 +12,6 @@ Seperti biasa, ini tool pilihan saya, kamu tidak harus pakai tool yang sama, dit
 Text Editor  
 Normalnya [Visual Studio Code](https://code.visualstudio.com/), kadang [Atom](http://atom.io/), sangat jarang [Sublime](https://www.sublimetext.com/3)
 
-[Simplenote](https://simplenote.com/)  
-Tempat saya menulis, saya menulis saaaangat banyaaaak, semua ide kasar ditampung disini. Saya suka Simplenote, karena mengorganisir file mudah dengan hashtag, tempat menulis bersih dari yang tidak penting.
-
 [Trello](http://trello.com/)  
 Untuk “tugas” yang harus saya kerjakan, saya organisir di trello. Terutama untuk hal-hal yang berhubungan dengan lebih dari satu orang (pekerjaan atau komunitas).
 

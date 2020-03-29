@@ -5,11 +5,7 @@ template: post
 slug: hidup-freelancer
 ---
 
-Sebagian orang bermimpi mau bekerja sebebas mungkin, tanpa bos yang mengatur jadwal dan pekerjaannya.
-
-Untuk yang sudah merasakannya (freelancer atau “anak startup” yang sedang membuat produk) sayangnya tidak seindah bayangan sebelumnya.
-
-Kalau kamu tidak punya bos, berarti kamulah BOSnya. Pertanyaannya apakah kamu bos yang baik atau bos yang buruk?
+Sebagian orang bermimpi mau bekerja sebebas mungkin, tanpa bos yang mengatur jadwal dan pekerjaannya. Untuk yang sudah merasakannya (freelancer atau “anak startup” yang sedang membuat produk) sayangnya tidak seindah bayangan sebelumnya. Kalau kamu tidak punya bos, berarti kamulah BOSnya. Pertanyaannya apakah kamu bos yang baik atau bos yang buruk?
 
 **Uang**  
 Normalnya, tidak ada orang yang ingin bekerja tanpa dibayar. Tapi saat kamu memasuki dunia ini uang menjadi isu yang besar. Kamu tidak menegoisasikan gaji, kamu tidak bisa menuntut siapa-siapa, kamu yang mengatur berapa uang yang mau kamu ambil bulan ini.

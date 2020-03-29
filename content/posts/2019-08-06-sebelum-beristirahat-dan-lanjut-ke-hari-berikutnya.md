@@ -1,8 +1,8 @@
 ---
 date: 2019-08-06
-title: "Sebelum beristirahat dan lanjut ke hari berikutnya"
+title: "Sebuah Pesan Untuk Hari Ini"
 template: post
-slug: sebelum-beristirahat-dan-lanjut-ke-hari-berikutnya
+slug: sebuah-pesan-untuk-hari-ini
 ---
 
 Kalau ada kesempatan jangan lupa untuk menanyakan beberapa hal ini ke diri sendiri:
