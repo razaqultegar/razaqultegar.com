@@ -24,7 +24,7 @@ Selain duduk di depan laptop, saya juga kerap berkegiatan alam terbuka dan sesek
 * 2019 - Dumoro `Web Development`
 * 2019 - The Jakmania Purwokerto `App Development`
 * 2019 - BTPN Syariah `App Development`
-* 2020 - Sensus Penduduk Online ``
+* 2020 - Sensus Penduduk Online `Web Development`
 * 2020 - Hooligans Indonesia Store `Web Design`
 * 2020 - Pertamina EP `App Development`
 * 2020 - Covid 19 Indonesia `Web Development`
