@@ -1,4 +1,5 @@
 ---
+date: 2017-08-17
 title: Tool
 desc: Daftar tool yang saya gunakan
 slug: tool

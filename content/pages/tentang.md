@@ -1,4 +1,5 @@
 ---
+date: 2020-03-30
 title: Tentang
 desc: Sekilas tentang saya
 slug: tentang
@@ -15,18 +16,18 @@ Selain duduk di depan laptop, saya juga kerap berkegiatan alam terbuka dan sesek
 * [Antara Anak Muda, Narkoba, Kopi-Senja, dan Karir](spotify:episode:7g9nSeHXUt9jxIvxmShoux)
 
 ## Portfolio
-* Alzheimer Indonesia - 2017
-* KPU Banyumas - 2017
-* Navis Galeri - 2018
-* Inovasi Desa - 2018
-* Panda SID - 2019
-* Dumoro - 2019
-* The Jakmania Purwokerto - 2019
-* BTPN Syariah - 2019
-* Sensus Penduduk Online - 2020
-* Hooligans Indonesia Store - 2020
-* Pertamina EP - 2020
-* Covid 19 Indonesia - 2020
+* 2017 - Alzheimer Indonesia `Web Design`
+* 2017 - KPU Banyumas `Web Development`
+* 2018 - Navis Galeri `Web Development`
+* 2018 - Inovasi Desa `Web Design`
+* 2019 - Panda SID `App Development`
+* 2019 - Dumoro `Web Development`
+* 2019 - The Jakmania Purwokerto `App Development`
+* 2019 - BTPN Syariah `App Development`
+* 2020 - Sensus Penduduk Online ``
+* 2020 - Hooligans Indonesia Store `Web Design`
+* 2020 - Pertamina EP `App Development`
+* 2020 - Covid 19 Indonesia `Web Development`
 
 ## Sedang Menggunakan
 
