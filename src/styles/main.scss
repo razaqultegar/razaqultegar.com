@@ -1,6 +1,6 @@
 body {
   margin: 60px auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
   background-color: #f6f5ed;
   color: #484848;
   width: 600px;
@@ -17,7 +17,7 @@ h1 {
 
 h2 {
   margin-top: 40px;
-  margin-bottom: 2ex;
+  margin-bottom: 5px;
   font-size: 24px;
   font-weight: normal;
 }
@@ -30,11 +30,11 @@ h3 {
 }
 
 a {
-  color: #313131;
+  color: #C30C0C;
   text-decoration: none;
-  border-bottom: 1px dotted #999892;
+  border-bottom: 1px dotted #C30C0C;
   &:hover {
-    border-bottom: 1px solid #999892;
+    border-bottom: 1px solid #C30C0C;
   }
 }
 
