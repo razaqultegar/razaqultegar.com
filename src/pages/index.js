@@ -22,7 +22,7 @@ export default class Index extends Component {
         <SEO />
         <header>
           <h1>RAZAQUL TEGAR</h1>
-          <p className="header">Saya adalah pengembang dari <a href="https://www.panda.id">Panda SID</a>, Junior Full Stack Developer, perokok aktif, kutu buku musiman, dan kerap berkegiatan di alam terbuka dan sesekali menangkap gerak dengan kamera ponselnya.</p>
+          <p className="header">Saya adalah seorang pekerja lepas sebagai Full Stack Developer, perokok aktif, kutu buku musiman, dan kerap berkegiatan di alam terbuka dan sesekali menangkap gerak dengan kamera ponsel.</p>
           <p>Anda dapat menemukan saya di <a href="https://github.com/razaqultegar/" target="_blank" rel="noopener noreferrer">GitHub</a>, atau bisa mengirimkan <a href="mailto:myrazaqul@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>.</p>
         </header>
         <main>

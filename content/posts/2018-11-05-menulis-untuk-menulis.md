@@ -11,7 +11,7 @@ Salah satu keuntungan menguasai satu skill, kamu bisa memilih bekerja dimana dan
 
 Apakah tulisan ini bermanfaat untuk orang lain? tidak tahu, yang jelas saya merasa nyaman saat menulis dan meningkatkan satu skill baru, -menulis- ini sendiri.
 
-### Kamu belum mulai menulis?
+## Kamu belum mulai menulis?
 
 Tidak harus membuat blog atau buku, kamu bisa menulis di buku kosong atau mengetik di komputer tanpa harus dipublikasikan. Menulis membantu saya untuk *berpikir* (skill yang harus kamu latih juga), apa yang sudah dilakukan, apa yang bisa diperbaiki atau apa yang jadi keinginan sejak lama tapi belum tercapai.
 
