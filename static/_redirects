@@ -7,5 +7,5 @@ https://razaqultegar.netlify.com/* https://razaqultegar.com/:splat 301!
 /portfolio/     /tentang/
 /blog/          /
 /artikel/       /
-/admin/         /
-/wp-admin/      /
+/admin/         /404
+/wp-admin/      /404
