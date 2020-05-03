@@ -1,5 +1,5 @@
 ---
-date: 2019-12-16
+date: 2020-02-16
 title: "Hidup Freelancer"
 template: post
 slug: hidup-freelancer

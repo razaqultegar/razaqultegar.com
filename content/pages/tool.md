@@ -1,5 +1,5 @@
 ---
-date: 2017-08-17
+date: 2020-04-28
 title: Tool
 desc: Daftar tool yang saya gunakan
 slug: tool
@@ -24,11 +24,11 @@ yap, harus selalu, setiap punya ide sebelum menuangkan ke laptop, mau menggambar
 
 ### Extension di chrome
 
-[Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en)  
-Extention di chrome untuk setiap membuka tab baru, kamu tidak akan terdistraksi dan tampilan yang sederhana.
+[Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg)  
+Extention di chrome untuk mengidentifikasi teknologi yang digunakan pada sebuah website, mulai dari bahasa pemograman, framework, library, dan masih banyak lagi.
 
-[Noisli](https://chrome.google.com/webstore/detail/noisli/klejemegaoblahjdpcajmpcnjjmkmkkf?hl=en)  
-Mendengarkan suara hujan, angin, air atau suara alam lainnya dengan konstan bisa bikin kamu lebih mudah berkonsentrasi saat kerja. DIbanding mencampurkan dengan musik yang bisa bikin kamu ikut nyanyi 😛
+[Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb)  
+Menampilkan satu layar website ke beberapa layar, extention ini sangat membantu untuk menguji ke responsivean sebuah website/aplikasi yang sedang kita buat.
 
 ### Extra
 

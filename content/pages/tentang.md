@@ -1,12 +1,10 @@
 ---
-date: 2020-03-30
+date: 2020-05-03
 title: Tentang
 desc: Sekilas tentang saya
 slug: tentang
 template: page
 ---
-
-![](../uploads/tentang.jpg)
 
 Saya merupakan seorang lelaki beruntung kelahiran Banyumas, 30 Januari, dengan nama asli Razaqul Akli Tegar Ardiansyah. Lulusan Rekayasa Perangkat Lunak di salah satu Sekolah Kejuruan Negeri yang ada di Purwokerto, dan sekarang saya sedang menempuh karir profesional sebagai Full Stack Developer.
 
@@ -25,6 +23,7 @@ Selain duduk di depan laptop, saya juga kerap berkegiatan alam terbuka dan sesek
 * 2020 - Sensus Penduduk Online `Web Development`
 * 2020 - Pertamina EP `App Development`
 * 2020 - Covid 19 Indonesia `Web Development`
+* 2020 - Limbo Digital `Web Development`
 
 ## Sedang Menggunakan
 
