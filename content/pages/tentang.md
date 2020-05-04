@@ -14,8 +14,6 @@ Selain duduk di depan laptop, saya juga kerap berkegiatan alam terbuka dan sesek
 * [Antara Anak Muda, Narkoba, Kopi-Senja, dan Karir](spotify:episode:7g9nSeHXUt9jxIvxmShoux)
 
 ## Portfolio
-* 2017 - KPU Banyumas `Web Development`
-* 2018 - Inovasi Desa `Web Design`
 * 2019 - Panda SID `App Development`
 * 2019 - Dumoro `Web Development`
 * 2019 - The Jakmania Purwokerto `App Development`
