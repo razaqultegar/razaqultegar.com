@@ -1,5 +1,5 @@
 ---
-date: 2020-05-03
+date: 2020-05-14
 title: Tentang
 desc: Sekilas tentang saya
 slug: tentang
@@ -17,17 +17,14 @@ Selain duduk di depan laptop, saya juga kerap berkegiatan alam terbuka dan sesek
 * 2019 - Panda SID `App Development`
 * 2019 - Dumoro `Web Development`
 * 2019 - The Jakmania Purwokerto `App Development`
-* 2019 - BTPN Syariah `App Development`
-* 2020 - Sensus Penduduk Online `Web Development`
 * 2020 - Pertamina EP `App Development`
-* 2020 - Covid 19 Indonesia `Web Development`
 * 2020 - Limbo Digital `Web Development`
 
 ## Sedang Menggunakan
 
 * Laptop: Acer Aspire E14 (Intel Core i3, RAM 6GB, dan HDD 500GB)
-* Hosting: Netlify dan Domainesia
-* Generator Situs Statis:  GatsbyJS
+* Hosting: Domainesia, Netlify dan Vercel
+* Generator Situs Statis:  GatsbyJS dan NextJS
 * Daftar tool yang saya pakai bisa di lihat [disini](/tool/)
 
 ## [Download Resume](/resume.pdf)
