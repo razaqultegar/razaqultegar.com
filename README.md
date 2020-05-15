@@ -1,8 +1,8 @@
 # Razaqul Tegar site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0f11547d-e541-4285-b7c4-10dcaa7746c9/deploy-status)](https://app.netlify.com/sites/razaqultegar/deploys) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This website for my documentation. Made with the Gatsby framework one of the factors why your website can be accessed very quickly and lightly. Begin documenting your journey from now on.
+This website for my documentation. Made with the Reactjs and Nextjs framework one of the factors why your website can be accessed very quickly and lightly. Begin documenting your journey from now on.
 
 ## Installation
 
@@ -22,18 +22,15 @@ This website for my documentation. Made with the Gatsby framework one of the fac
     yarn run dev
     ```
 
-1.  **Open the source code and start editing!**
+1.  **Open the source code and start editings**
 
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    Your site is now running at `http://localhost:3000` !
 
 ## Features
 
 - Posts and pages in Markdown
 - SEO Friendly
-- Feed / RSS
-- Styling using SASS
+- Responsive
 
 ## Contributing
 
