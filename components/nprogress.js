@@ -25,7 +25,7 @@ export default () => (
       }
 
       #nprogress .bar {
-        background: #000;
+        background: rgba(255, 255, 255, 0.5);
         position: fixed;
         z-index: 1031;
         top: 0;
@@ -41,7 +41,7 @@ export default () => (
         right: 0px;
         width: 100px;
         height: 100%;
-        box-shadow: 0 0 10px #000, 0 0 5px #000;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.5);
         opacity: 1;
 
         -webkit-transform: rotate(3deg) translate(0px, -4px);
