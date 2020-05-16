@@ -12,17 +12,18 @@ function Navbar() {
       <div className="menu">
         <ul className="menu-list">
           <li className="menu-item">
-            <a href="https://portfolio.razaqultegar.com" className="menu-link" target="_blank">
-              Portfolio
-            </a>
+            <Link href="/portfolio">
+              <a className="menu-link">
+                Portfolio
+              </a>
+            </Link>
           </li>
-          <li className="menu-item ">
+          <li className="menu-item">
             <Link href="/tentang">
               <a className="menu-link">Tentang</a>
             </Link>
           </li>
-
-          <li className="menu-item ">
+          <li className="menu-item">
             <Link href="/kontak">
               <a className="menu-link">Kontak</a>
             </Link>
