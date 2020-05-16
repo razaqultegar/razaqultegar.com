@@ -3,93 +3,128 @@ import formatDate from 'date-fns/format';
 
 export default ({ thumbnail, title, detail, description, date, link }) => {
   return (
-    <div className="article-list">
-      <div className="thumbnail">
-        <Link href={link}>
-          <img src={thumbnail} alt={title} />
-        </Link>
-      </div>
-      <div className="text">
-        <Link href={link}>
-          <h2 className="title">{title}</h2>
-        </Link>
-        <Link href={link}>{detail && <div className="summary">{description}</div>}</Link>
-      </div>
-      <style jsx>{`
-        .article-list {
-          cursor: pointer;
-          font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial,
-            TazuganeGothic, sans-serif;
-          display: block;
-        }
+    <Link href={link}>
+      <a>
+        <div className="article-list">
+          <div className="thumbnail">
+            <img src={thumbnail} alt={title} />
+          </div>
+          <div className="text">
+            <Link href={link}>
+              <h2 className="title">{title}</h2>
+            </Link>
+            {detail && <div className="summary">{description}</div>}
+            <div className="date">{formatDate(date, 'D MMMM YYYY')}</div>
+          </div>
+          <style jsx>{`
+            .article-list {
+              font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial,
+                TazuganeGothic, sans-serif;
+              display: block;
+            }
 
-        .thumbnail {
-          position: relative;
-        }
+            .thumbnail {
+              position: relative;
+            }
 
-        .text {
-          position: relative;
-          padding: 15px 0 40px 0;
-        }
+            .thumbnail:before {
+              display: block;
+              content: '';
+              width: 100%;
+              padding-top: 56.25%;
+            }
 
-        .title {
-          font-size: 1.25rem;
-          font-weight: 600;
-          line-height: 1.2;
-          margin-bottom: 10px;
-        }
+            .thumbnail img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              height: 100%;
+            }
 
-        .summary {
-          font-size: 0.875rem;
-          color: #555555;
-        }
+            .text {
+              position: relative;
+              padding: 20px 0 20px 0;
+            }
 
-        @media only screen and (min-width: 650px) {
-          .article-list {
-            width: 50%;
-            padding: 0 10px;
-          }
-        }
+            .title {
+              font-size: 1.25rem;
+              font-weight: 600;
+              line-height: 1.2;
+              margin-bottom: 10px;
+            }
 
-        @media only screen and (min-width: 700px) {
-          .article-list {
-            padding: 0 10px;
-          }
-        }
+            .summary {
+              font-size: 0.875rem;
+              color: #555555;
+              margin-bottom: 10px;
+            }
 
-        @media only screen and (min-width: 850px) {
-          .article-list {
-            padding: 0 10px;
-          }
-        }
+            .date {
+              display: inline;
+              color: #777777;
+              text-transform: none;
+              font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial,
+                TazuganeGothic, sans-serif;
+              font-size: 0.625rem;
+              font-weight: 400;
+              line-height: 1.2;
+            }
 
-        @media only screen and (min-width: 1000px) {
-          .article-list {
-            padding: 0 10px;
-          }
-        }
+            @media only screen and (min-width: 650px) {
+              .article-list {
+                width: 50%;
+                padding: 0 10px;
+              }
 
-        @media only screen and (min-width: 1050px) {
-          .article-list {
-            width: 33.33333%;
-            padding: 0 20px;
-          }
-        }
+              .text {
+                padding: 15px 0 40px 0;
+              }
+            }
 
-        @media only screen and (min-width: 1250px) {
-          .article-list {
-            width: 25%;
-            padding: 0 20px;
-          }
-        }
+            @media only screen and (min-width: 700px) {
+              .article-list {
+                padding: 0 10px;
+              }
+            }
 
-        @media only screen and (max-width: 699px) {
-          .article-list {
-            width: 100%;
-            padding: 0 5px;
-          }
-        }
-      `}</style>
-    </div>
+            @media only screen and (min-width: 850px) {
+              .article-list {
+                padding: 0 10px;
+              }
+            }
+
+            @media only screen and (min-width: 1000px) {
+              .article-list {
+                padding: 0 10px;
+              }
+            }
+
+            @media only screen and (min-width: 1050px) {
+              .article-list {
+                width: 33.33333%;
+                padding: 0 20px;
+              }
+            }
+
+            @media only screen and (min-width: 1250px) {
+              .article-list {
+                width: 25%;
+                padding: 0 20px;
+              }
+            }
+
+            @media only screen and (max-width: 699px) {
+              .article-list {
+                width: 100%;
+                padding: 0 5px;
+              }
+            }
+          `}</style>
+        </div>
+      </a>
+    </Link>
   );
 };
