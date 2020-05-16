@@ -24,11 +24,6 @@ export default function PageContainer({ title, description, children }) {
             box-sizing: border-box;
           }
 
-          ::selection {
-            background: #f7ff7c;
-            text-shadow: none;
-          }
-
           body {
             margin: 0;
             font-size: 1.125rem;
@@ -335,43 +330,7 @@ export default function PageContainer({ title, description, children }) {
           .line-numbers .line-highlight:after {
             content: none;
           }
-
-          pre::-moz-selection,
-          pre::-moz-selection,
-          code::-moz-selection,
-          code::-moz-selection {
-            text-shadow: none;
-            color: inherit;
-            background: rgba(150, 150, 150, 0.3) !important;
-          }
-
-          pre::selection,
-          pre::selection,
-          code::selection,
-          code::selection {
-            text-shadow: none;
-            color: inherit;
-            background: rgba(150, 150, 150, 0.3) !important;
-          }
-
-          pre[class*='language-']::-moz-selection,
-          pre[class*='language-']::-moz-selection,
-          code[class*='language-'] ::-moz-selection,
-          code[class*='language-'] ::-moz-selection {
-            text-shadow: none;
-            color: inherit;
-            background: rgba(150, 150, 150, 0.3) !important;
-          }
-
-          pre[class*='language-']::selection,
-          pre[class*='language-']::selection,
-          code[class*='language-'] ::selection,
-          code[class*='language-'] ::selection {
-            text-shadow: none;
-            color: inherit;
-            background: rgba(150, 150, 150, 0.3) !important;
-          }
-
+          
           @media only screen and (min-width: 1024px) {
             main {
               padding: 40px 80px;

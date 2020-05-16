@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LazyLoad from 'react-lazy-load';
 import formatDate from 'date-fns/format';
 import indonesia from 'date-fns/locale/id';
 
@@ -8,7 +9,9 @@ export default ({ thumbnail, title, detail, description, date, link }) => {
       <Link href={link}>
         <a>
           <div className="thumbnail">
-            <img src={thumbnail} alt={title} />
+            <LazyLoad debounce={false} throttle={250}>
+              <img src={thumbnail} alt={title} />
+            </LazyLoad>
           </div>
           <div className="text">
             <Link href={link}>

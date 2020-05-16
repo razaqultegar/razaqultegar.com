@@ -1,4 +1,5 @@
 import { MDXProvider } from '@mdx-js/tag';
+import LazyLoad from 'react-lazy-load';
 import formatDate from 'date-fns/format';
 import indonesia from 'date-fns/locale/id';
 
@@ -38,7 +39,9 @@ export default meta => ({ children }) => {
             </div>
           </div>
           <div className="article-thumbnail">
-            <img src={meta.thumbnail} />
+            <LazyLoad debounce={false} throttle={250}>
+              <img src={meta.thumbnail} />
+            </LazyLoad>
           </div>
           <div className="article-body">{children}</div>
           <style jsx>{`
