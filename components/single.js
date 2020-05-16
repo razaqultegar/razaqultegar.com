@@ -11,7 +11,7 @@ export default meta => ({ children }) => {
 
   return (
     <Page title={`${meta.title} – Limbo Digital Blog`}>
-      <SocialMeta image={`${meta.thumbnail}`} keywords={`${meta.keywords}`} {...meta} />
+      <SocialMeta image={`${meta.thumbnail}`} {...meta} />
       <article>
         <div className="article-header">
           <h1 className="article-title">{meta.title}</h1>
@@ -83,6 +83,11 @@ export default meta => ({ children }) => {
 
           .article-share .icon-text {
             display: none;
+          }
+
+          .article-thumbnail img {
+            width: 100%;
+            height: 100%;
           }
 
           .article-body {
