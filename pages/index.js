@@ -1,5 +1,3 @@
-import { Row } from 'reactstrap';
-
 import Page from '../components/page';
 import SocialMeta from '../components/social-meta';
 import List from '../components/list';
@@ -37,10 +35,79 @@ export default () => {
         title={`Razaqul Tegar - Full Stack Developer`}
         url="https://razaqultegar.com"
         description={`Razaqul Tegar adalah seorang pemuda beruntung kelahiran Banyumas, 30 Januari. Sekarang sedang menempuh karir profesionalnya sebagai Full Stack Developer.`}
+        type="website"
       />
-      <Row xs="1" sm="2" md="4" lg="4">
-        {items}
-      </Row>
+      <div className="article-row">{items}</div>
+      <style jsx>{`
+        .article-row {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          min-width: 100%;
+          margin-left: -5px;
+          margin-right: -5px;
+        }
+
+        @media only screen and (min-width: 650px) {
+          .article-row {
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            margin-left: -10px;
+            margin-right: -10px;
+          }
+        }
+
+        @media only screen and (min-width: 700px) {
+          .article-row {
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            margin-left: -10px;
+            margin-right: -10px;
+          }
+        }
+
+        @media only screen and (min-width: 850px) {
+          .article-row {
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            margin-left: -10px;
+            margin-right: -10px;
+          }
+        }
+
+        @media only screen and (min-width: 1000px) {
+          .article-row {
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            margin-left: -10px;
+            margin-right: -10px;
+          }
+        }
+
+        @media only screen and (min-width: 1050px) {
+          .article-row {
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            margin-left: -20px;
+            margin-right: -20px;
+          }
+        }
+
+        @media only screen and (min-width: 1250px) {
+          .article-row {
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            margin-left: -20px;
+            margin-right: -20px;
+          }
+        }
+      `}</style>
     </Page>
   );
 };

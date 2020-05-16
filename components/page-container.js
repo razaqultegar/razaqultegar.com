@@ -18,12 +18,19 @@ export default function PageContainer({ title, description, children }) {
       {children}
       <style jsx global>
         {`
+          *,
+          :after,
+          :before {
+            box-sizing: border-box;
+          }
+
           ::selection {
             background: #f7ff7c;
             text-shadow: none;
           }
 
           body {
+            margin: 0;
             font-size: 1.125rem;
             line-height: 1.7;
             background-color: #fff;
@@ -41,6 +48,7 @@ export default function PageContainer({ title, description, children }) {
 
           a {
             color: #000;
+            text-decoration: none;
           }
 
           a:hover {
@@ -48,11 +56,10 @@ export default function PageContainer({ title, description, children }) {
             text-decoration: none;
           }
 
-          img,
-          picture {
+          img {
             border: 0;
             margin: 0;
-            max-width: 100%;
+            width: 100%;
           }
 
           main {

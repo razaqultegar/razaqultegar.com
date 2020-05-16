@@ -11,7 +11,7 @@ export default meta => ({ children }) => {
 
   return (
     <Page title={`${meta.title} – Limbo Digital Blog`}>
-      <SocialMeta image={`${meta.thumbnail}`} {...meta} />
+      <SocialMeta image={`${meta.thumbnail}`} keywords={`${meta.keywords}`} {...meta} />
       <article>
         <div className="article-header">
           <h1 className="article-title">{meta.title}</h1>
@@ -85,10 +85,6 @@ export default meta => ({ children }) => {
             display: none;
           }
 
-          .article-thumbnail img {
-            width: 100%;
-          }
-
           .article-body {
             max-width: 800px;
             font-family: 'Lora', Georgia, serif;
@@ -100,7 +96,7 @@ export default meta => ({ children }) => {
           @media only screen and (min-width: 1000px) {
             .article-header {
               max-width: inherit;
-              margin: 0 0 20px 0;
+              margin: 0 0 20px;
             }
           }
 
