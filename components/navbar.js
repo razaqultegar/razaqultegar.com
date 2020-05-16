@@ -13,9 +13,7 @@ function Navbar() {
         <ul className="menu-list">
           <li className="menu-item">
             <Link href="/portfolio">
-              <a className="menu-link">
-                Portfolio
-              </a>
+              <a className="menu-link">Portfolio</a>
             </Link>
           </li>
           <li className="menu-item">

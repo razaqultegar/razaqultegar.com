@@ -70,7 +70,7 @@ export default function PageContainer({ title, description, children }) {
             background-color: #fff9c0;
             text-decoration: none;
           }
-          
+
           code {
             font-size: 13px;
           }
@@ -243,7 +243,7 @@ export default function PageContainer({ title, description, children }) {
           .token.keyword {
             color: #ffeead;
           }
-          
+
           .language-autohotkey .token.selector {
             color: #fca369;
           }
@@ -330,7 +330,7 @@ export default function PageContainer({ title, description, children }) {
           .line-numbers .line-highlight:after {
             content: none;
           }
-          
+
           @media only screen and (min-width: 1024px) {
             main {
               padding: 40px 80px;
