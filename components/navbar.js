@@ -12,19 +12,19 @@ function Navbar() {
       <div className="menu">
         <ul className="menu-list">
           <li className="menu-item">
-            <Link href="/works">
-              <a className="menu-link">Works</a>
-            </Link>
+            <a href="https://portfolio.razaqultegar.com" className="menu-link" target="_blank">
+              Portfolio
+            </a>
           </li>
           <li className="menu-item ">
-            <Link href="/about">
-              <a className="menu-link">About</a>
+            <Link href="/tentang">
+              <a className="menu-link">Tentang</a>
             </Link>
           </li>
 
           <li className="menu-item ">
-            <Link href="/contact">
-              <a className="menu-link">Contact</a>
+            <Link href="/kontak">
+              <a className="menu-link">Kontak</a>
             </Link>
           </li>
         </ul>

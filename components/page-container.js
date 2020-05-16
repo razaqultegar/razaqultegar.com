@@ -41,8 +41,13 @@ export default function PageContainer({ title, description, children }) {
           h3,
           h4,
           h5,
-          h6,
+          h6 {
+            font-family: 'Neue Haas Display Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0 0 10px;
+          }
+
           p {
+            font-family: 'Lora', Georgia, serif;
             margin: 0 0 10px;
           }
 
