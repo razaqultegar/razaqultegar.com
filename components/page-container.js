@@ -59,7 +59,7 @@ export default function PageContainer({ title, description, children }) {
           img {
             border: 0;
             margin: 0;
-            width: 100%;
+            max-width: 100%;
           }
 
           main {

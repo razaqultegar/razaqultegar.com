@@ -64,8 +64,8 @@ function Navbar() {
           .menu-list {
             display: flex;
             flex-direction: row;
-            padding-left: 0;
-            margin-bottom: 0;
+            padding: 0;
+            margin: 0;
             list-style: none;
           }
 
@@ -97,8 +97,6 @@ function Navbar() {
           }
 
           .brand img {
-            width: 10%;
-            max-width: 100%;
             margin-top: -6px;
             margin-left: 5px;
             -webkit-animation: handshake 2s ease-in-out 0s infinite;
@@ -228,8 +226,6 @@ function Navbar() {
           }
 
           .brand img {
-            width: 10%;
-            max-width: 100%;
             margin-top: -6px;
             margin-left: 5px;
           }
