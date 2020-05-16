@@ -28,7 +28,7 @@
 
 ## Acknowledgements
 
-- Vercel - [Next.js Site](https://nextjs.org/docs)
+- Vercel - [Next.js Site](https://nextjs.org)
 - Razaqul Tegar - [Next.js Advanced Starter](https://github.com/razaqultegar/nextjs-advanced-starter)
 - Thomas Frössman - [ExitWP](https://github.com/thomasf/exitwp) (WordPress XML to Markdown)
 
