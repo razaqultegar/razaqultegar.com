@@ -23,13 +23,13 @@ export default meta => ({ children }) => {
               <div className="date">
                 {formatDate(date, 'dddd, D MMMM YYYY', { locale: indonesia })}
               </div>
-              <a href="#javascript" className="article-share">
+              <a href={`https://www.facebook.com/sharer.php?u=${meta.url}`} className="article-share" target="_blank">
                 <span className="icon">
                   <Facebook />
                 </span>
                 <span className="icon-text">Share</span>
               </a>
-              <a href="#javascript" className="article-share">
+              <a href={`https://twitter.com/intent/tweet?url=${meta.url}`} className="article-share" target="_blank">
                 <span className="icon">
                   <Twitter />
                 </span>
