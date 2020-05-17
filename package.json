@@ -1,6 +1,6 @@
 {
   "name": "razaqultegar",
-  "description": "Personal site using ReactJS and NextJS",
+  "description": "Personal site using Next.js",
   "version": "1.2.0",
   "author": "Razaqul Tegar <razaqulmail@gmail.com>",
   "dependencies": {
