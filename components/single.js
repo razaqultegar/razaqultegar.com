@@ -92,8 +92,9 @@ export default meta => ({ children }) => {
             }
 
             .article-thumbnail img {
+              display: block;
+              height: auto;
               width: 100%;
-              height: 100%;
             }
 
             .article-body {
