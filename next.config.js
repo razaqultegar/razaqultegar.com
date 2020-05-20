@@ -1,6 +1,5 @@
 const rehypePrism = require('@mapbox/rehype-prism');
 const nextMDX = require('@next/mdx');
-const bundleAnalyzer = require('@next/bundle-analyzer');
 
 const withMDX = nextMDX({
   extension: /[/\\](pages|blog|telemetry|components[/\\](home))[/\\](.+)\.mdx?$/,
@@ -8,8 +7,6 @@ const withMDX = nextMDX({
     hastPlugins: [rehypePrism]
   }
 });
-
-const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
 
 const nextConfig = {
   pageExtensions: ['jsx', 'js', 'ts', 'tsx', 'mdx'],
@@ -27,4 +24,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withMDX(withBundleAnalyzer(nextConfig));
+module.exports = withMDX(nextConfig);

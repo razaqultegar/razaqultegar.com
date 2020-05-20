@@ -8,7 +8,6 @@
     "@mdx-js/loader": "0.20.3",
     "@mdx-js/mdx": "0.20.3",
     "@mdx-js/tag": "0.20.3",
-    "@next/bundle-analyzer": "9.1.4",
     "@next/mdx": "8.1.0",
     "classnames": "^2.2.6",
     "date-fns": "1.29.0",
