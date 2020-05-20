@@ -1,7 +1,0 @@
-# Redirect domain aliases to primary domain
-https://www.razaqultegar.com/* https://razaqultegar.com/:splat 301!
-
-# Old link
-/solved-ireport-tidak-fungsi-di-mode-jar/   /article/solved-ireport-tidak-fungsi-di-mode-jar
-
-/article    /
