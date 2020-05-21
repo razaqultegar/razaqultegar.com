@@ -18,9 +18,9 @@ Berikut beberapa daftar pesan error yang saya alami, mulai dari konfigurasi comp
 
 ## Pemecahan Masalah
 
-Silahkan buka terminal kamu dan masukkan perintah berikut sesuai dengan nomor pesan error di bagian Inti Permasalahan.
+Silahkan buka terminal dan masukkan perintah berikut sesuai dengan nomor pesan error di bagian Inti Permasalahan.
 
- 1. `composer global about` dan ada muncul pesan `"Changed current directory to /home/username/.config/composer"` untuk mengatasinya silahkan buka file konfigurasi zshrc-nya dengan perintah `sudo nano ~/.zshrc` dan tambahkan ini `alias laravel=".config/composer/vendor/bin/laravel"` di bagian paling bawah.
- 2. `composer instll` or  `composer update`
+ 1. Pertama masukkan perintah `composer global about` dan pasti akan muncul sebuah pesan sebagai berikut `"Changed current directory to /home/username/.config/composer"` untuk mengatasinya silahkan buka file konfigurasi zshrc-nya dengan perintah `sudo nano ~/.zshrc` dan tambahkan skrip ini `alias laravel=".config/composer/vendor/bin/laravel"` di bagian paling bawah.
+ 2. `composer install` or  `composer update`
  3. `composer install --ignore-platform-reqs` or `composer update --ignore-platform-reqs`
  4. Pertama masuk ke direktori projek laravel kamu dan ubah file `.env-example` menjadi `.env` lalu jalankan perintah `php artisan key:generate` setelah itu bersihkan cache dengan perintah `php artisan cache:clear && php artisan config:clear`
