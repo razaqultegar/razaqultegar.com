@@ -14,7 +14,7 @@ export default meta => ({ children }) => {
 
   return (
     <MDXProvider components={code}>
-      <Page title={`${meta.title} – Limbo Digital Blog`}>
+      <Page title={`${meta.title} | Razaqul Tegar - Full Stack Developer`}>
         <SocialMeta image={`${meta.thumbnail}`} {...meta} />
         <article>
           <div className="article-header">
