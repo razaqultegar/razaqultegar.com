@@ -2,14 +2,14 @@ const rehypePrism = require('@mapbox/rehype-prism');
 const nextMDX = require('@next/mdx');
 
 const withMDX = nextMDX({
-  extension: /[/\\](pages|blog|telemetry|components[/\\](home))[/\\](.+)\.mdx?$/,
+  extension: /[/\\](pages|article|components)[/\\](.+)\.mdx?$/,
   options: {
     hastPlugins: [rehypePrism]
   }
 });
 
 const nextConfig = {
-  pageExtensions: ['jsx', 'js', 'ts', 'tsx', 'mdx'],
+  pageExtensions: ['js', 'mdx'],
   experimental: {
     modern: true,
     redirects() {
