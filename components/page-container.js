@@ -349,6 +349,12 @@ export default function PageContainer({ title, description, children }) {
               padding: 40px 80px;
             }
           }
+
+          @media only screen and (min-width: 700px) {
+            blockquote p {
+              font-size: 1.75rem;
+            }
+          }
         `}
       </style>
     </main>
