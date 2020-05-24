@@ -3,18 +3,18 @@ import { meta } from '../../article/note-masalah-instalasi-laravel7-di-ubuntu-pr
 
 export default singlePost({ ...meta })
 
-Ini merupakan catatan saya ketika menginstall laravel di Ubuntu 18.04 dan mendapati beberapa pesan error. Sejauh ini adal 4 pesan error yang saya alami dan ngga menutup kemungkinan suatu saat bakal ada error-error lagi yang bermunculan atau bahkan error ini muncul kembali.
+Ini merupakan catatan saya ketika menginstall laravel di Ubuntu 18.04 dan mendapati beberapa pesan error. Sejauh ini ada 4 pesan error yang saya alami dan ngga menutup kemungkinan suatu saat bakal ada error-error baru yang bermunculan atau bahkan error ini terjadi lagi.
 
 > Note: Saya tidak akan membahas bagaimana pesan error ini bisa terjadi atau membahas lebih rinci, akan tetapi saya akan membahasnya dengan metode penyelesaian masalah.
 
 ## Inti Permasalahan
 
-Berikut beberapa daftar pesan error yang saya alami, mulai dari konfigurasi composer secara global di sistem operasi sampai ke konfigurasi laravel.
+Berikut beberapa daftar pesan error yang saya alami, mulai dari konfigurasi composer secara global sampai ke konfigurasi laravel.
 
-- zsh: laravel command not found
-- php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan
-- error: Your requirements could not be resolved to an installable set of packages
-- laravel 500 internal server error
+1. zsh: laravel command not found
+1. php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan
+1. error: Your requirements could not be resolved to an installable set of packages
+1. laravel 500 internal server error
 
 ## Pemecahan Masalah
 
@@ -28,7 +28,7 @@ alias laravel=".config/composer/vendor/bin/laravel"
 alias laravel=".composer/vendor/bin/laravel"
 ```
 
-bisa kalian cek sendiri untuk mengetahui dimana letak folder composernya dengan menjalankan perintah berikut
+Bisa kalian cek sendiri untuk mengetahui letak folder composernya dengan menjalankan perintah berikut
 
 ```bash
 $ composer global about
@@ -42,7 +42,7 @@ $ composer global about
 "Changed current directory to /home/username/.composer"
 ```
 
-Sedangkan untuk mengatasi masalah `php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan` cukup denga menjalankan perintah berikut:
+Sedangkan untuk mengatasi masalah `php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan` cukup dengan menjalankan perintah berikut:
 
 ```bash
 $ composer install
