@@ -11,16 +11,54 @@ Ini merupakan catatan saya ketika menginstall laravel di Ubuntu 18.04 dan mendap
 
 Berikut beberapa daftar pesan error yang saya alami, mulai dari konfigurasi composer secara global di sistem operasi sampai ke konfigurasi laravel.
 
- 1. `zsh: laravel command not found`
- 2. `php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artsan`
- 3. `error: Your requirements could not be resolved to an installable set of packages`
- 4. `laravel 500 internal server error`
+- zsh: laravel command not found
+- php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan
+- error: Your requirements could not be resolved to an installable set of packages
+- laravel 500 internal server error
 
 ## Pemecahan Masalah
 
-Silahkan buka terminal dan masukkan perintah berikut sesuai dengan nomor pesan error di bagian Inti Permasalahan.
+Untuk mengatasi masalah pesan error `zsh: laravel command not found`, cara yang harus dilakukan yakni dengan membuat PATH pada file konfigurasi zshrc.
 
- 1. Pertama masukkan perintah `composer global about` dan pasti akan muncul sebuah pesan sebagai berikut `"Changed current directory to /home/username/.config/composer"` untuk mengatasinya silahkan buka file konfigurasi zshrc-nya dengan perintah `sudo nano ~/.zshrc` dan tambahkan skrip ini `alias laravel=".config/composer/vendor/bin/laravel"` di bagian paling bawah.
- 2. `composer install` or  `composer update`
- 3. `composer install --ignore-platform-reqs` or `composer update --ignore-platform-reqs`
- 4. Pertama masuk ke direktori projek laravel kamu dan ubah file `.env-example` menjadi `.env` lalu jalankan perintah `php artisan key:generate` setelah itu bersihkan cache dengan perintah `php artisan cache:clear && php artisan config:clear`
+```bash
+$ sudo nano ~/.zshrc
+# dan tambahkan skrip berikut ke bagian paling bawah:
+alias laravel=".config/composer/vendor/bin/laravel"
+# atau
+alias laravel=".composer/vendor/bin/laravel"
+```
+
+bisa kalian cek sendiri untuk mengetahui dimana letak folder composernya dengan menjalankan perintah berikut
+
+```bash
+$ composer global about
+```
+
+<div className="filename">Output</div>
+
+```bash
+"Changed current directory to /home/username/.config/composer"
+# atau
+"Changed current directory to /home/username/.composer"
+```
+
+Sedangkan untuk mengatasi masalah `php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan` cukup denga menjalankan perintah berikut:
+
+```bash
+$ composer install
+# atau
+$ composer update
+```
+
+Lalu `error: Your requirements could not be resolved to an installable set of packages`, ini merupakan pesan error yang terjadi karena belum terinstallnya ekstensi php yang dibutuhkan oleh Laravel. Untuk itu kita harus menjalankan perintah:
+
+```bash
+sudo apt install php-zip php-xml php-mbstring
+```
+
+Terakhir ada penyelesaian masalah untuk pesan error `laravel 500 internal server error`, carana yakni
+
+- Masuk ke direktori root projek
+- Ubah file `.env-example` menjadi `.env`
+- Jalankan perintah `php artisan key:generate`
+- Setelah itu bersihkan cahce dengan perintah `php artisan cache:clear && php artisan config:clear`

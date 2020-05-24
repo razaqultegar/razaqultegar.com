@@ -84,6 +84,25 @@ export default function PageContainer({ title, description, children }) {
             font-size: 13px;
           }
 
+          ul {
+            margin: 0 0 30px;
+          }
+
+          main {
+            padding: 40px 20px;
+          }
+
+          .article-body a {
+            color: #000;
+            font-weight: 400;
+            text-decoration: underline;
+          }
+
+          .article-body a:hover {
+            color: rgba(0, 0, 0, 0.4);
+            text-decoration: none;
+          }
+
           pre.language-terminal code.language-terminal {
             position: relative;
             padding: 1rem;
@@ -338,10 +357,6 @@ export default function PageContainer({ title, description, children }) {
           .line-numbers .line-highlight:before,
           .line-numbers .line-highlight:after {
             content: none;
-          }
-
-          main {
-            padding: 40px 20px;
           }
 
           @media only screen and (min-width: 700px) {

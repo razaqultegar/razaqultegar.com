@@ -62,7 +62,6 @@ export default meta => ({ children }) => {
             }
 
             .article-title {
-              color: black;
               font-size: 2rem;
               line-height: 1.3;
               text-decoration: none;
