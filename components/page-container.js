@@ -84,7 +84,7 @@ export default function PageContainer({ title, description, children }) {
             font-size: 13px;
           }
 
-          ul {
+          ul, ol {
             margin: 0 0 30px;
           }
 
