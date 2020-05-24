@@ -75,10 +75,6 @@ export default function PageContainer({ title, description, children }) {
             padding-left: 20px;
           }
 
-          main {
-            padding: 40px 20px;
-          }
-
           ins {
             background-color: #fff9c0;
             text-decoration: none;
@@ -87,7 +83,7 @@ export default function PageContainer({ title, description, children }) {
           code {
             font-size: 13px;
           }
-    
+
           pre.language-terminal code.language-terminal {
             position: relative;
             padding: 1rem;
@@ -101,7 +97,7 @@ export default function PageContainer({ title, description, children }) {
             background: white;
             color: #333;
           }
-    
+
           pre.language-terminal code.language-terminal::before {
             content: '   ';
             position: absolute;
@@ -118,7 +114,7 @@ export default function PageContainer({ title, description, children }) {
             text-indent: 4px;
             letter-spacing: -15px;
           }
-    
+
           code[class*='language-'],
           pre[class*='language-'],
           pre code {
@@ -138,7 +134,7 @@ export default function PageContainer({ title, description, children }) {
             border-radius: 4px;
             -webkit-font-smoothing: antialiased;
           }
-    
+
           pre code {
             display: block;
             padding: 1.5rem;
@@ -147,7 +143,7 @@ export default function PageContainer({ title, description, children }) {
             border: 0;
             box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.15);
           }
-    
+
           kbd {
             background-color: #f7f7f7;
             border: 1px solid rgba(0, 0, 0, 0.3);
@@ -162,12 +158,12 @@ export default function PageContainer({ title, description, children }) {
             text-shadow: 0 1px 0 white;
             font-size: 14px;
           }
-    
+
           :not(pre) > code[class*='language-'] {
             padding: 3px 5px;
             color: #111;
           }
-    
+
           :not(pre) > code {
             padding: 3px 5px;
             border: none;
@@ -177,14 +173,14 @@ export default function PageContainer({ title, description, children }) {
             border-radius: 4px;
             background: rgba(0, 0, 0, 0.06);
           }
-    
+
           code[class*='language-css'],
           code[class*='language-scss'],
           code[class*='language-less'],
           code[class*='language-sass'] {
             color: #c9c;
           }
-    
+
           .filename {
             background: #111;
             padding: 0.5rem 1rem 0.75rem;
@@ -195,43 +191,43 @@ export default function PageContainer({ title, description, children }) {
             border-top-right-radius: 6px;
             margin-bottom: -2.2rem;
           }
-    
+
           .token.doctype {
             background: #000;
             color: #fff;
           }
-    
+
           .token.comment,
           .token.prolog,
           .token.cdata {
             color: #777c85;
           }
-    
+
           .token.namespace {
             opacity: 0.7;
           }
-    
+
           .token.string,
           .token.attr-value {
             color: #92d192;
           }
-    
+
           .token.punctuation {
             color: #d5d8df;
           }
-    
+
           .token.operator {
             color: #ac8d58;
           }
-    
+
           .token.variable {
             color: #f2777a;
           }
-    
+
           .token.property {
             color: #abb2bf;
           }
-    
+
           .token.entity,
           .token.url,
           .token.symbol,
@@ -242,67 +238,67 @@ export default function PageContainer({ title, description, children }) {
           .token.inserted {
             color: #fca369;
           }
-    
+
           .token.delimiter {
             background: black;
             color: white;
             padding: 1px 2px;
           }
-    
+
           .token.atrule {
             color: #62cfcf;
           }
-    
+
           .token.keyword {
             color: #ffeead;
           }
-    
+
           .language-autohotkey .token.selector {
             color: #fca369;
           }
-    
+
           .token.attr-name {
             color: #ffd479;
           }
-    
+
           .token.function {
             color: #62cfcf;
           }
-    
+
           .language-php .token.function {
             color: white;
           }
-    
+
           .token.class-name {
             color: #e1a6f2;
           }
-    
+
           .token.deleted,
           .language-autohotkey .token.tag {
             color: #f2777a;
           }
-    
+
           .token.tag {
             color: #6ab0f3;
           }
-    
+
           .language-autohotkey .token.keyword {
             color: #ffeead;
           }
-    
+
           .token.selector {
             color: #ffd479;
           }
-    
+
           .token.italic {
             font-style: italic;
           }
-    
+
           pre[data-line] {
             position: relative;
             padding: 1rem 0;
           }
-    
+
           .line-highlight {
             position: absolute;
             left: 0;
@@ -315,7 +311,7 @@ export default function PageContainer({ title, description, children }) {
             line-height: inherit;
             white-space: pre;
           }
-    
+
           .line-highlight:before,
           .line-highlight[data-end]:after {
             content: attr(data-start);
@@ -332,27 +328,31 @@ export default function PageContainer({ title, description, children }) {
             border-radius: 999px;
             text-shadow: none;
           }
-    
+
           .line-highlight[data-end]:after {
             content: attr(data-end);
             top: auto;
             bottom: 0.4em;
           }
-    
+
           .line-numbers .line-highlight:before,
           .line-numbers .line-highlight:after {
             content: none;
           }
 
-          @media only screen and (min-width: 1024px) {
-            main {
-              padding: 40px 80px;
-            }
+          main {
+            padding: 40px 20px;
           }
 
           @media only screen and (min-width: 700px) {
             blockquote p {
               font-size: 1.75rem;
+            }
+          }
+
+          @media only screen and (min-width: 1024px) {
+            main {
+              padding: 40px 80px;
             }
           }
         `}

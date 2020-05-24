@@ -23,13 +23,21 @@ export default meta => ({ children }) => {
               <div className="date">
                 {formatDate(date, 'dddd, D MMMM YYYY', { locale: indonesia })}
               </div>
-              <a href={`https://www.facebook.com/sharer.php?u=${meta.url}`} className="article-share" target="_blank">
+              <a
+                href={`https://www.facebook.com/sharer.php?u=${meta.url}`}
+                className="article-share"
+                target="_blank"
+              >
                 <span className="icon">
                   <Facebook />
                 </span>
                 <span className="icon-text">Share</span>
               </a>
-              <a href={`https://twitter.com/intent/tweet?url=${meta.url}`} className="article-share" target="_blank">
+              <a
+                href={`https://twitter.com/intent/tweet?url=${meta.url}`}
+                className="article-share"
+                target="_blank"
+              >
                 <span className="icon">
                   <Twitter />
                 </span>
@@ -55,7 +63,6 @@ export default meta => ({ children }) => {
 
             .article-title {
               color: black;
-              font-family: 'Neue Haas Display Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
               font-size: 2rem;
               line-height: 1.3;
               text-decoration: none;
@@ -105,13 +112,6 @@ export default meta => ({ children }) => {
               margin: 30px auto 0 auto;
             }
 
-            @media only screen and (min-width: 1000px) {
-              .article-header {
-                max-width: inherit;
-                margin: 0 0 20px;
-              }
-            }
-
             @media only screen and (min-width: 700px) {
               .article-title {
                 font-size: 3.125rem !important;
@@ -119,6 +119,13 @@ export default meta => ({ children }) => {
 
               .article-share .icon-text {
                 display: inline;
+              }
+            }
+
+            @media only screen and (min-width: 1000px) {
+              .article-header {
+                max-width: inherit;
+                margin: 0 0 20px;
               }
             }
           `}</style>

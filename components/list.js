@@ -71,8 +71,6 @@ export default ({ thumbnail, title, detail, description, date, link }) => {
           display: inline;
           color: #777777;
           text-transform: none;
-          font-family: HelveticaNeueArabic, NeueHelveticaW01, Helvetica, HelveticaWorld, Arial,
-            TazuganeGothic, sans-serif;
           font-size: 0.625rem;
           font-weight: 400;
           line-height: 1.2;
