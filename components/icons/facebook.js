@@ -18,10 +18,7 @@ export default () => (
       <mask id="social-icon-5ebe5fa7a331d6009d4019e6-facebook-facebook-b" fill="#fff">
         <use xlinkHref="#social-icon-5ebe5fa7a331d6009d4019e6-facebook-facebook-a"></use>
       </mask>
-      <g
-        fill="#000"
-        mask="url(#social-icon-5ebe5fa7a331d6009d4019e6-facebook-facebook-b)"
-      >
+      <g fill="#000" mask="url(#social-icon-5ebe5fa7a331d6009d4019e6-facebook-facebook-b)">
         <path d="M0 0h16v16H0z"></path>
       </g>
     </g>

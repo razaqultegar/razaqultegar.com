@@ -1,5 +1,5 @@
-const rehypePrism = require('@mapbox/rehype-prism');
 const nextMDX = require('@next/mdx');
+const rehypePrism = require('@mapbox/rehype-prism');
 
 const withMDX = nextMDX({
   extension: /[/\\](pages|article|components)[/\\](.+)\.mdx?$/,
@@ -19,7 +19,7 @@ const nextConfig = {
           permanent: true,
           destination: '/article/solved-ireport-tidak-fungsi-di-mode-jar'
         }
-      ]
+      ];
     }
   }
 };

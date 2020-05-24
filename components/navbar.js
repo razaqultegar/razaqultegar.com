@@ -12,7 +12,9 @@ function Navbar() {
       <div className="menu">
         <ul className="menu-list">
           <li className="menu-item">
-            <a href="https://demo.razaqultegar.com" target="_blank" className="menu-link">Portfolio</a>
+            <a href="https://demo.razaqultegar.com" target="_blank" className="menu-link">
+              Portfolio
+            </a>
           </li>
           <li className="menu-item">
             <Link href="/tentang">
