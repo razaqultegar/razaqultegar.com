@@ -12,7 +12,6 @@ const Header = () => {
         .header {
           background-color: #000;
           padding: 0 20px;
-          transition: all 300ms ease-in-out;
         }
 
         .header-wrap {

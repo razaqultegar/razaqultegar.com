@@ -32,7 +32,6 @@ export default function Intro() {
       <style jsx>{`
         .about-main {
           position: relative;
-          display: -ms-flexbox;
           display: flex;
           -webkit-box-pack: justify;
           justify-content: space-between;
@@ -40,12 +39,10 @@ export default function Intro() {
 
         .about-images {
           display: none;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -webkit-flex-flow: column;
           flex-flow: column;
           position: relative;
           width: 300px;
+          margin-right: 50px;
         }
 
         .about-description {
@@ -55,6 +52,7 @@ export default function Intro() {
         }
 
         .about-description img {
+          width: 100%;
           margin: 25px 0 0;
         }
 
@@ -79,7 +77,7 @@ export default function Intro() {
           }
 
           .about-description {
-            width: 71.1111%;
+            width: 75%;
             margin: 0;
           }
 

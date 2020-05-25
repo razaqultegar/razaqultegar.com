@@ -38,7 +38,6 @@ function Navbar() {
           padding: 1rem 0;
           flex-flow: row nowrap;
           justify-content: flex-start;
-          transition: all 300ms ease-in-out;
         }
 
         .brand {

@@ -45,8 +45,8 @@ export default ({ thumbnail, title, detail, description, date, link }) => {
           left: 0;
           right: 0;
           bottom: 0;
-          width: 100%;
           height: 100%;
+          width: 100%;
         }
 
         .text {
@@ -62,18 +62,18 @@ export default ({ thumbnail, title, detail, description, date, link }) => {
         }
 
         .summary {
-          font-size: 0.875rem;
           color: #555555;
+          font-size: 0.875rem;
           margin-bottom: 10px;
         }
 
         .date {
-          display: inline;
           color: #777777;
-          text-transform: none;
           font-size: 0.625rem;
           font-weight: 400;
           line-height: 1.2;
+          display: inline;
+          text-transform: none;
         }
 
         @media only screen and (min-width: 650px) {

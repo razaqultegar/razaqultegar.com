@@ -56,17 +56,17 @@ export default meta => ({ children }) => {
             }
 
             .article-header {
-              max-width: 640px;
               border-top: 3px solid #000;
+              max-width: 640px;
               margin: 0 auto 20px auto;
             }
 
             .article-title {
               font-size: 2rem;
               line-height: 1.3;
+              word-break: break-word;
               text-decoration: none;
               margin: 15px 0 15px 0;
-              word-break: break-word;
             }
 
             .article-meta {
@@ -104,10 +104,10 @@ export default meta => ({ children }) => {
             }
 
             .article-body {
-              max-width: 800px;
               font-family: 'Lora', Georgia, serif;
               font-size: 1.125rem;
               line-height: 1.7;
+              max-width: 800px;
               margin: 30px auto 0 auto;
             }
 
