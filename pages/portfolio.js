@@ -1,5 +1,6 @@
 import Page from '../components/page';
 import SocialMeta from '../components/social-meta';
+import Portfolio from '../components/page/portfolio';
 
 export default () => {
   return (
@@ -11,7 +12,7 @@ export default () => {
         description={`Razaqul Tegar adalah seorang pemuda beruntung kelahiran Banyumas, 30 Januari. Sekarang sedang menempuh karir profesionalnya sebagai Full Stack Developer.`}
         type="website"
       />
-      <h1>Ini Portfolio</h1>
+      <Portfolio />
     </Page>
   );
 };
