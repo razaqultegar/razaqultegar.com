@@ -26,7 +26,7 @@ export default function About() {
         <ul>
           <li>Bootstrap, CSS, HTML, Sass</li>
           <li>PHP, CodeIgniter, WordPress</li>
-          <li>JavaScript, Angular, React, jQuery, Node.js, Webpack</li>
+          <li>JavaScript, Angular, Electron, React, Node.js</li>
           <li>Express, Laravel (learning)</li>
           <li>Git, Java, Linux (Basic CLI), SQL</li>
         </ul>
