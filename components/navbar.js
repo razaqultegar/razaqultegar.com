@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import Link from 'next/link';
+import Hamburger from './hamburger';
 
 function Navbar() {
   return (
@@ -30,6 +31,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+      <Hamburger />
       <style jsx>{`
         .menu-wrap {
           position: relative;

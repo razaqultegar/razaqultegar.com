@@ -89,6 +89,11 @@ export default function PageContainer({ title, description, children }) {
             margin: 0 0 30px;
           }
 
+          button {
+            border: none;
+            outline: none;
+          }
+
           main {
             background-color: #fff;
             padding: 40px 20px;
