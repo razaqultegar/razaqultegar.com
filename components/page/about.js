@@ -1,4 +1,4 @@
-export default function Intro() {
+export default function About() {
   return (
     <div className="about-main">
       <aside className="about-images">
@@ -13,12 +13,14 @@ export default function Intro() {
         <p>
           Berhasil membuat aplikasi kalkulator dengan menggunakan Visual Basic 6.0 merupakan awal
           perjalan saya di dunia pemograman. Lebih tepatnya waktu itu saya masih duduk di Sekolah
-          Menengah Pertama. Setelah lulus, saya berhasil masuk ke salah satu Sekolah Menengah
-          Kejuruan ternama yang ada di Purwokerto dan mengambil jurusan Rekayasa Perangkat Lunak.
+          Menengah Pertama. Setelah lulus, saya masuk ke salah satu Sekolah Menengah Kejuruan
+          ternama yang ada di Purwokerto dan mengambil jurusan Rekayasa Perangkat Lunak.
         </p>
         <p>
-          Saat ini saya sering menghabiskan waktu untuk membuat sebuah aplikasi/website, baik itu secara
-          profesional maupun hanya sebagai hobi. Ketika saya tidak melakukan pekerjaan, biasanya saya menyempatkan waktu untuk berkegiatan alam seperti mendaki gunung, membaca buku, dan ngopi santai dengan beberapa teman.
+          Saat ini saya sering menghabiskan waktu untuk membuat sebuah aplikasi/website, baik itu
+          secara profesional maupun hanya sebagai hobi. Ketika saya tidak melakukan pekerjaan,
+          biasanya saya menyempatkan waktu untuk berkegiatan alam seperti mendaki gunung, membaca
+          buku, dan ngopi santai dengan beberapa teman.
         </p>
         <h3>Keahlian</h3>
         <ul>
@@ -74,6 +76,7 @@ export default function Intro() {
         @media only screen and (min-width: 1000px) {
           .about-images {
             display: flex;
+            width: 35%;
           }
 
           .about-description {
