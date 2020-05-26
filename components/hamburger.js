@@ -59,6 +59,75 @@ class Hamburger extends Component {
               z-index: 2;
             }
 
+            .hamburger.expand .patty {
+              opacity: 1;
+              -webkit-transition: opacity 0.15s linear,
+                -webkit-transform 0.7s cubic-bezier(0.86, 0, 0.07, 1), background 0.2s linear;
+              transition: opacity 0.15s linear, transform 0.7s cubic-bezier(0.86, 0, 0.07, 1),
+                background 0.2s linear;
+            }
+
+            .hamburger.expand .patty:nth-child(1) {
+              -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+            }
+
+            .hamburger.expand .patty:nth-child(2) {
+              -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+            }
+
+            .hamburger.expand .patty:nth-child(3) {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+            }
+
+            .hamburger.expand .patty:nth-child(4) {
+              -webkit-transform: translateY(6px);
+              transform: translateY(6px);
+            }
+
+            .hamburger.expand .patty:nth-child(5) {
+              -webkit-transform: translateY(12px);
+              transform: translateY(12px);
+            }
+
+            .hamburger.expand.on_press .patty,
+            .hamburger.expand:hover .patty {
+              -webkit-transition: opacity 0.15s linear, -webkit-transform 0.15s linear;
+              transition: opacity 0.15s linear, transform 0.15s linear;
+            }
+
+            .hamburger.expand.on_press .patty:nth-child(1),
+            .hamburger.expand:hover .patty:nth-child(1) {
+              -webkit-transform: translateY(-14px);
+              transform: translateY(-14px);
+            }
+
+            .hamburger.expand.on_press .patty:nth-child(2),
+            .hamburger.expand:hover .patty:nth-child(2) {
+              -webkit-transform: translateY(-7px);
+              transform: translateY(-7px);
+            }
+
+            .hamburger.expand.on_press .patty:nth-child(3),
+            .hamburger.expand:hover .patty:nth-child(3) {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+            }
+
+            .hamburger.expand.on_press .patty:nth-child(4),
+            .hamburger.expand:hover .patty:nth-child(4) {
+              -webkit-transform: translateY(7px);
+              transform: translateY(7px);
+            }
+
+            .hamburger.expand.on_press .patty:nth-child(5),
+            .hamburger.expand:hover .patty:nth-child(5) {
+              -webkit-transform: translateY(14px);
+              transform: translateY(14px);
+            }
+
             @media (max-width: 600px) {
               .hamburger {
                 opacity: 1;
