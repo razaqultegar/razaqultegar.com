@@ -35,13 +35,17 @@ class Hamburger extends Component {
               display: block;
               width: 30px;
               height: 30px;
-              margin-top: 18px;
+              margin-top: 15px;
               padding: 0;
               top: 0;
               right: 0;
               background: 0 0;
               overflow: hidden;
               opacity: 0;
+              -webkit-transition-delay: 0s;
+              transition-delay: 0s;
+              -webkit-transition: opacity 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+              transition: opacity 0.2s cubic-bezier(0.86, 0, 0.07, 1);
             }
 
             .hamburger .patty {
@@ -53,6 +57,10 @@ class Hamburger extends Component {
               top: 14px;
               background: #fff;
               opacity: 1;
+              -webkit-transition: opacity 0.15s linear,
+                -webkit-transform 0.3s cubic-bezier(0.86, 0, 0.07, 1), background 0.2s linear;
+              transition: opacity 0.15s linear, transform 0.3s cubic-bezier(0.86, 0, 0.07, 1),
+                background 0.2s linear;
             }
 
             .hamburger.expand {
@@ -128,7 +136,7 @@ class Hamburger extends Component {
               transform: translateY(14px);
             }
 
-            @media (max-width: 600px) {
+            @media (max-width: 991px) {
               .hamburger {
                 opacity: 1;
               }
@@ -266,7 +274,7 @@ class Hamburger extends Component {
             }
 
             .menu-col.menu {
-              background: #000;
+              background: #1b1d1e;
             }
 
             .menu {
@@ -367,6 +375,10 @@ class Hamburger extends Component {
             @media screen and (max-height: 700px), screen and (max-width: 767px) {
               .menu-col {
                 width: 100%;
+              }
+
+              .menu-col h2 {
+                display: none;
               }
 
               .menu-primary {

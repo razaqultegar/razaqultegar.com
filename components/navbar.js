@@ -232,6 +232,12 @@ function Navbar() {
             margin-left: 5px;
           }
         }
+
+        @media (max-width: 600px) {
+          .menu {
+            display: none;
+          }
+        }
       `}</style>
     </nav>
   );
