@@ -32,10 +32,10 @@ class Hamburger extends Component {
           <style jsx>{`
             .hamburger {
               position: absolute;
-              display: block;
+              display: none;
               width: 30px;
               height: 30px;
-              margin-top: 15px;
+              margin-top: 22px;
               padding: 0;
               top: 0;
               right: 0;
@@ -95,49 +95,9 @@ class Hamburger extends Component {
               transform: translateY(6px);
             }
 
-            .hamburger.expand .patty:nth-child(5) {
-              -webkit-transform: translateY(12px);
-              transform: translateY(12px);
-            }
-
-            .hamburger.expand.on_press .patty,
-            .hamburger.expand:hover .patty {
-              -webkit-transition: opacity 0.15s linear, -webkit-transform 0.15s linear;
-              transition: opacity 0.15s linear, transform 0.15s linear;
-            }
-
-            .hamburger.expand.on_press .patty:nth-child(1),
-            .hamburger.expand:hover .patty:nth-child(1) {
-              -webkit-transform: translateY(-14px);
-              transform: translateY(-14px);
-            }
-
-            .hamburger.expand.on_press .patty:nth-child(2),
-            .hamburger.expand:hover .patty:nth-child(2) {
-              -webkit-transform: translateY(-7px);
-              transform: translateY(-7px);
-            }
-
-            .hamburger.expand.on_press .patty:nth-child(3),
-            .hamburger.expand:hover .patty:nth-child(3) {
-              -webkit-transform: translateY(0);
-              transform: translateY(0);
-            }
-
-            .hamburger.expand.on_press .patty:nth-child(4),
-            .hamburger.expand:hover .patty:nth-child(4) {
-              -webkit-transform: translateY(7px);
-              transform: translateY(7px);
-            }
-
-            .hamburger.expand.on_press .patty:nth-child(5),
-            .hamburger.expand:hover .patty:nth-child(5) {
-              -webkit-transform: translateY(14px);
-              transform: translateY(14px);
-            }
-
             @media (max-width: 991px) {
               .hamburger {
+                display: block;
                 opacity: 1;
               }
 
@@ -163,47 +123,6 @@ class Hamburger extends Component {
               .hamburger .patty:nth-child(4) {
                 -webkit-transform: translateY(6px);
                 transform: translateY(6px);
-              }
-
-              .hamburger .patty:nth-child(5) {
-                -webkit-transform: translateY(12px);
-                transform: translateY(12px);
-              }
-
-              .hamburger.on_press .patty,
-              .hamburger:hover .patty {
-                -webkit-transition: opacity 0.15s linear, -webkit-transform 0.15s linear;
-                transition: opacity 0.15s linear, transform 0.15s linear;
-              }
-
-              .hamburger.on_press .patty:nth-child(1),
-              .hamburger:hover .patty:nth-child(1) {
-                -webkit-transform: translateY(-14px);
-                transform: translateY(-14px);
-              }
-
-              .hamburger.on_press .patty:nth-child(2),
-              .hamburger:hover .patty:nth-child(2) {
-                -webkit-transform: translateY(-7px);
-                transform: translateY(-7px);
-              }
-
-              .hamburger.on_press .patty:nth-child(3),
-              .hamburger:hover .patty:nth-child(3) {
-                -webkit-transform: translateY(0);
-                transform: translateY(0);
-              }
-
-              .hamburger.on_press .patty:nth-child(4),
-              .hamburger:hover .patty:nth-child(4) {
-                -webkit-transform: translateY(7px);
-                transform: translateY(7px);
-              }
-
-              .hamburger.on_press .patty:nth-child(5),
-              .hamburger:hover .patty:nth-child(5) {
-                -webkit-transform: translateY(14px);
-                transform: translateY(14px);
               }
             }
           `}</style>
@@ -274,7 +193,7 @@ class Hamburger extends Component {
             }
 
             .menu-col.menu {
-              background: #1b1d1e;
+              background: #000;
             }
 
             .menu {
@@ -282,6 +201,7 @@ class Hamburger extends Component {
               font-family: 'Neue Haas Display Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
               font-weight: normal;
               line-height: 1.4;
+              text-transform: uppercase;
             }
 
             .menu ul {
@@ -313,8 +233,8 @@ class Hamburger extends Component {
               width: 30px;
               height: 30px;
               padding: 0;
-              top: 36px;
-              right: 40px;
+              top: 20px;
+              right: 20px;
               background: 0 0;
               overflow: hidden;
             }
@@ -345,9 +265,7 @@ class Hamburger extends Component {
             }
 
             .menu-close.on_press:after,
-            .menu-close.on_press:before,
-            .menu-close:hover:after,
-            .menu-close:hover:before {
+            .menu-close.on_press:before {
               opacity: 0.6;
             }
 
@@ -409,8 +327,8 @@ class Hamburger extends Component {
 
             @media (max-width: 600px) {
               .menu-close {
-                top: 23px;
-                right: 25px;
+                top: 20px;
+                right: 20px;
               }
             }
 
