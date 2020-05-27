@@ -57,8 +57,7 @@ export default meta => ({ children }) => {
 
             .article-header {
               border-top: 3px solid #000;
-              max-width: 640px;
-              margin: 0 auto 20px auto;
+              margin-bottom: 20px;
             }
 
             .article-title {
