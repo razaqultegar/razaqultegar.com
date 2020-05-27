@@ -23,9 +23,9 @@ Untuk mengatasi masalah pesan error `zsh: laravel command not found`, cara yang 
 ```bash
 $ sudo nano ~/.zshrc
 # dan tambahkan skrip berikut ke bagian paling bawah:
-alias laravel=".config/composer/vendor/bin/laravel"
+alias laravel="~/.config/composer/vendor/bin/laravel"
 # atau
-alias laravel=".composer/vendor/bin/laravel"
+alias laravel="~/.composer/vendor/bin/laravel"
 ```
 
 Bisa kalian cek sendiri untuk mengetahui letak folder composernya dengan menjalankan perintah berikut
