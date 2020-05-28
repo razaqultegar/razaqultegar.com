@@ -243,7 +243,7 @@ export default function Portfolio() {
         }
 
         .featured-link {
-          margin-top: 75px;
+          margin-top: 24px;
         }
 
         .portfolio {
@@ -294,6 +294,10 @@ export default function Portfolio() {
 
           .featured-portfolio {
             flex-direction: row;
+          }
+
+          .featured-link {
+            margin-top: 75px;
           }
         }
 
