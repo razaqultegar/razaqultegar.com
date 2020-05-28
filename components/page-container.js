@@ -70,7 +70,7 @@ export default function PageContainer({ title, description, children }) {
           blockquote p {
             color: #000;
             font-family: 'Neue Haas Display Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 1.625rem;
+            font-size: 1.2rem;
             line-height: 1.7;
             padding-left: 20px;
           }
