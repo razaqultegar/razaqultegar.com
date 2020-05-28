@@ -110,6 +110,12 @@ export default function PageContainer({ title, description, children }) {
             text-decoration: none;
           }
 
+          .article-body span.note {
+            color: red;
+            font-size: 14px;
+            margin-left: 5px;
+          }
+
           @media only screen and (min-width: 700px) {
             blockquote p {
               font-size: 1.75rem;
