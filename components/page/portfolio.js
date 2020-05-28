@@ -22,7 +22,7 @@ export default function Portfolio() {
                 Indonesia. Situs ini dikelola oleh tim Gugus Tugas Percepatan Penanganan COVID-19
               </p>
               <div className="featured-tech">
-                <span>desain</span>
+                <span>development</span>
                 <span>nodejs</span>
                 <span>wordpress</span>
               </div>
@@ -36,25 +36,6 @@ export default function Portfolio() {
         </section>
         <div className="portfolio">
           <div className="portfolio-header">
-            <h3>Sensus Penduduk Online</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Situs informasi untuk pendataan penduduk yang dilakukan oleh Badan Pusat Statistik Indonesia.</p>
-            <div className="portfolio-tech">
-              <span>angular</span>
-              <span>desain</span>
-              <span>development</span>
-              <span>javascript</span>
-            </div>
-          </div>
-          <div className="portfolio-link">
-            <a href="https://sensus.bps.go.id" style={{ color: '#fff' }}>
-              Kunjungi Situs →
-            </a>
-          </div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-header">
             <h3>BTPN Syariah</h3>
           </div>
           <div className="portfolio-body">
@@ -64,37 +45,6 @@ export default function Portfolio() {
               <span>mysql</span>
               <span>netbeans</span>
             </div>
-          </div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-header">
-            <h3>Pertamina EP</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Aplikasi pemutar vidio presentasi yang diminta secara khusus oleh VP Drilling &amp; Workover Pertamina EP, Bpk Pranefo Maaruf.</p>
-            <div className="portfolio-tech">
-              <span>development</span>
-              <span>electron</span>
-              <span>javascript</span>
-            </div>
-          </div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-header">
-            <h3>Panda SID</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Aplikasi sistem informasi desa yang dikembangan untuk memudahkan desa dalam tata kelola informasi.</p>
-            <div className="portfolio-tech">
-              <span>codeigniter</span>
-              <span>development</span>
-              <span>php</span>
-            </div>
-          </div>
-          <div className="portfolio-link">
-            <a href="https://panda.id" style={{ color: '#fff' }}>
-              Kunjungi Situs →
-            </a>
           </div>
         </div>
         <div className="portfolio">
@@ -117,12 +67,62 @@ export default function Portfolio() {
         </div>
         <div className="portfolio">
           <div className="portfolio-header">
+            <h3>Panda SID</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Aplikasi sistem informasi desa yang dikembangan untuk memudahkan desa dalam tata kelola informasi.</p>
+            <div className="portfolio-tech">
+              <span>codeigniter</span>
+              <span>development</span>
+              <span>php</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://panda.id" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
+        <div className="portfolio">
+          <div className="portfolio-header">
+            <h3>Pertamina EP</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Aplikasi pemutar vidio presentasi yang diminta secara khusus oleh VP Drilling &amp; Workover Pertamina EP, Bpk Pranefo Maaruf.</p>
+            <div className="portfolio-tech">
+              <span>development</span>
+              <span>electron</span>
+              <span>javascript</span>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio">
+          <div className="portfolio-header">
+            <h3>Sensus Penduduk Online</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Situs informasi untuk pendataan penduduk yang dilakukan oleh Badan Pusat Statistik Indonesia.</p>
+            <div className="portfolio-tech">
+              <span>angular</span>
+              <span>development</span>
+              <span>javascript</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://sensus.bps.go.id" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
+        <div className="portfolio">
+          <div className="portfolio-header">
             <h3>The Jakmania Purwokerto App</h3>
           </div>
           <div className="portfolio-body">
             <p>Aplikasi sistem informasi untuk memudahkan dalam tata kelola anggota dan keuangan dalam organisasi.</p>
             <div className="portfolio-tech">
               <span>codeigniter</span>
+              <span>design</span>
               <span>development</span>
               <span>php</span>
             </div>
