@@ -116,7 +116,7 @@ export default function Portfolio() {
         </div>
         <div className="portfolio">
           <div className="portfolio-header">
-            <h3>The Jakmania Purwokerto App</h3>
+            <h3>The Jakmania Purwokerto</h3>
           </div>
           <div className="portfolio-body">
             <p>Aplikasi sistem informasi untuk memudahkan dalam tata kelola anggota dan keuangan dalam organisasi.</p>
