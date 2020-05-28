@@ -9,8 +9,6 @@ export default function Contact() {
          <ul>
             <li><a href="https://facebook.com/razaqultegar">Facebook</a></li>
             <li><a href="https://github.com/razaqultegar">GitHub</a></li>
-            <li><a href="https://saweria.com/donate/razaqultegar">Saweria</a></li>
-            <li><a href="https://twitter.com/razaqultegar">Twitter</a></li>
          </ul>
          <h3>Podcast</h3>
          <ul>
