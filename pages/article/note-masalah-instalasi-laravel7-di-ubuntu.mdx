@@ -21,7 +21,7 @@ Berikut beberapa daftar pesan error yang saya alami, mulai dari konfigurasi comp
 Untuk mengatasi masalah pesan error `zsh: laravel command not found`, cara yang harus dilakukan yakni dengan membuat PATH pada file konfigurasi zshrc.
 
 ```bash
-$ sudo nano ~/.zshrc
+sudo nano ~/.zshrc
 # dan tambahkan skrip berikut ke bagian paling bawah:
 alias laravel="~/.config/composer/vendor/bin/laravel"
 # atau
@@ -45,9 +45,9 @@ $ composer global about
 Sedangkan untuk mengatasi masalah `php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan` cukup dengan menjalankan perintah berikut:
 
 ```bash
-$ composer install
+composer install
 # atau
-$ composer update
+composer update
 ```
 
 Lalu `error: Your requirements could not be resolved to an installable set of packages`, ini merupakan pesan error yang terjadi karena belum terinstallnya ekstensi php yang dibutuhkan oleh Laravel. Untuk itu kita harus menjalankan perintah:
