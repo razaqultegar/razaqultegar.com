@@ -6,7 +6,7 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-const listItems = importAll(require.context('../article', false, /\-preview\.mdx$/));
+const listItems = importAll(require.context('../artikel', false, /\-preview\.mdx$/));
 
 function dateSortDesc(a, b) {
   const date1 = new Date(a.meta.date);
