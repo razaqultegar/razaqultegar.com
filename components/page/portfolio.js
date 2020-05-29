@@ -133,6 +133,61 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
+        <h2>Eksperimen</h2>
+        <div className="portfolio">
+          <div className="portfolio-header">
+            <h3>Simple Laravel</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Sebuah projek menggunakan Laravel 7 yang berguna untuk memudahkan kamu dalam memulai belajar Framework. Terutama Laravel 7.</p>
+            <div className="portfolio-tech">
+              <span>development</span>
+              <span>laravel</span>
+              <span>php</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://github.com/razaqultegar/simple-laravel" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
+        <div className="portfolio">
+          <div className="portfolio-header">
+            <h3>Simple WordPress</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Tema kustom WordPress yang dibuat se-simple mungkin, sehingga tidak membutuhkan resource yang lama ketika mengaksesnya.</p>
+            <div className="portfolio-tech">
+              <span>development</span>
+              <span>php</span>
+              <span>wordpress</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://github.com/razaqultegar/simple-wordpress" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
+        <div className="portfolio">
+          <div className="portfolio-header">
+            <h3>Buku Tamu Desa</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Aplikasi Buku Tamu yang dibuat untuk Desa, sehingga data mudah diakses.</p>
+            <div className="portfolio-tech">
+              <span>development</span>
+              <span>php</span>
+              <span>wordpress</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://github.com/razaqultegar/simple-wordpress" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
       </div>
       <style jsx>{`
         #pages {
