@@ -49,6 +49,23 @@ export default function Portfolio() {
         </div>
         <div className="portfolio">
           <div className="portfolio-header">
+            <h3>DesaOS</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Distribusi Linux hasil remastering Ubuntu yang dirancang khusus untuk mampu berjalan di komputer dengan spek rendah.</p>
+            <div className="portfolio-tech">
+              <span>development</span>
+              <span>linux</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://puskomedia.id/dumoro" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
+        <div className="portfolio">
+          <div className="portfolio-header">
             <h3>Dumoro</h3>
           </div>
           <div className="portfolio-body">
@@ -136,6 +153,24 @@ export default function Portfolio() {
         <h2>Eksperimen</h2>
         <div className="portfolio">
           <div className="portfolio-header">
+            <h3>Limbo Digital</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Penyedia jasa pengembangan aplikasi, website, serta agensi digital.</p>
+            <div className="portfolio-tech">
+              <span>desain</span>
+              <span>development</span>
+              <span>javascript</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://limbodigital.id" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
+        <div className="portfolio">
+          <div className="portfolio-header">
             <h3>Simple Laravel</h3>
           </div>
           <div className="portfolio-body">
@@ -177,9 +212,10 @@ export default function Portfolio() {
           <div className="portfolio-body">
             <p>Aplikasi Buku Tamu yang dibuat untuk Desa, sehingga data mudah diakses.</p>
             <div className="portfolio-tech">
+              <span>codeigniter</span>
+              <span>design</span>
               <span>development</span>
               <span>php</span>
-              <span>wordpress</span>
             </div>
           </div>
           <div className="portfolio-link">
@@ -226,7 +262,7 @@ export default function Portfolio() {
         .thumbnail-images {
           height: 100%;
           margin: 0;
-          min-height: 320px;
+          min-height: 375px;
           overflow: hidden;
           position: relative;
         }
