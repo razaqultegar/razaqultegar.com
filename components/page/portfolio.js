@@ -52,7 +52,10 @@ export default function Portfolio() {
             <h3>Panda SID</h3>
           </div>
           <div className="portfolio-body">
-            <p>Aplikasi sistem informasi desa yang dikembangan untuk memudahkan desa dalam tata kelola informasi.</p>
+            <p>
+              Aplikasi sistem informasi desa yang dikembangan untuk memudahkan desa dalam tata
+              kelola informasi.
+            </p>
             <div className="portfolio-tech">
               <span>codeigniter</span>
               <span>development</span>
@@ -70,7 +73,10 @@ export default function Portfolio() {
             <h3>Pertamina EP</h3>
           </div>
           <div className="portfolio-body">
-            <p>Aplikasi pemutar vidio presentasi yang diminta secara khusus oleh VP Drilling &amp; Workover Pertamina EP, Bpk Pranefo Maaruf.</p>
+            <p>
+              Aplikasi pemutar vidio presentasi yang diminta secara khusus oleh VP Drilling &amp;
+              Workover Pertamina EP, Bpk Pranefo Maaruf.
+            </p>
             <div className="portfolio-tech">
               <span>development</span>
               <span>electron</span>
@@ -83,7 +89,10 @@ export default function Portfolio() {
             <h3>Sensus Penduduk Online</h3>
           </div>
           <div className="portfolio-body">
-            <p>Situs informasi untuk pendataan penduduk yang dilakukan oleh Badan Pusat Statistik Indonesia.</p>
+            <p>
+              Situs informasi untuk pendataan penduduk yang dilakukan oleh Badan Pusat Statistik
+              Indonesia.
+            </p>
             <div className="portfolio-tech">
               <span>angular</span>
               <span>development</span>
@@ -102,14 +111,17 @@ export default function Portfolio() {
             <h3>DesaOS</h3>
           </div>
           <div className="portfolio-body">
-            <p>Distribusi Linux hasil remastering Ubuntu yang dirancang khusus untuk mampu berjalan di komputer dengan spek rendah.</p>
+            <p>
+              Distribusi Linux hasil remastering Ubuntu yang dirancang khusus untuk mampu berjalan
+              di komputer dengan spek rendah.
+            </p>
             <div className="portfolio-tech">
               <span>development</span>
               <span>linux</span>
             </div>
           </div>
           <div className="portfolio-link">
-            <a href="https://puskomedia.id/dumoro" style={{ color: '#fff' }}>
+            <a href="https://sourceforge.net/projects/desaos/" style={{ color: '#fff' }}>
               Kunjungi Situs →
             </a>
           </div>
@@ -119,7 +131,10 @@ export default function Portfolio() {
             <h3>The Jakmania Purwokerto</h3>
           </div>
           <div className="portfolio-body">
-            <p>Aplikasi sistem informasi untuk memudahkan dalam tata kelola anggota dan keuangan dalam organisasi.</p>
+            <p>
+              Aplikasi sistem informasi untuk memudahkan dalam tata kelola anggota dan keuangan
+              dalam organisasi.
+            </p>
             <div className="portfolio-tech">
               <span>codeigniter</span>
               <span>design</span>
@@ -128,6 +143,12 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="portfolio-link">
+            <a
+              href="https://github.com/razaqultegar/jakpurwokerto"
+              style={{ color: '#fff', marginRight: '10px' }}
+            >
+              Source Code →
+            </a>
             <a href="https://app.jakpurwokerto.org" style={{ color: '#fff' }}>
               Kunjungi Situs →
             </a>
@@ -138,30 +159,14 @@ export default function Portfolio() {
             <h3>Simple WordPress</h3>
           </div>
           <div className="portfolio-body">
-            <p>Tema kustom WordPress yang dibuat se-simple mungkin, sehingga tidak membutuhkan resource yang lama ketika mengaksesnya.</p>
+            <p>
+              Tema kustom WordPress yang dibuat se-simple mungkin, sehingga tidak membutuhkan
+              resource yang lama ketika mengaksesnya.
+            </p>
             <div className="portfolio-tech">
               <span>development</span>
               <span>php</span>
               <span>wordpress</span>
-            </div>
-          </div>
-          <div className="portfolio-link">
-            <a href="https://github.com/razaqultegar/simple-wordpress" style={{ color: '#fff' }}>
-              Kunjungi Situs →
-            </a>
-          </div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-header">
-            <h3>Buku Tamu Desa</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Aplikasi Buku Tamu yang dibuat untuk Desa, sehingga data mudah diakses.</p>
-            <div className="portfolio-tech">
-              <span>codeigniter</span>
-              <span>design</span>
-              <span>development</span>
-              <span>php</span>
             </div>
           </div>
           <div className="portfolio-link">
