@@ -66,24 +66,6 @@ export default function Portfolio() {
         </div>
         <div className="portfolio">
           <div className="portfolio-header">
-            <h3>Dumoro</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Tema situs wordpress kustom untuk UKM yang hendak memulai bisnis di dunia digital.</p>
-            <div className="portfolio-tech">
-              <span>development</span>
-              <span>php</span>
-              <span>wordpress</span>
-            </div>
-          </div>
-          <div className="portfolio-link">
-            <a href="https://puskomedia.id/dumoro" style={{ color: '#fff' }}>
-              Kunjungi Situs →
-            </a>
-          </div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-header">
             <h3>Panda SID</h3>
           </div>
           <div className="portfolio-body">
@@ -151,42 +133,6 @@ export default function Portfolio() {
           </div>
         </div>
         <h2>Eksperimen</h2>
-        <div className="portfolio">
-          <div className="portfolio-header">
-            <h3>Limbo Digital</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Penyedia jasa pengembangan aplikasi, website, serta agensi digital.</p>
-            <div className="portfolio-tech">
-              <span>desain</span>
-              <span>development</span>
-              <span>javascript</span>
-            </div>
-          </div>
-          <div className="portfolio-link">
-            <a href="https://limbodigital.id" style={{ color: '#fff' }}>
-              Kunjungi Situs →
-            </a>
-          </div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-header">
-            <h3>Simple Laravel</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Sebuah projek menggunakan Laravel 7 yang berguna untuk memudahkan kamu dalam memulai belajar Framework. Terutama Laravel 7.</p>
-            <div className="portfolio-tech">
-              <span>development</span>
-              <span>laravel</span>
-              <span>php</span>
-            </div>
-          </div>
-          <div className="portfolio-link">
-            <a href="https://github.com/razaqultegar/simple-laravel" style={{ color: '#fff' }}>
-              Kunjungi Situs →
-            </a>
-          </div>
-        </div>
         <div className="portfolio">
           <div className="portfolio-header">
             <h3>Simple WordPress</h3>
