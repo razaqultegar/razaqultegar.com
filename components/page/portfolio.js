@@ -49,23 +49,6 @@ export default function Portfolio() {
         </div>
         <div className="portfolio">
           <div className="portfolio-header">
-            <h3>DesaOS</h3>
-          </div>
-          <div className="portfolio-body">
-            <p>Distribusi Linux hasil remastering Ubuntu yang dirancang khusus untuk mampu berjalan di komputer dengan spek rendah.</p>
-            <div className="portfolio-tech">
-              <span>development</span>
-              <span>linux</span>
-            </div>
-          </div>
-          <div className="portfolio-link">
-            <a href="https://puskomedia.id/dumoro" style={{ color: '#fff' }}>
-              Kunjungi Situs →
-            </a>
-          </div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-header">
             <h3>Panda SID</h3>
           </div>
           <div className="portfolio-body">
@@ -113,6 +96,24 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
+        <h2>Eksperimen</h2>
+        <div className="portfolio">
+          <div className="portfolio-header">
+            <h3>DesaOS</h3>
+          </div>
+          <div className="portfolio-body">
+            <p>Distribusi Linux hasil remastering Ubuntu yang dirancang khusus untuk mampu berjalan di komputer dengan spek rendah.</p>
+            <div className="portfolio-tech">
+              <span>development</span>
+              <span>linux</span>
+            </div>
+          </div>
+          <div className="portfolio-link">
+            <a href="https://puskomedia.id/dumoro" style={{ color: '#fff' }}>
+              Kunjungi Situs →
+            </a>
+          </div>
+        </div>
         <div className="portfolio">
           <div className="portfolio-header">
             <h3>The Jakmania Purwokerto</h3>
@@ -132,7 +133,6 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-        <h2>Eksperimen</h2>
         <div className="portfolio">
           <div className="portfolio-header">
             <h3>Simple WordPress</h3>
