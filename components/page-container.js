@@ -99,13 +99,15 @@ export default function PageContainer({ title, description, children }) {
             padding: 40px 20px;
           }
 
-          .article-body a, #pages a {
+          .article-body a,
+          #pages a {
             color: #000;
             font-weight: 400;
             text-decoration: underline;
           }
 
-          .article-body a:hover, #pages a:hover {
+          .article-body a:hover,
+          #pages a:hover {
             color: rgba(0, 0, 0, 0.4);
             text-decoration: none;
           }

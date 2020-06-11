@@ -5,17 +5,33 @@ export default function Contact() {
         <h1 className="page-title">Kontak</h1>
       </div>
       <div className="page-body">
-         <p>Saya tidak begitu bisa memainkan sebuah platform sosial media, terkadang saya membuat akun hanya untuk melihat desain, fitur, dsb. Terakhir saya menghapus akun Instagram, karena semakin hari semakin tidak ada waktu untuk memainkan itu.</p>
-         <ul>
-            <li><a href="https://facebook.com/razaqultegar">Facebook</a></li>
-            <li><a href="https://github.com/razaqultegar">GitHub</a></li>
-         </ul>
-         <h3>Podcast</h3>
-         <ul>
-           <li><a href="https://open.spotify.com/episode/7g9nSeHXUt9jxIvxmShoux?si=htbCu-H-QN2mwS9pZT5RZw">Antara Anak Muda, Narkoba, Kopi-Senja, dan Karir</a></li>
-         </ul>
-         <h3>Email</h3>
-         <p>Saya selalu senang ketika ada orang menghubungi saya. Untuk itu jika kamu ingin berbicara dengan saya, apapun itu keperluannya. Silahkan kirim email ke <strong>myrazaqul[at]gmail[dot]com</strong>.</p>
+        <p>
+          Saya tidak begitu bisa memainkan sebuah platform sosial media, terkadang saya membuat akun
+          hanya untuk melihat desain, fitur, dsb. Terakhir saya menghapus akun Instagram, karena
+          semakin hari semakin tidak ada waktu untuk memainkan itu.
+        </p>
+        <ul>
+          <li>
+            <a href="https://facebook.com/razaqultegar">Facebook</a>
+          </li>
+          <li>
+            <a href="https://github.com/razaqultegar">GitHub</a>
+          </li>
+        </ul>
+        <h3>Podcast</h3>
+        <ul>
+          <li>
+            <a href="https://open.spotify.com/episode/7g9nSeHXUt9jxIvxmShoux?si=htbCu-H-QN2mwS9pZT5RZw">
+              Antara Anak Muda, Narkoba, Kopi-Senja, dan Karir
+            </a>
+          </li>
+        </ul>
+        <h3>Email</h3>
+        <p>
+          Saya selalu senang ketika ada orang menghubungi saya. Untuk itu jika kamu ingin berbicara
+          dengan saya, apapun itu keperluannya. Silahkan kirim email ke{' '}
+          <strong>myrazaqul[at]gmail[dot]com</strong>.
+        </p>
       </div>
       <style jsx>{`
         #pages {
