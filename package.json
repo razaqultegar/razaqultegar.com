@@ -29,7 +29,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "clean": "rm -rf .next",
     "check": "npx npm-check-updates -u",
+    "format": "yarn run clean && prettier '**/*.js' --write",
     "start": "next start"
   }
 }
