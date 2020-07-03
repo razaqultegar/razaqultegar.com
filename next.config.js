@@ -9,19 +9,7 @@ const withMDX = nextMDX({
 });
 
 const nextConfig = {
-  pageExtensions: ['js', 'mdx'],
-  experimental: {
-    modern: true,
-    redirects() {
-      return [
-        {
-          source: '/solved-ireport-tidak-fungsi-di-mode-jar/',
-          permanent: true,
-          destination: '/article/solved-ireport-tidak-fungsi-di-mode-jar'
-        }
-      ];
-    }
-  }
+  pageExtensions: ['js', 'mdx']
 };
 
 module.exports = withMDX(nextConfig);
