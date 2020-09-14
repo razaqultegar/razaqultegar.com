@@ -1,6 +1,10 @@
-.DS_Store
-.env
-.next
-.vscode
+# Project dependencies
 node_modules
+.cache/
+
+# Build directory
+public/
+.DS_Store
 yarn-error.log
+yarn.lock
+package-lock.json
