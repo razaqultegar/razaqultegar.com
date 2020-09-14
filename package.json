@@ -1,37 +1,38 @@
 {
   "name": "razaqultegar",
-  "description": "Personal site using Next.js",
-  "version": "1.2.0",
-  "author": "Razaqul Tegar <razaqulmail@gmail.com>",
+  "description": "Personal site using Gatsby.js",
+  "version": "1.3.0",
+  "author": "Razaqul Tegar <myrazaqul@gmail.com>",
   "dependencies": {
-    "@mapbox/rehype-prism": "0.3.1",
-    "@mdx-js/loader": "0.20.3",
-    "@mdx-js/mdx": "0.20.3",
-    "@mdx-js/tag": "0.20.3",
-    "@next/mdx": "8.1.0",
-    "date-fns": "1.29.0",
-    "next": "9.4.2",
-    "nprogress": "0.2.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "gatsby": "2.24.57",
+    "gatsby-plugin-google-analytics": "2.3.13",
+    "gatsby-plugin-react-helmet": "3.3.10",
+    "gatsby-remark-prismjs": "3.5.11",
+    "gatsby-source-filesystem": "2.3.29",
+    "gatsby-transformer-remark": "2.8.34",
+    "prismjs": "1.21.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.1.0",
+    "tachyons": "4.12.0"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "2.1.1"
   },
   "keywords": [
     "razaqultegar",
-    "nextjs",
+    "gatsbyjs",
     "reactjs",
     "nodejs"
   ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "next build",
-    "dev": "next",
-    "clean": "rm -rf .next",
-    "check": "npx npm-check-updates -u",
-    "format": "yarn run clean && prettier '**/*.js' --write",
-    "start": "next start"
+    "build": "gatsby build",
+    "check": "yarn upgrade-interactive --latest",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "yarn run clean && prettier '**/*.{js,json}' --write",
+    "start": "yarn run develop"
   }
 }
