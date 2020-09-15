@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/posts/`
       }
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -25,6 +26,13 @@ module.exports = {
               showLineNumbers: false,
               noInlineHighlight: false
             }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              maxWidth: 590
+            },
           }
         ]
       }
