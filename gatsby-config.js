@@ -4,6 +4,7 @@ module.exports = {
     description: 'Full Stack Web Developer'
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
