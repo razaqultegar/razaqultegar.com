@@ -48,9 +48,7 @@ export default class BlogPostTemplate extends Component {
 
     const css = {
       backgroundImage: `url(${post.image})`,
-      backgroundSize: `cover`,
-      height: `400px`,
-      maxWidth: `100%`
+      height: `400px`
     };
 
     if (post.imageSize) {
