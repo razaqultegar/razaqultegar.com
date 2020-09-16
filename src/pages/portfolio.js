@@ -39,19 +39,17 @@ export default class Portfolio extends Component {
         </div>
 
         <div className="clients">
-          <h3>Klien Terbaru Saya Mengatakan:</h3>
+          <h3>Klien Saya Mengatakan:</h3>
           <div className="superhuman">
-            <img src="https://cldup.com/Wj7n50mV13.png" alt="" />
+            <img src="/medias/dewo-triatmoko.jpeg" alt="" />
             <span className="quote">&#x201c;</span>
             <p>
-              Azer is a phenomenal problem solver, and a great asset on any engineering team. He
-              worked with us on a very high risk project, and it's now in production for all of our
-              users.
+              Tegar adalah anak muda yang potensial dan berbakat dalam pemecahan masalah. Dia bekerja dengan kami dalam proyek berisiko sangat tinggi, dan sekarang sudah berjalan untuk mengelola semua nasabah kami.
               <br />
               <br />
-              Conrad Irwin
+              Dewo Triatmoko
               <br />
-              CTO of Superhuman
+              Operations Head BTPN Syariah
             </p>
 
             <div className="x-clear" />
@@ -70,10 +68,10 @@ export default class Portfolio extends Component {
 
         <div className="tea">
           <div className="triangle" />
-          <img src="https://c1.staticflickr.com/5/4464/37192502570_f88f06f162_z.jpg" alt="" />
+          <img src="/medias/python-source.png" alt="" />
           <div className="circle" />
           <div className="caption">
-            This is my home-office in Berlin, where I turn tea into software.
+            sedikit baris kode menggunakan Bahasa Pemograman Python
           </div>
         </div>
 
@@ -86,9 +84,9 @@ export default class Portfolio extends Component {
         </div>
 
         <div className="old">
-          <h3>Tua / Mati</h3>
+          <h3>Lainnya</h3>
 
-          {portfolio.old.map(p => this.renderRecentProject(p))}
+          {portfolio.others.map(p => this.renderRecentProject(p))}
         </div>
       </main>
     );
