@@ -28,7 +28,7 @@
 
 ## Acknowledgements
 
-- Gatsby, Inc - [Gatsby.js Site](https://www.gatsbyjs.com)
+- Gatsby, Inc - [GatsbyJS Site](https://www.gatsbyjs.com)
 - Vagr9K - [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 - Thomas Frössman - [ExitWP](https://github.com/thomasf/exitwp) (WordPress XML to Markdown)
 
