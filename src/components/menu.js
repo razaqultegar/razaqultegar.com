@@ -14,6 +14,14 @@ export default class Menu extends Component {
           <div className="links tr">
             {this.props.footer ? this.renderLink({ to: '/', title: 'Homepage' }) : null}
             {links.map((l, i) => this.renderLink(l, i))}
+            <a
+              href="https://github.com/razaqultegar/notebook"
+              className="x-inherit mh3 no-underline hover-near-black gray x-inherit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Notebook
+            </a>
           </div>
           <div className="x-clear" />
         </div>
@@ -33,15 +41,21 @@ export default class Menu extends Component {
 
   renderGlobalLink(to, title, selected) {
     return (
-      <a className={this.renderLinkClass(selected)} href={to} target="_blank" rel="noreferrer">
+      <Link
+        className={this.renderLinkClass(selected)}
+        to={to}
+        key={title}
+        target="_blank"
+        rel="noreferrer"
+      >
         {title}
-      </a>
+      </Link>
     );
   }
 
   renderLocalLink(to, title, selected) {
     return (
-      <Link className={this.renderLinkClass(selected)} to={to}>
+      <Link className={this.renderLinkClass(selected)} to={to} key={title}>
         {title}
       </Link>
     );
