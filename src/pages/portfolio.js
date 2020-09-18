@@ -44,7 +44,9 @@ export default class Portfolio extends Component {
             <img src="/medias/dewo-triatmoko.jpeg" alt="" />
             <span className="quote">&#x201c;</span>
             <p>
-              Tegar adalah anak muda yang potensial dan berbakat dalam pemecahan masalah. Dia bekerja dengan kami dalam proyek berisiko sangat tinggi, dan sekarang sudah berjalan untuk mengelola semua nasabah kami.
+              Tegar adalah anak muda yang potensial dan berbakat dalam pemecahan masalah. Dia
+              bekerja dengan kami dalam proyek berisiko sangat tinggi, dan sekarang sudah berjalan
+              untuk mengelola semua nasabah kami.
               <br />
               <br />
               Dewo Triatmoko
@@ -70,9 +72,7 @@ export default class Portfolio extends Component {
           <div className="triangle" />
           <img src="/medias/python-source.png" alt="" />
           <div className="circle" />
-          <div className="caption">
-            sedikit baris kode menggunakan Bahasa Pemograman Python
-          </div>
+          <div className="caption">sedikit baris kode menggunakan Bahasa Pemograman Python</div>
         </div>
 
         <div className="x-clear" />
