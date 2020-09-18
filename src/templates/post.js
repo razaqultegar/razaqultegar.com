@@ -63,7 +63,7 @@ export default class BlogPostTemplate extends Component {
   }
 }
 
-export const pageQuery = graphql`
+export const postQuery = graphql`
   query BlogPostByPath($path: String!) {
     site {
       siteMetadata {
