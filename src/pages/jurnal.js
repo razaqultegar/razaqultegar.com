@@ -5,7 +5,7 @@ import PageHeader from '../components/page-header';
 import SimpleLayout from '../components/simple-layout';
 
 export default class Jurnal extends Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.years = {};
   }
 
@@ -41,6 +41,7 @@ export default class Jurnal extends Component {
                 <Link
                   className="x-sans no-underline dark-gray hover-near-black f4 lh-copy"
                   to={post.node.frontmatter.path}
+                  key={post.node.frontmatter.title}
                 >
                   <aside className="silver x-mono">
                     {new Date(post.node.frontmatter.date).getFullYear()}
@@ -69,6 +70,7 @@ export default class Jurnal extends Component {
               <Link
                 to={post.node.frontmatter.path}
                 className="no-underline dark-gray hover-near-black"
+                key={post.node.frontmatter.title}
               >
                 <header style={bg} className="cover br3 bg-center" />
                 <h2 className="x-sans f3 fw5 tc mb0">{post.node.frontmatter.title}</h2>
