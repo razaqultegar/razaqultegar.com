@@ -45,8 +45,8 @@ export default class Homepage extends Component {
               <h2 className="f5 mv0">
                 <Link
                   to="jurnal"
-                  key="jurnal"
                   className="hover-near-black gray x-inherit no-underline"
+                  key="all"
                 >
                   semua jurnal
                 </Link>
@@ -69,7 +69,11 @@ export default class Homepage extends Component {
     };
 
     return (
-      <a href={post.node.frontmatter.path} className="highlighted-post x-noborder relative">
+      <Link
+        to={post.node.frontmatter.path}
+        className="highlighted-post x-noborder relative"
+        key={post.node.frontmatter.title}
+      >
         <header className="absolute top-0 tc bg-near-white w-100">
           <h4 className="x-mono silver mt0 mb1">
             {new Date(post.node.frontmatter.date).getFullYear()}
@@ -79,7 +83,7 @@ export default class Homepage extends Component {
         <div className="w-100 image">
           <div className="w-100 h-100" style={img} />
         </div>
-      </a>
+      </Link>
     );
   }
 }
