@@ -13,7 +13,15 @@ module.exports = {
         path: `${__dirname}/posts/`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/static/`
+      }
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -32,7 +40,7 @@ module.exports = {
             options: {
               linkImagesToOriginal: false,
               maxWidth: 590
-            },
+            }
           }
         ]
       }

@@ -13,6 +13,7 @@
     "gatsby-remark-prismjs": "3.5.11",
     "gatsby-source-filesystem": "2.3.29",
     "gatsby-transformer-remark": "2.8.34",
+    "gatsby-transformer-sharp": "2.5.15",
     "prismjs": "1.21.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
