@@ -78,6 +78,8 @@ export const pageQuery = graphql`
         title
         desc
         image
+        imageCaption
+        imageSize
         hideImage
         path
         date(formatString: "DD MMMM YYYY", locale: "id")
