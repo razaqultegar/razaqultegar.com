@@ -63,7 +63,7 @@ export default class Portfolio extends Component {
 
           {portfolio.opensource.map(p => this.renderRecentProject(p))}
 
-          <a href="https://github.com/azer" className="github">
+          <a href="https://github.com/razaqultegar" className="github">
             Selengkapnya di Github &#10230;
           </a>
         </div>
@@ -97,7 +97,10 @@ export default class Portfolio extends Component {
       <div className="recent-project">
         {portfolio.logo ? this.renderLogo(portfolio) : null}
         {portfolio.screenshot ? this.renderScreenshot(portfolio) : null}
-        <a href={portfolio.link}>{portfolio.title}</a>—{portfolio.description}
+        <a href={portfolio.link} key={portfolio.title}>
+          {portfolio.title}
+        </a>{' '}
+        — {portfolio.description}
       </div>
     );
   }
