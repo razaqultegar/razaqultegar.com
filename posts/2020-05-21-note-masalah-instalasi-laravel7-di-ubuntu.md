@@ -1,8 +1,9 @@
 ---
 title: 'Note, Masalah Instalasi Laravel 7 di Ubuntu'
-image: '/medias/thumbnail-laravel.png'
-date: '2020-05-21T00:00:00.000Z'
-path: '/jurnal/note-masalah-instalasi-laravel7-di-ubuntu'
+image: /medias/thumbnail-laravel.png
+imageSize: cover
+date: 2020-05-21T00:00:00.000Z
+path: /jurnal/note-masalah-instalasi-laravel7-di-ubuntu
 ---
 
 Ini merupakan catatan saya ketika menginstall laravel di Ubuntu 18.04 dan mendapati beberapa pesan error. Sejauh ini ada 4 pesan error yang saya alami dan ngga menutup kemungkinan suatu saat bakal ada error-error baru yang bermunculan atau bahkan error ini terjadi lagi.

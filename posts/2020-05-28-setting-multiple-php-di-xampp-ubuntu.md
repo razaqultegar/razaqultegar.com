@@ -1,8 +1,9 @@
 ---
 title: 'Setting, Multiple PHP di XAMPP Ubuntu'
-image: '/medias/thumbnail-ubuntu.png'
-date: '2020-05-28T00:00:00.000Z'
-path: '/jurnal/setting-multiple-php-di-xampp-ubuntu'
+image: /medias/thumbnail-ubuntu.png
+imageSize: cover
+date: 2020-05-28T00:00:00.000Z
+path: /jurnal/setting-multiple-php-di-xampp-ubuntu
 ---
 
 ## Inti Permasalahn
