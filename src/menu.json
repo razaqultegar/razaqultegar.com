@@ -1,5 +1,4 @@
 [
   { "to": "/jurnal", "title": "Jurnal" },
-  { "to": "/portfolio", "title": "Portfolio" },
-  { "to": "https://github.com/razaqultegar/notebook", "title": "Notebook" }
+  { "to": "/portfolio", "title": "Portfolio" }
 ]
