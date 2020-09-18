@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import links from '../menu.json';
 
 export default class BurgerMenu extends Component {
@@ -33,9 +34,9 @@ export default class BurgerMenu extends Component {
     if (l.className === 'footer-link') return;
 
     return (
-      <a className="button x-sans" href={l.to}>
+      <Link className="button x-sans" to={l.to} key={l.title}>
         {l.title}
-      </a>
+      </Link>
     );
   }
 }
