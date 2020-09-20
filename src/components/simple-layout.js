@@ -40,8 +40,6 @@ export default class SimpleLayout extends Component {
           </div>
           <footer className="pv4 x-sans f4 mid-gray footer">
             <div className="x-viewport">
-              © 2020 Razaqul Tegar
-              <i />
               <a href="https://github.com/razaqultegar">Github</a>
               <i />
               <a href="https://twitter.com/razaqultegar">Twitter</a>
