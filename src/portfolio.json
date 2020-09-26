@@ -9,9 +9,19 @@
       "title": "SIPERTIN",
       "link": "#",
       "description": "A LMS applications for the 21st Century"
+    },
+    {
+      "title": "Angular Electron",
+      "link": "https://github.com/razaqultegar/angular-electron",
+      "description": "Simple ultra-fast bootstrapping with Angular and Electron"
     }
   ],
   "opensource": [
+    {
+      "title": "Angular Electron",
+      "link": "https://github.com/razaqultegar/angular-electron",
+      "description": "Simple ultra-fast bootstrapping with Angular and Electron"
+    },
     {
       "title": "Jakmania Purwokerto App",
       "link": "https://github.com/razaqultegar/jakpurwokerto",
@@ -34,6 +44,11 @@
     }
   ],
   "websites": [
+    {
+      "title": "Situs Indonesia Covid",
+      "link": "https://covid19.go.id",
+      "description": "Pusat informasi terkini seputar Covid-19 di Indonesia"
+    },
     {
       "title": "Hooligans®",
       "link": "https://hooligans.co.id",
