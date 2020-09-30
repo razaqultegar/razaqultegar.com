@@ -1,7 +1,8 @@
 ---
 title: 'Note, Masalah Instalasi Laravel 7 di Ubuntu'
 image: /medias/thumbnail-laravel.png
-imageSize: cover
+imageHeight: 500px
+imageSize: contain
 date: 2020-05-21T00:00:00.000Z
 path: /jurnal/note-masalah-instalasi-laravel7-di-ubuntu
 ---

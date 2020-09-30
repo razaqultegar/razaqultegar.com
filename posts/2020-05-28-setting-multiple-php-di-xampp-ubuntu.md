@@ -1,7 +1,8 @@
 ---
 title: 'Setting, Multiple PHP di XAMPP Ubuntu'
 image: /medias/thumbnail-ubuntu.png
-imageSize: cover
+imageHeight: 500px
+imageSize: contain
 date: 2020-05-28T00:00:00.000Z
 path: /jurnal/setting-multiple-php-di-xampp-ubuntu
 ---

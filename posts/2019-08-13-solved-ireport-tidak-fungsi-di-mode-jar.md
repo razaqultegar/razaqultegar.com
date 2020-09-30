@@ -1,7 +1,8 @@
 ---
 title: 'Solved! iReport tidak berfungsi dimode JAR'
 image: /medias/thumbnail-netbeans.png
-imageSize: cover
+imageHeight: 500px
+imageSize: contain
 date: 2019-08-13T00:00:00.000Z
 path: /jurnal/solved-ireport-tidak-fungsi-di-mode-jar
 ---
