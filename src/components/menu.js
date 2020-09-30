@@ -8,17 +8,16 @@ export default class Menu extends Component {
     return (
       <header className="menu x-sans f4 fw4">
         <div className="inner pb4 relative x-viewport">
-          <a className="absolute x-inherit hover-near-black no-underline gray" href="/">
+          <Link className="absolute x-inherit hover-near-black no-underline gray" to="/">
             Razaqul Tegar
-          </a>
+          </Link>
           <div className="links tr">
-            {this.props.footer ? this.renderLink({ to: '/', title: 'Homepage' }) : null}
             {links.map((l, i) => this.renderLink(l, i))}
             <a
               href="https://github.com/razaqultegar/notebook"
               className="x-inherit mh3 no-underline hover-near-black gray x-inherit"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Notebook
             </a>
@@ -32,8 +31,6 @@ export default class Menu extends Component {
   renderLink(l) {
     const location = this.props.location && this.props.location.pathname;
 
-    if (l.className === 'footer-link' && !this.props.footer) return;
-
     const render = /^\w+:/.test(l.to) ? this.renderGlobalLink : this.renderLocalLink;
 
     return [render.call(this, l.to, l.title, location === l.to || location === l.to + '/')];
@@ -46,7 +43,7 @@ export default class Menu extends Component {
         to={to}
         key={title}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         {title}
       </Link>

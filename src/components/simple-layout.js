@@ -40,9 +40,9 @@ export default class SimpleLayout extends Component {
           </div>
           <footer className="pv4 x-sans f4 mid-gray footer">
             <div className="x-viewport">
-              <a href="https://github.com/razaqultegar">Github</a>
+              <a href="https://github.com/razaqultegar" target="_blank" rel="noopener noreferrer">Github</a>
               <i />
-              <a href="https://twitter.com/razaqultegar">Twitter</a>
+              <a href="https://twitter.com/razaqultegar" target="_blank" rel="noopener noreferrer">Twitter</a>
               <button onClick={scrollTop} className="top">
                 ↑
               </button>

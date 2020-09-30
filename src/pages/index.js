@@ -12,7 +12,7 @@ export default class Homepage extends Component {
   }
 
   recentPosts() {
-    return this.props.data.allMarkdownRemark.edges.slice(0, 5);
+    return this.props.data.allMarkdownRemark.edges.slice(0, 3);
   }
 
   render() {
@@ -27,11 +27,11 @@ export default class Homepage extends Component {
       >
         <PageHeader image="/icons/index.jpg">
           <strong>Razaqul Tegar</strong> – Full Stack Developer. Pernah magang di{' '}
-          <a href="https://turing.com" target="_blank" rel="noreferrer">
+          <a href="https://turing.com" target="_blank" rel="noopener noreferrer">
             @turing
           </a>
           . Kepala Pengembang di{' '}
-          <a href="https://limbodigital.id" target="_blank" rel="noreferrer">
+          <a href="https://limbodigital.id" target="_blank" rel="noopener noreferrer">
             @dld
           </a>
           . Bekerja Global, Bangga Indonesia 🇮🇩
@@ -44,9 +44,8 @@ export default class Homepage extends Component {
             <div className="dtc tr">
               <h2 className="f5 mv0">
                 <Link
-                  to="jurnal"
+                  to="/jurnal"
                   className="hover-near-black gray x-inherit no-underline"
-                  key="all"
                 >
                   semua jurnal
                 </Link>
@@ -54,7 +53,7 @@ export default class Homepage extends Component {
             </div>
           </div>
           <section className="x-grid-3 mt4 highlights">
-            {this.highlightedPosts().map((post, ind) => this.renderHighlightedPost(post, ind))}
+            {this.highlightedPosts().map((post) => this.renderHighlightedPost(post))}
           </section>
         </div>
       </SimpleLayout>
@@ -72,7 +71,7 @@ export default class Homepage extends Component {
       <Link
         to={post.node.frontmatter.path}
         className="highlighted-post x-noborder relative"
-        key={post.node.frontmatter.title}
+        key={post.node.id}
       >
         <header className="absolute top-0 tc bg-near-white w-100">
           <h4 className="x-mono silver mt0 mb1">
@@ -99,15 +98,13 @@ export const query = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
-          frontmatter {
-            path
-            date(formatString: "DD MMMM, YYYY")
-            highlighted
-          }
+          id
           frontmatter {
             title
             image
+            path
+            date(formatString: "DD MMMM, YYYY")
+            highlighted
           }
         }
       }

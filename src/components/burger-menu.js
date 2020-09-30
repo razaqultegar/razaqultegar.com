@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
+
 import links from '../menu.json';
 
 export default class BurgerMenu extends Component {
@@ -18,7 +19,7 @@ export default class BurgerMenu extends Component {
         <button className="hamburger" aria-label="Toggle Menu" onClick={() => this.toggle()} />
         <div className="header">
           <h1>
-            <a href="/">Razaqul Tegar</a>
+            <Link to="/">Razaqul Tegar</Link>
           </h1>
         </div>
 
@@ -31,8 +32,6 @@ export default class BurgerMenu extends Component {
   }
 
   renderLink(l) {
-    if (l.className === 'footer-link') return;
-
     return (
       <Link className="button x-sans" to={l.to} key={l.title}>
         {l.title}
