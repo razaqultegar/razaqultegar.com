@@ -47,9 +47,12 @@ export default class BlogPostTemplate extends Component {
       return <div className="post-image-space" />;
 
     const css = {
-      backgroundImage: `url(${post.image})`,
-      height: `400px`
+      backgroundImage: `url(${post.image})`
     };
+
+    if (post.imageHeight) {
+      css.height = post.imageHeight;
+    }
 
     if (post.imageSize) {
       css.backgroundSize = post.imageSize;
@@ -72,13 +75,13 @@ export const postQuery = graphql`
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      id
       html
       frontmatter {
         title
         desc
         image
         imageCaption
+        imageHeight
         imageSize
         hideImage
         path
