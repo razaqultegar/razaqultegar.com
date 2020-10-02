@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 
 import Layout from '../styles/index';
-import BurgerMenu from './burger-menu';
 import Menu from './menu';
 
 export default class SimpleLayout extends Component {
@@ -33,7 +32,6 @@ export default class SimpleLayout extends Component {
             <link rel="canonical" href={this.props.url || 'https://razaqultegar.com'} />
             <link rel="icon" type="image/png" href="/icons/index.jpg" />
           </Helmet>
-          <BurgerMenu location={this.props.location} />
           <Menu location={this.props.location} />
           <div className={`x-viewport x-auto pt4 ${this.props.fullwidth ? 'x-fullwidth' : ''}`}>
             {this.props.children}
