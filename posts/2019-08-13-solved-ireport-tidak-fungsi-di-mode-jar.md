@@ -1,5 +1,5 @@
 ---
-title: 'Solved! iReport tidak berfungsi dimode JAR'
+title: 'Solved, iReport tidak berfungsi dimode JAR'
 image: /medias/thumbnail-netbeans.png
 imageHeight: 500px
 imageSize: contain
