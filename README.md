@@ -8,17 +8,21 @@
 
 1.  **Run local server:**
 
-    ```sh
+    ```bash
+    # clone this repository
     git clone https://github.com/razaqultegar/razaqultegar.com.git
     ```
 
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into repo’s directory and start it up.
 
-    ```sh
-    cd razaqultegar.com
+    ```bash
+    # install dependencies
     yarn
+    # or if you'd like to use npm instead
+    npm install
+    # serve with hot reload at localhost:8000
     yarn run dev
     ```
 
