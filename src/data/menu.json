@@ -1,0 +1,15 @@
+{
+  "primary": [
+    { "to": "/", "title": "Home" },
+    { "to": "/journal", "title": "Journal" },
+    { "to": "https://unsplash.com/@razaqultegar", "title": "Photography" },
+    { "to": "/portfolio", "title": "Portfolio" },
+    { "to": "/about", "title": "About" }
+  ],
+  "secondary": [
+    { "to": "/search", "title": "Search" },
+    { "to": "/dashboard", "title": "Dashboard" },
+    { "to": "https://github.com/razaqultegar/notebook", "title": "Notebook" },
+    { "to": "/uses", "title": "Uses" }
+  ]
+}

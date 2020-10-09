@@ -3,7 +3,7 @@
     {
       "title": "Dinamika Limbo Digital",
       "link": "https://limbodigital.id",
-      "description": "Dinamika Limbo Digital adalah perusahaan pengembang perangkat lunak global yang menyediakan solusi IT untuk perusahaan di seluruh dunia."
+      "description": "Dinamika Limbo Digital is a global software development company providing IT solutions for companies around the world"
     },
     {
       "title": "SIPERTIN",
@@ -25,34 +25,34 @@
     {
       "title": "Jakmania Purwokerto App",
       "link": "https://github.com/razaqultegar/jakpurwokerto",
-      "description": "Aplikasi pengelolaan komunitas, dengan keakuratan data tingkat tinggi."
+      "description": "Community management application, with high level of data accuracy"
     },
     {
       "title": "Simple Wordpress",
       "link": "https://github.com/razaqultegar/simple-wordpress",
-      "description": "Struktur tema wordpress yang sederhana"
+      "description": "Simple wordpress theme structure"
     },
     {
       "title": "Buku Tamu Digital",
       "link": "https://github.com/razaqultegar/tamdes-web",
-      "description": "Pencatatan abadi tanpa takut kehilangan"
+      "description": "Immortal record keeping without fear of loss"
     },
     {
       "title": "Notebook",
       "link": "https://github.com/razaqultegar/notebook",
-      "description": "Buku catatan pribadi dan publik saya. Saya mengatur pengetahuan, ide, dan pemikiran saya di sini."
+      "description": "My private and public notebooks. I organize my knowledge, ideas and thoughts here"
     }
   ],
   "websites": [
     {
       "title": "Situs Indonesia Covid",
       "link": "https://covid19.go.id",
-      "description": "Pusat informasi terkini seputar Covid-19 di Indonesia"
+      "description": "The latest information center about Covid-19 in Indonesia"
     },
     {
       "title": "Hooligans®",
       "link": "https://hooligans.co.id",
-      "description": "Cinta dengan permainan cantik ini"
+      "description": "the Original Indonesia Clothing for The Love of This Beautiful Game"
     },
     {
       "title": "Sensus Penduduk Indonesia",
@@ -62,39 +62,39 @@
     {
       "title": "Mobil 88 by Astra",
       "link": "https://www.mobil88.astra.co.id",
-      "description": "Jual / Beli mobil Anda dengan percaya diri"
+      "description": "Sell / buy your car with confidence"
     },
     {
       "title": "Aston International",
       "link": "https://www.astonhotelsinternational.com",
-      "description": "Tempat menginap dengan gaya dan layanan yang tak tertandingi. Persembahan dari Archipelago International"
+      "description": "A place to stay with unmatched style and service. Presentation from Archipelago International"
     }
   ],
   "others": [
     {
       "title": "Pertamina EP",
       "link": "#",
-      "description": "Presentasi Tools dalam bentuk Vidio"
+      "description": "Presentation Tools in the Video"
     },
     {
       "title": "Panda SID",
       "link": "https://panda.id",
-      "description": "Inovasi teknologi untuk pemerintah desa"
+      "description": "Technological innovation for village government"
     },
     {
       "title": "BTPN Syariah",
       "link": "#",
-      "description": "Menyimpan, Mengelola dan Memberikan"
+      "description": "Save, Manage and Deliver"
     },
     {
       "title": "Arsip Negara Republik Indonesia",
       "link": "https://www.anri.go.id",
-      "description": "Mengelola dan Menyajikan dengan mudah"
+      "description": "Manage and Serve with ease"
     },
     {
       "title": "DesaOS",
       "link": "https://sourceforge.net/projects/desaos",
-      "description": "Sistem Operasi turunan Debian. Dari Desa untuk Desa"
+      "description": "Debian derivative Operating System. From Village to Village"
     }
   ]
 }
