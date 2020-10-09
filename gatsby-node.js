@@ -1,44 +1,90 @@
-const Promise = require('bluebird');
 const path = require('path');
+const { paginate } = require('gatsby-awesome-pagination');
 
-exports.createPages = ({ graphql, actions }) => {
+const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/post.js');
+  const pagePage = path.resolve('./src/templates/page.js');
+  const blogPage = path.resolve('./src/templates/post.js');
 
-    resolve(
-      graphql(`
-        {
-          allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
-            edges {
-              node {
-                frontmatter {
-                  path
-                  title
-                  desc
-                  date(formatString: "DD MMMM YYYY", locale: "id")
-                }
+  const result = await graphql(
+    `
+      {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                layout
               }
             }
           }
         }
-      `).then(result => {
-        if (result.errors) {
-          console.log(result.errors);
-          reject(result.errors);
-        }
+      }
+    `
+  );
 
-        result.data.allMarkdownRemark.edges.forEach(({ node }, i) => {
-          console.log('create page', node.frontmatter.path);
+  if (result.errors) {
+    throw result.errors;
+  }
 
-          createPage({
-            path: node.frontmatter.path,
-            component: blogPost,
-            context: {}
-          });
-        });
-      })
-    );
+  const all = result.data.allMarkdownRemark.edges;
+  const pages = all.filter(post => post.node.frontmatter.layout === 'page');
+  const posts = all.filter(post => post.node.frontmatter.layout === 'post');
+
+  pages.forEach(page => {
+    createPage({
+      path: page.node.fields.slug,
+      component: pagePage,
+      context: {
+        slug: page.node.fields.slug
+      }
+    });
+  });
+
+  paginate({
+    createPage,
+    items: all,
+    itemsPerPage: 10,
+    pathPrefix: '/journal',
+    component: path.resolve('src/templates/archive.js')
+  });
+
+  posts.forEach(post => {
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPage,
+      context: {
+        slug: post.node.fields.slug
+      }
+    });
   });
 };
+
+const createNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+
+  let slug;
+  if (node.internal.type === 'MarkdownRemark') {
+    const fileNode = getNode(node.parent);
+    const parsedFilePath = path.parse(fileNode.relativePath);
+
+    if (Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')) {
+      slug = `/${node.frontmatter.slug}`;
+    } else {
+      slug = `/${parsedFilePath.dir}`;
+    }
+
+    createNodeField({
+      name: 'slug',
+      node,
+      value: slug
+    });
+  }
+};
+
+exports.createPages = createPages;
+exports.onCreateNode = createNode;
