@@ -1,0 +1,12 @@
+dist: xenial
+language: node_js
+node_js:
+  - 'lts/*'
+cache:
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - yarn --frozen-lockfile
+script:
+  - yarn run build
