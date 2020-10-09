@@ -1,33 +1,14 @@
-import React, { useEffect } from 'react';
-import { Link, graphql } from 'gatsby';
+import React from 'react';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import readingTime from 'reading-time';
 import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
-import Comment from '../components/Comment';
 
 export default function PostTemplate({ data, location }) {
   const { siteMetadata } = data.site;
   const post = data.markdownRemark;
   const thumbnail = post.frontmatter.thumbnail;
-  const commentBox = React.createRef();
-
-  useEffect(() => {
-    const commentScript = document.createElement('script');
-    commentScript.async = true;
-    commentScript.src = 'https://utteranc.es/client.js';
-    commentScript.setAttribute('repo', 'razaqultegar/comments');
-    commentScript.setAttribute('issue-term', 'pathname');
-    commentScript.setAttribute('id', 'utterances');
-    commentScript.setAttribute('theme', 'github-light');
-    commentScript.setAttribute('crossorigin', 'anonymous');
-    if (commentBox && commentBox.current) {
-      commentBox.current.appendChild(commentScript);
-    } else {
-      console.log(`Error adding utterances comments on: ${commentBox}`);
-    }
-  }, []); // eslint-disable-line
 
   return (
     <Layout>
@@ -57,38 +38,23 @@ export default function PostTemplate({ data, location }) {
         <meta property="article:published_time" content={post.frontmatter.date} />
         <meta property="article:section" content={post.frontmatter.category} />
       </Helmet>
-      <article className="post-item">
-        <header className="post-header">
-          <h1>{post.frontmatter.title}</h1>
-          <p>
-            <span style={{ textTransform: 'capitalize' }}>{post.frontmatter.category}</span> -{' '}
-            <Link to={post.fields.slug}>
-              <time>{post.frontmatter.date}</time>
-            </Link>{' '}
-            by {siteMetadata.author} - {readingTime(post.html).text}
-          </p>
-          {thumbnail ? (
-            <Img
-              fluid={thumbnail.childImageSharp.fluid}
-              className="post-thumbnail"
-              alt={post.frontmatter.title}
-            />
-          ) : null}
-        </header>
-        <div className="markup" dangerouslySetInnerHTML={{ __html: post.html }} />
-      </article>
-      <div id="comments-wrapper">
-        <div className="markup comments-title">
-          <h2>Comments</h2>
-        </div>
-        <Comment commentBox={commentBox} />
+      <div className="markup page-header">
+        <h1>{post.frontmatter.title}</h1>
       </div>
+      {thumbnail ? (
+        <Img
+          fluid={thumbnail.childImageSharp.fluid}
+          className="page-thumbnail"
+          alt={post.frontmatter.title}
+        />
+      ) : null}
+      <div className="markup" dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query PageBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -99,20 +65,19 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      excerpt
       fields {
         slug
       }
       frontmatter {
         title
         date(formatString: "MMM Do, YYYY")
-        category
+        layout
         thumbnail {
           childImageSharp {
-            fixed(width: 1200, height: 600) {
+            fixed(width: 482, height: 482) {
               ...GatsbyImageSharpFixed
             }
-            fluid(maxWidth: 1140) {
+            fluid(maxWidth: 482) {
               ...GatsbyImageSharpFluid
             }
           }
