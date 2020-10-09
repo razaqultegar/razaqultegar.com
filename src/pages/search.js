@@ -57,7 +57,7 @@ const Search = props => {
           }
         ]}
       />
-      <div className="markup" style={{ marginBottom: '1rem' }}>
+      <div className="markup page-header">
         <h1>Search</h1>
       </div>
       <input
@@ -78,7 +78,12 @@ const Search = props => {
                 <Link to={slug}>{title}</Link>
               </strong>
               <br />
-              <a href="https://freek.dev/1569-aws-vpc-for-software-engineers" class="text-sm text-gray-700"><span style={{ textTransform: 'capitalize' }}>{category}</span> - {date}</a>
+              <a
+                href="https://freek.dev/1569-aws-vpc-for-software-engineers"
+                class="text-sm text-gray-700"
+              >
+                <span style={{ textTransform: 'capitalize' }}>{category}</span> - {date}
+              </a>
             </li>
           );
         })}
