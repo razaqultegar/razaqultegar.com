@@ -1,13 +1,14 @@
 ---
-title: 'Solved, iReport tidak berfungsi dimode JAR'
-image: /medias/thumbnail-netbeans.png
-imageHeight: 500px
-imageSize: contain
+thumbnail: thumbnail-netbeans.png
+title: "Solved, iReport doesn't work in JAR mode"
 date: 2019-08-13T00:00:00.000Z
-path: /jurnal/solved-ireport-tidak-fungsi-di-mode-jar
+category:
+    - java
+slug: solved-ireport-doesnt-work-in-jar-mode
+layout: post
 ---
 
-## Inti Permasalahan
+## The core problem
 
 ```java
 try{
@@ -23,13 +24,15 @@ try{
 }
 ```
 
-Kode diatas merupakan kode standart untuk pemanggilan iReport di Java Netbeans, banyak sekali situs-situs tutorial yang menyarankan kode tersebut. Tapi, ada kesalahan yang menurut saya paling fatal disitu yakni ada di bagian `File report_file = new File (namaFile);`.
+The code above is the standard code for calling iReport on Java Netbeans, there are lots of tutorial sites that suggest that code. However, there is an error that I think is the most fatal in the section `File report_file = new File (filename);`.
 
-Ketika aplikasi/program di jalankan melalui Netbeans, script pemanggilan itu berfungsi dengan baik. Namun, ketika aplikasi/program kamu sudah diexectuble menjadi sebuah file Jar, script itu tidak berfungsi sama sekali dan muncul pesan error `java.io.FileNotFoundException` yang berarti file jasper kamu tidak ditemukan.
+When the application / program run through Netbeans, the calling script it works fine. However, when an application / program you are already diexectuble into a Jar file, the script was not functioning at all and the error message `java.io.FileNotFoundException` which means you jasper file not found.
 
-## Pemecahan Masalah
+![solved-ireport](solved-ireport.png)
 
-Untuk mengatasi permasalahan tersebut kamu harus mengganti bagian yang fatal itu menjadi seperti berikut.
+## Troubleshooting
+
+To solve this problem you have to replace the fatal part as follows.
 
 ```java
 try{
