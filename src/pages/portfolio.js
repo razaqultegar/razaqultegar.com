@@ -1,100 +1,81 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
+import Helmet from 'react-helmet';
 
-import SimpleLayout from '../components/simple-layout';
-import PageHeader from '../components/page-header';
-import portfolio from '../portfolio.json';
+import Layout from '../components/Layout';
+import portfolio from '../data/portfolio.json';
 
 export default class Portfolio extends Component {
   render() {
-    const title = `Portfolio | ${this.props.data.site.siteMetadata.title} - ${this.props.data.site.siteMetadata.description}`;
+    const { data } = this.props;
+    const siteMetadata = data.site.siteMetadata;
 
     return (
-      <SimpleLayout
-        name="software"
-        location={this.props.location}
-        type="website"
-        title={title}
-        desc="Razaqul Tegar Portfolio"
-        image="/icons/portfolio.png"
-      >
-        <PageHeader image="/icons/portfolio.png">
-          Semuanya dimulai dengan aplikasi, cepat dan ramah pengguna. Itu membawa saya ke kota baru,
-          ide-ide baru, dan orang-orang baru.
-        </PageHeader>
-
-        {this.renderProjects()}
-      </SimpleLayout>
-    );
-  }
-
-  renderProjects() {
-    return (
-      <main className="projects pv4 x-sans">
-        <h1 className="x-sans fw3 tc pv0 mid-gray">Portfolio</h1>
-
-        <div className="recent">
-          <h3>Aktif Bekerja</h3>
-          {portfolio.recent.map(p => this.renderRecentProject(p))}
+      <Layout>
+        <Helmet
+          title={`Portfolio | ${siteMetadata.title}`}
+          meta={[
+            {
+              name: 'description',
+              content: siteMetadata.description
+            },
+            { property: 'og:title', content: 'Portfolio' },
+            {
+              property: 'og:description',
+              content: siteMetadata.description
+            }
+          ]}
+        />
+        <div className="markup page-header">
+          <h1>Portfolio</h1>
         </div>
-
-        <div className="clients">
-          <h3>Klien Saya Mengatakan:</h3>
-          <div className="superhuman">
-            <img src="/medias/dewo-triatmoko.jpeg" alt="" />
-            <span className="quote">&#x201c;</span>
-            <p>
-              Tegar adalah anak muda yang potensial dan berbakat dalam pemecahan masalah. Dia
-              bekerja dengan kami dalam proyek berisiko sangat tinggi, dan sekarang sudah berjalan
-              untuk mengelola semua nasabah kami.
-              <br />
-              <br />
-              Dewo Triatmoko
-              <br />
-              Operations Head BTPN Syariah
-            </p>
-
-            <div className="x-clear" />
+        <div className="portfolio">
+          <div className="recent">
+            <h3>Actively Working On</h3>
+            {portfolio.recent.map(p => this.renderRecentProject(p))}
+          </div>
+          <div className="clients">
+            <h3>My Client Says:</h3>
+            <div className="superhuman">
+              <img src="/images/dewo-triatmoko.jpeg" alt="Dewo Triatmoko" />
+              <span className="quote">&#x201c;</span>
+              <p>
+                Tegar is a young person who has the potential and talent in problem solving. He
+                worked with us in a very high-risk project, and now it is running to manage all of
+                our customers.
+                <br />
+                <br />
+                Dewo Triatmoko
+                <br />
+                Operations Head BTPN Syariah
+              </p>
+              <div style={{ clear: 'both' }} />
+            </div>
+          </div>
+          <div className="opensource">
+            <h3>Open Source</h3>
+            {portfolio.opensource.map(p => this.renderRecentProject(p))}
+            <a href="https://github.com/razaqultegar" className="github">
+              More On Github &#10230;
+            </a>
+          </div>
+          <div style={{ clear: 'both' }} />
+          <div className="websites">
+            <h3>Websites</h3>
+            {portfolio.websites.map(p => this.renderRecentProject(p))}
+          </div>
+          <div className="old">
+            <h3>Other</h3>
+            {portfolio.others.map(p => this.renderRecentProject(p))}
           </div>
         </div>
-
-        <div className="opensource">
-          <h3>Sumber Terbuka</h3>
-
-          {portfolio.opensource.map(p => this.renderRecentProject(p))}
-
-          <a href="https://github.com/razaqultegar" className="github">
-            Selengkapnya di Github &#10230;
-          </a>
-        </div>
-
-        <div className="tea">
-          <div className="triangle" />
-          <img src="/medias/python-source.png" alt="" />
-          <div className="circle" />
-          <div className="caption">sedikit baris kode menggunakan Bahasa Pemograman Python</div>
-        </div>
-
-        <div className="x-clear" />
-
-        <div className="websites">
-          <h3>Website</h3>
-
-          {portfolio.websites.map(p => this.renderRecentProject(p))}
-        </div>
-
-        <div className="old">
-          <h3>Lainnya</h3>
-
-          {portfolio.others.map(p => this.renderRecentProject(p))}
-        </div>
-      </main>
+      </Layout>
     );
   }
 
   renderRecentProject(portfolio) {
     return (
-      <div className="recent-project">
+      <div className="recent-project" key={portfolio.title}>
         {portfolio.logo ? this.renderLogo(portfolio) : null}
         {portfolio.screenshot ? this.renderScreenshot(portfolio) : null}
         <a href={portfolio.link} key={portfolio.title}>
@@ -127,7 +108,7 @@ export default class Portfolio extends Component {
 }
 
 export const pageQuery = graphql`
-  query PortfolioQuery {
+  query PortfolioPageQuery {
     site {
       siteMetadata {
         title

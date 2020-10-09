@@ -1,110 +1,127 @@
 import React, { Component } from 'react';
 import { Link, graphql } from 'gatsby';
+import Helmet from 'react-helmet';
+import Img from 'gatsby-image';
 
-import SimpleLayout from '../components/simple-layout';
-import PageHeader from '../components/page-header';
+import Layout from '../components/Layout';
 
-export default class Homepage extends Component {
-  highlightedPosts() {
-    return this.props.data.allMarkdownRemark.edges.filter(e => {
-      return e.node.frontmatter.highlighted;
-    });
-  }
-
-  recentPosts() {
-    return this.props.data.allMarkdownRemark.edges.slice(0, 3);
-  }
-
+export default class Home extends Component {
   render() {
-    return (
-      <SimpleLayout
-        name="index"
-        location={this.props.location}
-        title={`${this.props.data.site.siteMetadata.title} - ${this.props.data.site.siteMetadata.description}`}
-        desc="Razaqul Tegar adalah seorang pemuda beruntung kelahiran Banyumas, 30 Januari. Sekarang sedang menempuh karir profesionalnya sebagai Full Stack Web Developer."
-        type="website"
-        image="/icons/index.jpg"
-      >
-        <PageHeader image="/icons/index.jpg">
-          <strong>Razaqul Tegar</strong> – Full Stack Developer. Pernah magang di{' '}
-          <a href="https://turing.com" target="_blank" rel="noopener noreferrer">
-            @turing
-          </a>
-          . Kepala Pengembang di{' '}
-          <a href="https://limbodigital.id" target="_blank" rel="noopener noreferrer">
-            @dld
-          </a>
-          . Bekerja Global, Bangga Indonesia 🇮🇩
-        </PageHeader>
-        <div className="pt4 highlights-wrapper">
-          <div className="dt w-100">
-            <div className="dtc">
-              <h1 className="x-sans fw3 pv0 mid-gray">Rekap Tahunan</h1>
-            </div>
-            <div className="dtc tr">
-              <h2 className="f5 mv0">
-                <Link
-                  to="/jurnal"
-                  className="hover-near-black gray x-inherit no-underline"
-                >
-                  semua jurnal
-                </Link>
-              </h2>
-            </div>
-          </div>
-          <section className="x-grid-3 mt4 highlights">
-            {this.highlightedPosts().map((post) => this.renderHighlightedPost(post))}
-          </section>
-        </div>
-      </SimpleLayout>
+    const { data } = this.props;
+    const siteMetadata = data.site.siteMetadata;
+    const posts = data.allMarkdownRemark.edges;
+
+    const Intro = () => (
+      <div className="intro">
+        <p>
+          I'm Razaqul, Full Stack Developer and Development Lead of{' '}
+          <a href="https://limbodigital.id">@DLD</a> where I worked for this moment. I also a former
+          intern at <a href="https://turing.com">@turing</a> (working on remotely). In my free time
+          I've built and maintain various open-source projects of my own like: this Websites,
+          Angular Electron Kit, Simple Slug Packages and any more. You can find me on{' '}
+          <a href="https://twitter.com/razaqultegar">Twitter</a> or{' '}
+          <a href="mailto:myrazaqul@gmail.com">write an email</a>. (I'm not on Facebook, LinkedIn,
+          or Instagram).
+        </p>
+      </div>
     );
-  }
-
-  renderHighlightedPost(post) {
-    const img = {
-      backgroundImage: `url(${post.node.frontmatter.image})`,
-      backgroundPosition: 'center center',
-      backgroundSize: 'cover'
-    };
 
     return (
-      <Link
-        to={post.node.frontmatter.path}
-        className="highlighted-post x-noborder relative"
-        key={post.node.id}
-      >
-        <header className="absolute top-0 tc bg-near-white w-100">
-          <h4 className="x-mono silver mt0 mb1">
-            {new Date(post.node.frontmatter.date).getFullYear()}
-          </h4>
-          <h2 className="f5 lh-copy ph3 mid-gray w-95">{post.node.frontmatter.title}</h2>
-        </header>
-        <div className="w-100 image">
-          <div className="w-100 h-100" style={img} />
+      <Layout>
+        <Helmet
+          title={siteMetadata.title}
+          meta={[
+            {
+              name: 'description',
+              content: siteMetadata.description
+            },
+            { property: 'og:title', content: 'Home' },
+            {
+              property: 'og:description',
+              content: siteMetadata.description
+            }
+          ]}
+        />
+        <Intro />
+        <div
+          style={{
+            height: '6px',
+            backgroundColor: '#f16563',
+            boxShadow: '0 3px 0 #f16563dd, 0 3px 0 #000',
+            marginBottom: '1.25rem'
+          }}
+        />
+        <div className="highlights-wrapper">
+          <div className="highlights-content">
+            <h1>Annual Recap</h1>
+          </div>
+          <div className="highlights-content">
+            <h2>
+              <Link to="/journal" className="hover-near-black gray x-inherit no-underline">
+                see all journal
+              </Link>
+            </h2>
+          </div>
         </div>
-      </Link>
+        <section className="x-grid-4 highlights">
+          {posts.map(({ node }) => {
+            const thumbnail = node.frontmatter.thumbnail;
+            return (
+              <Link to={node.fields.slug} className="highlighted-post" key={node.fields.slug}>
+                <header>
+                  <h4>{new Date(node.frontmatter.date).getFullYear()}</h4>
+                  <h2>{node.frontmatter.title}</h2>
+                </header>
+                <div className="image">
+                  <Img
+                    fluid={thumbnail.childImageSharp.fluid}
+                    style={{
+                      position: 'absolute',
+                      left: 0,
+                      top: 0,
+                      width: '100%',
+                      height: '100%'
+                    }}
+                    alt={node.frontmatter.title}
+                  />
+                </div>
+              </Link>
+            );
+          })}
+        </section>
+      </Layout>
     );
   }
 }
 
-export const query = graphql`
-  query HomepageQuery {
+export const pageQuery = graphql`
+  query IndexPageQuery {
     site {
       siteMetadata {
         title
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { highlighted: { in: true } } }
+    ) {
       edges {
         node {
-          id
+          fields {
+            slug
+          }
           frontmatter {
-            title
-            image
-            path
-            date(formatString: "DD MMMM, YYYY")
             highlighted
+            title
+            date(formatString: "DD MMMM, YYYY")
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1140) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
