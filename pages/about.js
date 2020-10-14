@@ -28,23 +28,22 @@ const About = () => {
         />
         <div className="markup">
           <p>
-            I live in Ghent, Belgium and am passionate about PHP. I'm a Laravel enthusiast and have
-            used the framework for many projects. Follow me{' '}
+            I live in South Jakarta, Indonesia and am passionate about Programming. More than 5
+            years to explore it and have working for many projects from there. Follow me{' '}
             <a href="http://twitter.com/razaqultegar">on Twitter</a> to know what keeps me busy.
             Want to know which IDE, apps and hardware I use? <a href="/uses">Here you go</a>!
           </p>
           <p>
-            I'm a developer at <a href="https://spatie.be">Spatie</a> of which I'm the co-owner. At
-            my company we use a lot of open source software: PHP, Ubuntu, Laravel, Composer, Yarn,…
-            are a few of the things we use everyday. My company couldn't exist without open source
-            software. That's why we're trying to give back as much as possible.
+            I'm a full stack developer at{' '}
+            <a href="https://limbodigital.id">Dinamika Limbo Digital/DLD</a> of which I'm the
+            co-owner. At my company we use a lot of technology or programming language like: PHP,
+            CodeIgniter, Laravel, Java, JavaScript, Node, Yarn, and any more… are a few of the
+            things we use everyday. My company couldn't exist without technology. That's why we're
+            trying to give back as much as possible.
           </p>
           <p>
             Whenever we stumble upon a problem that we can solve in a clean way, we extract our
-            solution so other developers can use it. Together with my colleagues I regularly release{' '}
-            <a href="https://spatie.be/opensource">PHP</a>,{' '}
-            <a href="https://spatie.be/opensource">Laravel and JavaScript packages</a>. Those
-            packages have been downloaded more than 35 million times.
+            solution so other developers can use it.
           </p>
         </div>
       </MainLayout>
