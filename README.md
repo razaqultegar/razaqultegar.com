@@ -27,9 +27,9 @@
     yarn run dev
     ```
 
-1. **Create .env.local**
+1.  **Create .env.local**
 
-   Change `.env.sample` to `.env.local`.
+    Change `.env.sample` to `.env.local`.
 
 1.  **Open the source code and start editings**
 
