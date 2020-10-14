@@ -330,9 +330,8 @@ p {
   display: block;
 }
 
-.markup ol li p:first-child,
-.markup ul li p:first-child {
-  margin-bottom: 1.5rem;
+.markup ol, .markup ul {
+  list-style-position: inside;
 }
 
 .markup ol li pre,
