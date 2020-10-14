@@ -1,6 +1,11 @@
 import React from 'react';
+import NextLink from 'next/link';
 
 import MainLayout from '../layouts/main-layout';
+import PostHighlight from '../components/PostHighlight';
+
+import { frontMatter as tryMinimalism } from './journal/trying-minimalism-concept.mdx';
+import { frontMatter as centralJava } from './journal/triple-s-central-java.mdx';
 
 const Index = () => {
   const Intro = () => (
@@ -42,6 +47,82 @@ const Index = () => {
           marginBottom: '1.25rem'
         }}
       />
+      <div className="highlights-wrapper">
+        <div className="highlights-content">
+          <h1>Annual Recap</h1>
+        </div>
+        <div className="highlights-content">
+          <h2>
+            <NextLink
+              href="/journal"
+              passHref
+            >
+              <a className="link">see all journal</a>
+            </NextLink>
+          </h2>
+        </div>
+      </div>
+      <section className="x-grid-4 highlights">
+        <PostHighlight {...tryMinimalism} />
+        <PostHighlight {...centralJava} />
+      </section>
+      <style jsx>{`
+        .x-grid-4 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 2rem;
+          grid-row-gap: 0.5rem;
+          justify-items: stretch;
+          align-items: stretch;
+        }
+
+        .highlights-wrapper {
+          display: table;
+          width: 100%;
+        }
+
+        .highlights-content {
+          display: table-cell;
+        }
+
+        .highlights-content:last-child {
+          text-align: right;
+        }
+
+        .highlights-content h1 {
+          color: #555;
+          font-size: 22px;
+          font-weight: 300;
+          margin: 0.67em 0;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .highlights-content h2 {
+          font-size: 12px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        .highlights {
+          margin-top: 0.8rem;
+        }
+
+        @media (max-width: 1200px) {
+          .x-grid-4 {
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 0.5rem;
+          }
+        }
+
+        @media (max-width: 900px) {
+          .x-grid-4 {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 0.5rem;
+            grid-row-gap: 0.5rem;
+          }
+        }
+      `}</style>
     </MainLayout>
   );
 };

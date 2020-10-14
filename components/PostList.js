@@ -4,7 +4,6 @@ import { parseISO, format } from 'date-fns';
 
 const PostList = frontMatter => {
   const { title, summary, publishedAt, category, readingTime } = frontMatter;
-
   const slug = frontMatter.__resourcePath.replace('journal/', '').replace('.mdx', '');
 
   return (
