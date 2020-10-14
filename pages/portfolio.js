@@ -67,6 +67,84 @@ export default class Portfolio extends Component {
               {portfolio.others.map(p => this.renderRecentProject(p))}
             </div>
           </div>
+          <style jsx>{`
+            .portfolio a {
+              text-decoration: none;
+              border-bottom: 1px dotted #ccc;
+            }
+
+            .portfolio a:hover {
+              border-bottom: none;
+            }
+
+            .portfolio .clients,
+            .portfolio .old,
+            .portfolio .recent,
+            .portfolio .websites {
+              margin: 50px auto 30px;
+            }
+
+            .portfolio .recent h3,
+            .portfolio .clients h3,
+            .portfolio .opensource h3,
+            .portfolio .websites h3,
+            .portfolio .old h3 {
+              color: #888;
+              font-size: 16px;
+              font-weight: 500;
+              text-transform: uppercase;
+              margin: 20px 2px;
+            }
+
+            .portfolio .clients {
+              color: #333;
+            }
+
+            .portfolio .clients .superhuman {
+              padding-top: 20px;
+            }
+
+            .portfolio .clients img {
+              width: 100px;
+              border-radius: 50%;
+              float: left;
+            }
+
+            .portfolio .clients .quote {
+              position: absolute;
+              margin: -35px 0 0 10px;
+              font: 150px Tiempos text regular;
+              color: #22e9ab;
+            }
+
+            .portfolio .clients p {
+              display: block;
+              float: right;
+              width: calc(100% - 120px);
+              padding-top: 50px;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 1.7;
+              color: #666;
+            }
+
+            .portfolio .opensource {
+              width: 100%;
+              background: #fffbe5;
+              padding: 25px 50px;
+              margin: 50px 0 0;
+            }
+
+            .portfolio .opensource a.github {
+              font-size: 14px;
+              text-transform: uppercase;
+              text-align: right;
+              border: 0;
+              background: transparent;
+              color: #666;
+              width: 215px;
+            }
+          `}</style>
         </MainLayout>
       </>
     );
@@ -74,8 +152,8 @@ export default class Portfolio extends Component {
 
   renderRecentProject(portfolio) {
     return (
-      <div className="recent-project" key={portfolio.title}>
-        <a href={portfolio.link} key={portfolio.title}>
+      <div key={portfolio.title} style={{ color: '#666', marginBottom: '25px', lineHeight: '1.5rem' }}>
+        <a href={portfolio.link} key={portfolio.title} style={{ color: '#111', fontWeight: '500', borderBottom: '1px dotted #999892' }}>
           {portfolio.title}
         </a>{' '}
         — {portfolio.description}
