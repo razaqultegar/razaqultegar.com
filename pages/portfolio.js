@@ -67,113 +67,6 @@ export default class Portfolio extends Component {
               {portfolio.others.map(p => this.renderRecentProject(p))}
             </div>
           </div>
-          <style jsx>{`
-            .portfolio a {
-              text-decoration: none;
-              border-bottom: 1px dotted #ccc;
-            }
-
-            .portfolio a:hover {
-              border-bottom: none;
-            }
-
-            .portfolio .clients,
-            .portfolio .old,
-            .portfolio .recent,
-            .portfolio .websites {
-              margin: 50px auto 30px;
-            }
-
-            .portfolio .recent h3,
-            .portfolio .clients h3,
-            .portfolio .opensource h3,
-            .portfolio .websites h3,
-            .portfolio .old h3 {
-              color: #888;
-              font-size: 16px;
-              font-weight: 500;
-              text-transform: uppercase;
-              margin: 20px 2px;
-            }
-
-            .portfolio .recent-project {
-              color: #666;
-              margin-bottom: 25px;
-              line-height: 1.5rem;
-            }
-
-            .portfolio .recent-project .logo {
-              text-align: center;
-            }
-
-            .portfolio .recent-project .logo img {
-              height: 100px;
-            }
-
-            .portfolio .recent-project .screenshot {
-              margin: 50px 0 20px 0;
-            }
-
-            .portfolio .recent-project .screenshot-img {
-              height: 250px;
-              background: no-repeat top center;
-              background-size: cover;
-            }
-
-            .portfolio .recent-project a {
-              color: #111;
-              font-weight: 500;
-            }
-
-            .portfolio .clients {
-              color: #333;
-            }
-
-            .portfolio .clients .superhuman {
-              padding-top: 20px;
-            }
-
-            .portfolio .clients img {
-              width: 100px;
-              border-radius: 50%;
-              float: left;
-            }
-
-            .portfolio .clients .quote {
-              position: absolute;
-              margin: -35px 0 0 10px;
-              font: 150px Tiempos text regular;
-              color: #22e9ab;
-            }
-
-            .portfolio .clients p {
-              display: block;
-              float: right;
-              width: calc(100% - 120px);
-              padding-top: 50px;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 1.7;
-              color: #666;
-            }
-
-            .portfolio .opensource {
-              width: 100%;
-              background: #fffbe5;
-              padding: 25px 50px;
-              margin: 50px 0 0;
-            }
-
-            .portfolio .opensource a.github {
-              font-size: 14px;
-              text-transform: uppercase;
-              text-align: right;
-              border: 0;
-              background: transparent;
-              color: #666;
-              width: 215px;
-            }
-          `}</style>
         </MainLayout>
       </>
     );
@@ -182,32 +75,10 @@ export default class Portfolio extends Component {
   renderRecentProject(portfolio) {
     return (
       <div className="recent-project" key={portfolio.title}>
-        {portfolio.logo ? this.renderLogo(portfolio) : null}
-        {portfolio.screenshot ? this.renderScreenshot(portfolio) : null}
         <a href={portfolio.link} key={portfolio.title}>
           {portfolio.title}
         </a>{' '}
         — {portfolio.description}
-      </div>
-    );
-  }
-
-  renderLogo(portfolio) {
-    return (
-      <div className="logo">
-        <img src={portfolio.logo} alt={portfolio.title} />
-      </div>
-    );
-  }
-
-  renderScreenshot(portfolio) {
-    const css = {
-      backgroundImage: `url(${portfolio.screenshot})`
-    };
-
-    return (
-      <div className="screenshot">
-        <div className="screenshot-img" style={css} />
       </div>
     );
   }
