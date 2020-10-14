@@ -53,10 +53,7 @@ const Index = () => {
         </div>
         <div className="highlights-content">
           <h2>
-            <NextLink
-              href="/journal"
-              passHref
-            >
+            <NextLink href="/journal" passHref>
               <a className="link">see all journal</a>
             </NextLink>
           </h2>

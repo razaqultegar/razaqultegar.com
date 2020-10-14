@@ -152,8 +152,15 @@ export default class Portfolio extends Component {
 
   renderRecentProject(portfolio) {
     return (
-      <div key={portfolio.title} style={{ color: '#666', marginBottom: '25px', lineHeight: '1.5rem' }}>
-        <a href={portfolio.link} key={portfolio.title} style={{ color: '#111', fontWeight: '500', borderBottom: '1px dotted #999892' }}>
+      <div
+        key={portfolio.title}
+        style={{ color: '#666', marginBottom: '25px', lineHeight: '1.5rem' }}
+      >
+        <a
+          href={portfolio.link}
+          key={portfolio.title}
+          style={{ color: '#111', fontWeight: '500', borderBottom: '1px dotted #999892' }}
+        >
           {portfolio.title}
         </a>{' '}
         — {portfolio.description}
