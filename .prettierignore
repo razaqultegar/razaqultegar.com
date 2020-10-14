@@ -1,6 +1,3 @@
-.cache
-node_modules
-public
-package.json
-package-lock.json
-yarn-lock.json
+.mdx-data
+.next
+.now
