@@ -1,9 +1,9 @@
 # Razaqul Tegar site
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/9e1f22f6-d676-417b-ac40-a60b1465cee6/deploy-status)](https://app.netlify.com/sites/razaqultegar/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://travis-ci.org/razaqultegar/razaqultegar.com.svg?branch=master)](https://travis-ci.org/razaqultegar/razaqultegar.com)
 
-**Note**: The source for this site was not created to be a template or theme, but for my own use. Feel free to take whatever inspiration from it that you want, but this code was not written with the intention of being, cloned and deployed. As such, I do not provide support or guidance for doing that. I recommend using the [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter) to set up a blog or an existing theme created for that purpose.
+**Note**: The source for this site was not created to be a template or theme, but for my own use. Feel free to take whatever inspiration from it that you want, but this code was not written with the intention of being, cloned and deployed. As such, I do not provide support or guidance for doing that. I recommend using the [NextJS Blog Starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) to set up a blog or an existing theme created for that purpose.
 
 ## Installation
 
@@ -23,18 +23,25 @@
     yarn
     # or if you'd like to use npm instead
     npm install
-    # serve with hot reload at localhost:8000
+    # serve with hot reload at localhost:3000
     yarn run dev
     ```
 
+1. **Create .env.local**
+
+   Change `.env.sample` to `.env.local`.
+
 1.  **Open the source code and start editings**
 
-    Your site is now running at `http://localhost:8000` !
+    Your site is now running at `http://localhost:3000` !
 
 ## Acknowledgements
 
-- Gatsby, Inc - [GatsbyJS Site](https://www.gatsbyjs.com)
-- Vagr9K - [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
+- [Vercel Site](https://vercel.com)
+- [NextJS Site](https://nextjs.org)
+- [NextJS Blog Starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
+- MDX JS - [MDX](https://github.com/mdx-js/mdx)
+- Spotify - [Spotify API](https://developer.spotify.com)
 - Thomas Frössman - [ExitWP](https://github.com/thomasf/exitwp) (WordPress XML to Markdown)
 
 ## License
