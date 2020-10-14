@@ -1,0 +1,100 @@
+{
+  "recent": [
+    {
+      "title": "Dinamika Limbo Digital",
+      "link": "https://limbodigital.id",
+      "description": "Dinamika Limbo Digital is a global software development company providing IT solutions for companies around the world"
+    },
+    {
+      "title": "SIPERTIN",
+      "link": "#",
+      "description": "A LMS applications for the 21st Century"
+    },
+    {
+      "title": "Angular Electron",
+      "link": "https://github.com/razaqultegar/angular-electron",
+      "description": "Simple ultra-fast bootstrapping with Angular and Electron"
+    }
+  ],
+  "opensource": [
+    {
+      "title": "Angular Electron",
+      "link": "https://github.com/razaqultegar/angular-electron",
+      "description": "Simple ultra-fast bootstrapping with Angular and Electron"
+    },
+    {
+      "title": "Jakmania Purwokerto App",
+      "link": "https://github.com/razaqultegar/jakpurwokerto",
+      "description": "Community management application, with high level of data accuracy"
+    },
+    {
+      "title": "Simple Wordpress",
+      "link": "https://github.com/razaqultegar/simple-wordpress",
+      "description": "Simple wordpress theme structure"
+    },
+    {
+      "title": "Buku Tamu Digital",
+      "link": "https://github.com/razaqultegar/tamdes-web",
+      "description": "Immortal record keeping without fear of loss"
+    },
+    {
+      "title": "Notebook",
+      "link": "https://github.com/razaqultegar/notebook",
+      "description": "My private and public notebooks. I organize my knowledge, ideas and thoughts here"
+    }
+  ],
+  "websites": [
+    {
+      "title": "Situs Indonesia Covid",
+      "link": "https://covid19.go.id",
+      "description": "The latest information center about Covid-19 in Indonesia"
+    },
+    {
+      "title": "Hooligans®",
+      "link": "https://hooligans.co.id",
+      "description": "the Original Indonesia Clothing for The Love of This Beautiful Game"
+    },
+    {
+      "title": "Sensus Penduduk Indonesia",
+      "link": "https://sensus.bps.go.id",
+      "description": "#MencatatIndonesia"
+    },
+    {
+      "title": "Mobil 88 by Astra",
+      "link": "https://www.mobil88.astra.co.id",
+      "description": "Sell / buy your car with confidence"
+    },
+    {
+      "title": "Aston International",
+      "link": "https://www.astonhotelsinternational.com",
+      "description": "A place to stay with unmatched style and service. Presentation from Archipelago International"
+    }
+  ],
+  "others": [
+    {
+      "title": "Pertamina EP",
+      "link": "#",
+      "description": "Presentation Tools in the Video"
+    },
+    {
+      "title": "Panda SID",
+      "link": "https://panda.id",
+      "description": "Technological innovation for village government"
+    },
+    {
+      "title": "BTPN Syariah",
+      "link": "#",
+      "description": "Save, Manage and Deliver"
+    },
+    {
+      "title": "Arsip Negara Republik Indonesia",
+      "link": "https://www.anri.go.id",
+      "description": "Manage and Serve with ease"
+    },
+    {
+      "title": "DesaOS",
+      "link": "https://sourceforge.net/projects/desaos",
+      "description": "Debian derivative Operating System. From Village to Village"
+    }
+  ]
+}
