@@ -47,10 +47,6 @@ const Track = track => {
 
         .spotify-list .spotify-content p {
           color: rgb(113, 128, 150);
-          max-width: 600px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
         }
       `}</style>
     </div>

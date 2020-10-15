@@ -68,6 +68,17 @@ const PostHighlight = frontMatter => {
         .highlighted-post .image picture img {
           padding-top: 100px;
         }
+
+        @media (max-width: 900px) {
+          .highlighted-post header h4 {
+            font-size: 14px;
+            margin-bottom: 0.25rem;
+          }
+
+          .highlighted-post header h2 {
+            font-size: 14px;
+          }
+        }
       `}</style>
     </>
   );

@@ -131,7 +131,7 @@ export default class Portfolio extends Component {
             .portfolio .opensource {
               width: 100%;
               background: #fffbe5;
-              padding: 25px 50px;
+              padding: 25px 50px 50px;
               margin: 50px 0 0;
             }
 
@@ -142,6 +142,7 @@ export default class Portfolio extends Component {
               border: 0;
               background: transparent;
               color: #666;
+              float: right;
               width: 215px;
             }
           `}</style>

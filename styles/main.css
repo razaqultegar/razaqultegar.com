@@ -349,8 +349,6 @@ p {
 }
 
 .markup blockquote {
-  margin-left: -1rem;
-  margin-right: -1rem;
   padding: 1rem;
   --bg-opacity: 1;
   background-color: #ebf4ff;
@@ -403,8 +401,6 @@ p {
 }
 
 .markup pre {
-  margin-left: -1rem;
-  margin-right: -1rem;
   padding: 1rem;
   overflow-x: auto;
   font-size: .75em;
@@ -416,9 +412,9 @@ p {
 }
 
 /* Responsive */
-@media (min-width:640px) {
+@media (min-width: 640px) {
   .header {
-     margin-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   .page-thumbnail {
@@ -450,7 +446,7 @@ p {
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   html {
     font-size: 18px;
   }
@@ -510,7 +506,7 @@ p {
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   html {
     font-size: 19px;
   }
