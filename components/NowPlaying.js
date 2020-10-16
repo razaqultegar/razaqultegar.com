@@ -24,8 +24,6 @@ const NowPlaying = () => {
         .spotify-now-playing {
           position: fixed;
           bottom: 20px;
-          left: 20px;
-          display: inline-block;
           width: auto;
           animation: popFromBottom 0.5s ease-in-out;
         }
@@ -41,15 +39,13 @@ const NowPlaying = () => {
 
         .spotify-now-playing .spotify-album-cover {
           display: inline-block;
-          width: 14vmin;
-          height: 14vmin;
+          width: 65px;
           position: absolute;
-          top: -1.5vmin;
         }
 
         .spotify-now-playing .spotify-now-title {
           background: #1db954;
-          padding: 5px 5px 5px 90px;
+          padding: 5px 10px 5px 75px;
           font-size: 18px;
           text-align: left;
         }
@@ -70,13 +66,26 @@ const NowPlaying = () => {
 
         .spotify-now-playing .spotify-now-artist {
           text-align: left;
-          padding: 5px 5px 5px 90px;
+          padding: 5px 10px 5px 75px;
           font-size: 12px;
           background: #22a24f;
           color: #fff;
           display: inline-block;
           float: left;
           font-weight: 600;
+        }
+
+        @media (max-width: 1024px) {
+          .spotify-now-playing {
+            display: inline-block;
+            left: 20px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .spotify-now-playing {
+            display: none;
+          }
         }
       `}</style>
     </div>
