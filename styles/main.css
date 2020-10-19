@@ -375,13 +375,13 @@ p {
 
 .link, .markup :not(.no-markup) a:not(.permalink) {
   outline: 0;
-  color: #33bddb;
+  color: #f05644;
   transition: color .2s ease-in-out;
   text-decoration: underline;
 }
 
 .link:hover, .markup :not(.no-markup) a:not(.permalink):hover {
-  color: #f05644;
+  color: #33bddb;
 }
 
 .markup :not(pre)>code {
