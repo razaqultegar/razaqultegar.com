@@ -19,9 +19,9 @@ To be able to install 2 XAMPP applications with different PHP versions on Ubuntu
 
 ```bash
 cd /opt
-sudo mv lampp/lampp5
+sudo mv lampp/ lampp5/
 # or
-sudo mv lampp/lampp7
+sudo mv lampp/ lampp7/
 ```
 
 2. Download XAMPP
@@ -48,15 +48,15 @@ sudo ./xampp-linux-x64-7.4.6-0-installer.run
 Running XAMPP PHP version 5.6
 
 ```bash
-sudo rm -rf /opt/lampp
-sudo ln -s /opt/lampp5/ lampp
+sudo rm -rf /opt/lampp/
+sudo ln -s /opt/lampp5/ lampp/
 sudo /opt/lampp/lampp start
 ```
 
 Runs XAMPP PHP version 7.4
 
 ```bash
-sudo rm -rf /opt/lampp
-sudo ln -s /opt/lampp7/ lampp
+sudo rm -rf /opt/lampp/
+sudo ln -s /opt/lampp7/ lampp/
 sudo /opt/lampp/lampp start
 ```
