@@ -2,6 +2,12 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/uses",
+      "destination": "/my-current-setup-2019-edition"
+    }
+  ],
   "headers": [
     {
       "source": "/api/now-playing",
