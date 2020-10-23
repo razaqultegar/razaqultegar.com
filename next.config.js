@@ -15,6 +15,10 @@ module.exports = withMdxEnhanced({
   }
 })({
   webpack: config => {
+    if (isServer) {
+      require('./scripts/generate-sitemap');
+    }
+
     return config;
   }
 });
