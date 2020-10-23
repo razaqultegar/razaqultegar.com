@@ -5,7 +5,7 @@
   "redirects": [
     {
       "source": "/uses",
-      "destination": "/my-current-setup-2019-edition"
+      "destination": "/journal/my-current-setup-2019-edition"
     }
   ],
   "headers": [
