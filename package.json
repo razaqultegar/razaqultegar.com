@@ -28,13 +28,5 @@
     "dev": "next",
     "format": "prettier --write \"**/*.{html,js,json,md,mdx,yml}\"",
     "start": "next start"
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "printWidth": 100,
-    "singleQuote": true,
-    "trailingComma": "none",
-    "arrowParens": "avoid",
-    "endOfLine": "auto"
   }
 }
