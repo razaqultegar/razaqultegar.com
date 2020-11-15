@@ -270,7 +270,7 @@ p {
   margin-bottom: 1.25rem;
 }
 
-.border-java, .border-laravel {
+.border-java, .border-laravel, .border-codeigniter {
   height: 6px;
   background-color: #cbd5e0;
   box-shadow: 0 3px 0 #cbd5e0dd;
