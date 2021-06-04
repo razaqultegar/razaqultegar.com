@@ -9,7 +9,6 @@
     "node": true,
     "jest": true
   },
-  "extends": ["nextjs"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
