@@ -1,24 +1,14 @@
-const readingTime = require('reading-time');
-const mdxPrism = require('mdx-prism');
-const withMdxEnhanced = require('next-mdx-enhanced');
-
-module.exports = withMdxEnhanced({
-  layoutPath: 'layouts',
-  defaultLayout: true,
-  remarkPlugins: [require('remark-slug')],
-  rehypePlugins: [mdxPrism],
-  extendFrontMatter: {
-    process: mdxContent => ({
-      wordCount: mdxContent.split(/\s+/gu).length,
-      readingTime: readingTime(mdxContent)
-    })
-  }
-})({
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      require('./scripts/generate-sitemap');
-    }
-
-    return config;
-  }
-});
+module.exports = {
+  future: {
+    webpack5: true,
+    strictPostcssConfiguration: true,
+  },
+  reactStrictMode: true,
+  experimental: {
+    turboMode: true,
+    eslint: true,
+  },
+  typescript: {
+    ignoreDevErrors: true,
+  },
+}

@@ -1,22 +1,10 @@
 {
-  "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
     {
       "source": "/uses",
       "destination": "/journal/my-current-setup-2019-edition"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/top-tracks",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400, stale-while-revalidate=43200"
-        }
-      ]
     }
   ]
 }

@@ -27,10 +27,6 @@
     yarn run dev
     ```
 
-1.  **Create .env.local**
-
-    Change `.env.sample` to `.env.local`.
-
 1.  **Open the source code and start editings**
 
     Your site is now running at `http://localhost:3000` !
@@ -40,8 +36,6 @@
 - [Vercel Site](https://vercel.com)
 - [NextJS Site](https://nextjs.org)
 - [NextJS Blog Starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
-- MDX JS - [MDX](https://github.com/mdx-js/mdx)
-- Spotify - [Spotify API](https://developer.spotify.com)
 - Thomas Frössman - [ExitWP](https://github.com/thomasf/exitwp) (WordPress XML to Markdown)
 
 ## License
