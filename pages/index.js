@@ -45,7 +45,7 @@ const About = () => {
             Kontak
           </Link>{' '}
           /{' '}
-          <Link underline href="/rss">
+          <Link underline href="/feed.xml">
             RSS
           </Link>
         </p>
