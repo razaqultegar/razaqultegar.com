@@ -1,12 +1,9 @@
 import NextHead from 'next/head'
 
-const defaultOgImage =
-  'https://res.cloudinary.com/dsdlhtnpw/image/upload/v1572673557/og-image_budbm8.png'
-
 const Head = ({
   title = 'Razaqul Tegar',
   description = "Hi, I'm Razaqul Tegar. Cofounder and COO on Limbo Digital.",
-  image = defaultOgImage,
+  image = 'og.png',
   children,
 }) => {
   return (
