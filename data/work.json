@@ -1,10 +1,46 @@
 {
   "data": [
     {
-      "title": "Mobil 88 by Astra",
-      "description": "Sell/buy your car with confidence.",
-      "url": "https://www.mobil88.astra.co.id",
-      "image": "https://limbodigital.id/_next/image?url=%2Fstatic%2Fwork%2Fmobil88.jpg&w=3840&q=75"
+      "title": "Dinamika Limbo Digital",
+      "description": "No.1 Agensi Digital Kreatif di Banyumas",
+      "url": "https://limbodigital.id",
+      "image": "/work/limbo.png"
+    },
+    {
+      "title": "SIPERTIN",
+      "description": "Sistem Manajamen Perpustakaan",
+      "url": "#!",
+      "image": "/work/sipertin.png"
+    },
+    {
+      "title": "Pertamina EP",
+      "description": "Aplikasi Presentasi Vidio",
+      "url": "#!",
+      "image": "/work/pertamina-ep.png"
+    },
+    {
+      "title": "Notebook",
+      "description": "Catatan Berbagi dalam bentuk MarkDown",
+      "url": "https://github.com/razaqultegar/notebook",
+      "key": "open source"
+    },
+    {
+      "title": "Angular Electron",
+      "description": "Rancangan Cepat dengan AngularJS dan ElectronJS",
+      "url": "https://github.com/razaqultegar/angular-electron",
+      "key": "open source"
+    },
+    {
+      "title": "Simple Wordpress",
+      "description": "Struktur tema dasar untuk WordPress",
+      "url": "https://github.com/razaqultegar/simple-wordpress",
+      "key": "open source"
+    },
+    {
+      "title": "Buku Tamu Digital",
+      "description": "Pencatatan kunjungan tamu",
+      "url": "https://github.com/razaqultegar/tamdes-web",
+      "key": "open source"
     }
   ]
 }
