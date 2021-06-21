@@ -24,17 +24,19 @@ const Post = ({
   previous,
   next,
 }) => {
+  const dateTo = new Date(date).toLocaleDateString('id-ID', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  })
+
   return (
     <Page
       slug={slug}
       title={title}
       description={description}
       showHeaderTitle={false}
-      image={
-        og && og === true
-          ? `${slug}.png`
-          : og
-      }
+      image={og && og === true ? `${slug}.png` : og}
     >
       <Head>
         {hidden && <meta name="robots" content="noindex" />}
@@ -43,7 +45,7 @@ const Post = ({
 
       <article
         dangerouslySetInnerHTML={{
-          __html: `<span class="${styles.date}">${date}</span><h1 class="${
+          __html: `<span class="${styles.date}">${dateTo}</span><h1 class="${
             styles.title
           }">${escapeHtml(title)}</h1>${html}`,
         }}
