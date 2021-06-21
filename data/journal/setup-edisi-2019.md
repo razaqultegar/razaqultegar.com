@@ -1,11 +1,11 @@
 ---
 title: Setup saya saat ini (edisi 2019)
-description: Ini adalah setup saya, Anda tidak harus menggunakan alat yang sama atau apa pun, ditulis untuk berbagi dan membantu mempromosikannya sebagai ucapan terima kasih telah membantu saya.
+description: Ini adalah setup saya tahun 2019, Anda tidak harus menggunakan alat yang sama atau apa pun, ditulis untuk berbagi dan membantu mempromosikannya sebagai ucapan terima kasih telah membantu saya.
 slug: setup-edisi-2019
-date: October 19, 2019
+date: 19 October 2019
 ---
 
-Ini adalah setup saya, Anda tidak harus menggunakan alat yang sama atau apa pun, ditulis untuk berbagi dan membantu mempromosikannya sebagai ucapan terima kasih telah membantu saya.
+Ini adalah setup saya tahun 2019, Anda tidak harus menggunakan alat yang sama atau apa pun, ditulis untuk berbagi dan membantu mempromosikannya sebagai ucapan terima kasih telah membantu saya.
 
 ## Hardware
 
@@ -21,7 +21,7 @@ Saya jarang mengupgrade sistem operasi saya, jadi saya selalu menggunakan versi 
 
 Secara default saya menyembunyikan dock. Saya suka menjaga desktop saya tetap bersih, bahkan hard disk dan sampah tidak boleh ditampilkan di sana. Di dock saya tidak ada program yang menetap. Hanya aplikasi yang sering digunakan dan sedang berjalan yang ada di sana. Saya hanya memiliki tumpukan untuk Unduhan dan Desktop secara permanen di sana. Berikut adalah tangkapan layar di mana saya sengaja memindahkan penunjuk saya ke samping sehingga dok ditampilkan.
 
-![](/journal/my-current-setup-2019-edition/dock.png)
+![](/journal/setup-edisi-2019/dock.png)
 
 Ini adalah beberapa aplikasi yang saya gunakan:
 
@@ -35,7 +35,7 @@ Ini adalah beberapa aplikasi yang saya gunakan:
 
 ## iOS
 
-![](/journal/my-current-setup-2019-edition/ios.png)
+![](/journal/setup-edisi-2019/ios.png)
 
 Saya jarang untuk menggunakan ponsel terlalu lama, sebagian besar waktu saya dihabiskan di depan Laptop. Notifikasi dan lencana notifikasi dimatikan untuk semua aplikasi kecuali Pesan.
 
@@ -48,3 +48,7 @@ Berikut adalah ikhtisar dari beberapa aplikasi yang saat ini ada di layar berand
 - Telegram, WhatsApp: untuk berkomunikasi dengan tim dan beberapa komunitas lain.
 - Traveloka: untuk mencari jadwal kereta api, pesawat dan hotel di Indonesia.
 - Trello: berisi tugas saya, baik pribadi maupun bisnis.
+
+## Penutup
+
+Setiap tahun, saya akan menulis versi terbaru dari setup yang saya gunakan. Baca juga [Setup saya tahun 2020](/journal/setup-edisi-2020).

@@ -2,7 +2,7 @@
 title: Solved, iReport tidak berfungsi pada mode JAR
 description: Masalah inti Kode di atas adalah kode standar untuk memanggil iReport di Java Netbeans, ada banyak situs tutorial yang menyarankan kode itu.
 slug: solved-ireport-tidak-berfungsi-pada-mode-jar
-date: August 13, 2019
+date: 13 August 2019
 ---
 
 ## Inti Permasalahan
@@ -25,7 +25,7 @@ Kode di atas adalah kode standar untuk memanggil iReport di Java Netbeans, ada b
 
 Ketika aplikasi dijalankan melalui Netbeans, skrip panggilan berfungsi dengan baik. Namun ketika aplikasi anda sudah diexectuble menjadi file Jar, script tersebut tidak berfungsi sama sekali dan muncul pesan error `java.io.FileNotFoundException` yang berarti file jasper Anda tidak ditemukan.
 
-![Screenshot](/journal/solved-ireport-doesnt-work-on-jar-mode/screenshot.png)
+![Screenshot](/journal/solved-ireport-tidak-berfungsi-pada-mode-jar/screenshot.png)
 
 ## Troubleshooting
 
