@@ -2,7 +2,7 @@
 title: Catatan, Masalah Instalasi Laravel
 description: Ini adalah catatan saya ketika menginstal Laravel di Ubuntu 18.04 dan saya mendapat beberapa pesan kesalahan.
 slug: catatan-masalah-instalasi-laravel
-date: May 21, 2020
+date: 21 May 2020
 ---
 
 Ini adalah catatan saya ketika menginstal Laravel di Ubuntu 18.04 dan saya mendapat beberapa pesan error. Sejauh ini sudah ada 4 pesan error yang saya alami dan tidak menutup kemungkinan suatu saat akan muncul error baru atau bahkan error ini terulang.

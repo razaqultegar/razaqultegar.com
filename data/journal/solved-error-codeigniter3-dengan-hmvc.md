@@ -2,7 +2,7 @@
 title: Solved, Error CodeIgniter 3 dengan HMVC
 description: CodeIgniter adalah kerangka kerja PHP yang kuat dengan footprint yang sangat kecil, dibangun untuk pengembang yang membutuhkan toolkit sederhana dan elegan untuk membuat aplikasi web berfitur lengkap.
 slug: solved-error-codeigniter3-dengan-hmvc
-date: November 09, 2020
+date: 09 November 2020
 ---
 
 [CodeIgniter](https://codeigniter.com) adalah kerangka kerja PHP yang kuat dengan footprint yang sangat kecil, dibangun untuk pengembang yang membutuhkan toolkit sederhana dan elegan untuk membuat aplikasi web berfitur lengkap.
