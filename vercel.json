@@ -5,6 +5,10 @@
     {
       "source": "/uses",
       "destination": "/journal/setup-edisi-2020"
+    },
+    {
+      "source": "/contact",
+      "destination": "/about"
     }
   ]
 }
