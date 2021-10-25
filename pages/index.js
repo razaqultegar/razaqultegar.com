@@ -8,9 +8,9 @@ const About = () => {
         <h1>Razaqul Tegar</h1>
 
         <p>
-          Cofounder &amp; coo di{' '}
-          <Link underline href="https://limbodigital.id" external>
-            Limbo Digital, DLD;
+          Kepala pengembangan di{' '}
+          <Link underline href="https://dotsgroup.id" external>
+            Dots Group;
           </Link>{' '}
           pernah magang di{' '}
           <Link underline href="https://turing.com" external>
@@ -39,10 +39,6 @@ const About = () => {
           <br />
           <Link underline href="/about">
             Tentang
-          </Link>{' '}
-          /{' '}
-          <Link underline href="/contact">
-            Kontak
           </Link>{' '}
           /{' '}
           <Link underline href="/feed.xml">
