@@ -8,13 +8,9 @@ const About = () => {
         <h1>Razaqul Tegar</h1>
 
         <p>
-          Kepala pengembangan di{' '}
+          Kepala pengembangan di tim pengembang{' '}
           <Link underline href="https://dotsgroup.id" external>
-            Dots Group;
-          </Link>{' '}
-          pernah magang di{' '}
-          <Link underline href="https://turing.com" external>
-            Turing US
+            DOTS
           </Link>
           , perokok aktif, kutu buku musiman, kerap berkegiatan di alam terbuka
           dan sesekali menangkap gerak dengan kamera ponsel.
