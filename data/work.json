@@ -1,10 +1,10 @@
 {
   "data": [
     {
-      "title": "SIPERTIN",
-      "description": "Sistem Manajamen Perpustakaan",
-      "url": "#!",
-      "image": "/work/sipertin.png"
+      "title": "Panda SID",
+      "description": "Sistem Informasi Desa Terintegrasi",
+      "url": "https://panda.id",
+      "image": "/work/panda-sid.png"
     },
     {
       "title": "Pertamina EP",
@@ -13,10 +13,10 @@
       "image": "/work/pertamina-ep.png"
     },
     {
-      "title": "Notebook",
-      "description": "Catatan Berbagi dalam bentuk MarkDown",
-      "url": "https://github.com/razaqultegar/notebook",
-      "key": "open source"
+      "title": "SIPERTIN",
+      "description": "Sistem Manajamen Perpustakaan",
+      "url": "#!",
+      "image": "/work/sipertin.png"
     },
     {
       "title": "Angular Electron",
