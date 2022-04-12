@@ -34,7 +34,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gray-matter": "^4.0.3",
-    "marked": "^2.0.6",
+    "marked": "^4.0.10",
     "next-unused": "^0.0.6",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-hover-media-feature": "^1.0.1",
