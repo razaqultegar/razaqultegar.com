@@ -2,24 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "allowJs": true,
-    "jsx": "preserve",
-    "target": "esnext",
+    "target": "es5",
     "module": "esnext",
-    "lib": ["dom", "es2019"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "noEmit": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "noImplicitAny": true,
+    "strict": false,
     "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
@@ -27,11 +16,17 @@
     "isolatedModules": true,
     "paths": {
       "@components/*": ["components/*"],
+      "@data/*": ["data/*"],
       "@lib/*": ["lib/*"],
-      "@styles/*": ["styles/*"],
-      "@data/*": ["data/*"]
-    }
+      "@styles/*": ["styles/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "incremental": true
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
+  "exclude": ["node_modules"]
 }
