@@ -1,11 +1,11 @@
-import cn from 'classnames'
-import { useInView } from 'react-intersection-observer'
-import 'intersection-observer'
+import cn from "classnames";
+import { useInView } from "react-intersection-observer";
+import "intersection-observer";
 
-import styles from './entry.module.css'
+import styles from "./entry.module.css";
 
 const Entry = ({ title, description, image, href, position }) => {
-  const [ref, inView] = useInView({ triggerOnce: true })
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
     <a
@@ -20,19 +20,19 @@ const Entry = ({ title, description, image, href, position }) => {
         style={{
           backgroundImage: image
             ? !inView
-              ? 'none'
+              ? "none"
               : `url('${image}')`
-            : 'none',
-          backgroundPosition: position ? position : 'center',
+            : "none",
+          backgroundPosition: position ? position : "center",
         }}
       >
         <div>
-          <p className={cn(styles.title, 'clamp')}>{title}</p>
-          <p className={cn(styles.description, 'clamp')}>{description}</p>
+          <p className={cn(styles.title, "clamp")}>{title}</p>
+          <p className={cn(styles.description, "clamp")}>{description}</p>
         </div>
       </section>
     </a>
-  )
-}
+  );
+};
 
-export default Entry
+export default Entry;

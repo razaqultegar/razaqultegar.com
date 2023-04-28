@@ -1,12 +1,12 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Page from '@components/page'
-import Link from '@components/link'
-import styles from './error.module.css'
+import Page from "@components/page";
+import Link from "@components/link";
+import styles from "./error.module.css";
 
 const Error = ({ status }) => {
   return (
-    <Page title={status || 'Error'}>
+    <Page title={status || "Error"}>
       <Head>
         <title>404 — Razaqul Tegar</title>
       </Head>
@@ -23,7 +23,7 @@ const Error = ({ status }) => {
               </p>
 
               <footer>
-                — Aaron Swartz,{' '}
+                — Aaron Swartz,{" "}
                 <Link external href="http://www.aaronsw.com/weblog/visitingmit">
                   <cite>I Love the University</cite>
                 </Link>
@@ -33,12 +33,12 @@ const Error = ({ status }) => {
         </>
       ) : (
         <section className={styles.section}>
-          <span>{status || '?'}</span>
+          <span>{status || "?"}</span>
           <p>An error occurred.</p>
         </section>
       )}
     </Page>
-  )
-}
+  );
+};
 
-export default Error
+export default Error;

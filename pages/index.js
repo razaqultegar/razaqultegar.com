@@ -1,5 +1,5 @@
-import Page from '@components/page'
-import Link from '@components/link'
+import Page from "@components/page";
+import Link from "@components/link";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         <h1>Razaqul Tegar</h1>
 
         <p>
-          Kepala pengembangan di tim pengembang{' '}
+          Mantan kepala pengembangan di tim pengembang{" "}
           <Link underline href="https://dotsgroup.id" external>
             DOTS
           </Link>
@@ -19,31 +19,31 @@ const About = () => {
         <p>
           <Link underline href="/journal">
             Jurnal
-          </Link>{' '}
-          /{' '}
+          </Link>{" "}
+          /{" "}
           <Link underline href="/quotes">
             Kutipan
-          </Link>{' '}
-          /{' '}
+          </Link>{" "}
+          /{" "}
           <Link underline href="/playlist">
             Musik
-          </Link>{' '}
-          /{' '}
+          </Link>{" "}
+          /{" "}
           <Link underline href="/work">
             Kerjaan
-          </Link>{' '}
+          </Link>{" "}
           <br />
           <Link underline href="/about">
             Tentang
-          </Link>{' '}
-          /{' '}
-          <Link underline href="/feed.xml">
-            RSS
+          </Link>{" "}
+          /{" "}
+          <Link underline href="https://github.com/razaqultegar" external>
+            GitHub
           </Link>
         </p>
       </article>
     </Page>
-  )
-}
+  );
+};
 
-export default About
+export default About;

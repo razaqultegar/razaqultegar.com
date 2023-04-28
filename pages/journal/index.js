@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-import Page from '@components/page'
-import PostsList from '@components/posts-list'
-import getPosts from '@lib/get-posts'
+import Page from "@components/page";
+import PostsList from "@components/posts-list";
+import getPosts from "@lib/get-posts";
 
 const Journal = ({ posts }) => {
   return (
@@ -13,17 +13,17 @@ const Journal = ({ posts }) => {
         </ul>
       </article>
     </Page>
-  )
-}
+  );
+};
 
 export const getStaticProps = () => {
-  const posts = getPosts()
+  const posts = getPosts();
 
   return {
     props: {
       posts,
     },
-  }
-}
+  };
+};
 
-export default Journal
+export default Journal;

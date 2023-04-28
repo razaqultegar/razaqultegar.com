@@ -1,8 +1,8 @@
-import { memo } from 'react'
-import cn from 'classnames'
+import { memo } from "react";
+import cn from "classnames";
 
-import Link from '@components/link'
-import styles from './text.module.css'
+import Link from "@components/link";
+import styles from "./text.module.css";
 
 const TextEntry = ({ title, description, type, comment, href, as }) => {
   return (
@@ -16,14 +16,14 @@ const TextEntry = ({ title, description, type, comment, href, as }) => {
       >
         <div className={styles.type}>{type}</div>
         <div>
-          <p className={cn(styles.title, 'clamp')}>{title}</p>
+          <p className={cn(styles.title, "clamp")}>{title}</p>
           {description && (
-            <p className={cn(styles.description, 'clamp')}>{description}</p>
+            <p className={cn(styles.description, "clamp")}>{description}</p>
           )}
         </div>
       </Link>
     </li>
-  )
-}
+  );
+};
 
-export default memo(TextEntry)
+export default memo(TextEntry);

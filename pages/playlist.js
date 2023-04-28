@@ -1,8 +1,8 @@
-import Page from '@components/page'
-import Entry from '@components/entry'
+import Page from "@components/page";
+import Entry from "@components/entry";
 
 // Data
-import { data as items } from '@data/playlist.json'
+import { data as items } from "@data/playlist.json";
 
 const Playlist = () => {
   return (
@@ -17,11 +17,11 @@ const Playlist = () => {
               href={entry.url}
               description={entry.description}
             />
-          )
+          );
         })}
       </article>
     </Page>
-  )
-}
+  );
+};
 
-export default Playlist
+export default Playlist;

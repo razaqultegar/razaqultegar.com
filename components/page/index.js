@@ -1,6 +1,6 @@
-import Head from '@components/head'
-import Header from '@components/header'
-import styles from './page.module.css'
+import Head from "@components/head";
+import Header from "@components/header";
+import styles from "./page.module.css";
 
 const Page = ({
   header = true,
@@ -14,7 +14,7 @@ const Page = ({
   return (
     <div className={styles.wrapper}>
       <Head
-        title={`${title ? `${title} - ` : ''}Razaqul Tegar`}
+        title={`${title ? `${title} - ` : ""}Razaqul Tegar`}
         description={description}
         image={image}
       />
@@ -22,7 +22,7 @@ const Page = ({
       {header && <Header title={showHeaderTitle && title} />}
       <main className={styles.main}>{children}</main>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

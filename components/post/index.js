@@ -1,16 +1,16 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Navigation from './navigation'
-import Page from '@components/page'
-import styles from './post.module.css'
+import Navigation from "./navigation";
+import Page from "@components/page";
+import styles from "./post.module.css";
 
 function escapeHtml(unsafe) {
   return unsafe
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;')
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 const Post = ({
@@ -24,11 +24,11 @@ const Post = ({
   previous,
   next,
 }) => {
-  const dateTo = new Date(date).toLocaleDateString('id-ID', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  })
+  const dateTo = new Date(date).toLocaleDateString("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
 
   return (
     <Page
@@ -53,7 +53,7 @@ const Post = ({
 
       <Navigation previous={previous} next={next} />
     </Page>
-  )
-}
+  );
+};
 
-export default Post
+export default Post;

@@ -1,9 +1,9 @@
-import NextHead from 'next/head'
+import NextHead from "next/head";
 
 const Head = ({
-  title = 'Razaqul Tegar',
+  title = "Razaqul Tegar",
   description = "Hi, I'm Razaqul Tegar. Cofounder and COO on Limbo Digital.",
-  image = 'og.png',
+  image = "og.png",
   children,
 }) => {
   return (
@@ -39,14 +39,6 @@ const Head = ({
       <meta name="twitter:site" content="@razaqultegar" />
       <meta name="apple-mobile-web-app-title" content="Razaqul Tegar" />
       <meta name="author" content="Razaqul Tegar" />
-
-      {/* RSS feed */}
-      <link
-        rel="alternate"
-        type="application/rss+xml"
-        title="RSS Feed for razaqultegar.com"
-        href="/feed.xml"
-      />
 
       {/* Favicons */}
       <link
@@ -90,7 +82,7 @@ const Head = ({
       />
       {children}
     </NextHead>
-  )
-}
+  );
+};
 
-export default Head
+export default Head;
