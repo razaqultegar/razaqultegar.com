@@ -1,7 +1,0 @@
-export { default as Book } from './book'
-export { default as Music } from './music'
-export { default as Reading } from './reading'
-export { default as Quote } from './quote'
-export { default as RSS } from './rss'
-export { default as Words } from './words'
-export { default as Logo } from './logo'
