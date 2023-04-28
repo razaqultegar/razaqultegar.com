@@ -1,7 +1,7 @@
 ---
-title: Solved, iReport tidak berfungsi pada mode JAR
+title: iReport tidak berfungsi pada mode JAR
 description: Masalah inti Kode di atas adalah kode standar untuk memanggil iReport di Java Netbeans, ada banyak situs tutorial yang menyarankan kode itu.
-slug: solved-ireport-tidak-berfungsi-pada-mode-jar
+slug: ireport-tidak-berfungsi-pada-mode-jar
 date: 13 August 2019
 ---
 

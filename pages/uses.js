@@ -2,11 +2,11 @@ import Page from "@components/page";
 import getMarkdown from "@lib/get-markdown";
 import Link from "@components/link";
 
-const Quotes = ({ html }) => {
+const Uses = ({ html }) => {
   return (
     <Page
-      title="Kutipan"
-      description="Kumpulan kutipan-kutipan penting yang ditemui dalam membaca."
+      title="Perlengkapan"
+      description="Perlengkapan saya dari tahun ke tahun"
     >
       <article dangerouslySetInnerHTML={{ __html: html }} />
     </Page>
@@ -14,7 +14,7 @@ const Quotes = ({ html }) => {
 };
 
 export const getStaticProps = async () => {
-  const md = await getMarkdown("data/quotes.md");
+  const md = await getMarkdown("data/uses.md");
 
   return {
     props: {
@@ -23,4 +23,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default Quotes;
+export default Uses;

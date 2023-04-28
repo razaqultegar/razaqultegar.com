@@ -2,4 +2,4 @@ Saya tinggal di Purwokerto, Jawa Tengah dan saya sangat terbosesi dengan Teknolo
 
 > Ikuti saya di [Twitter](https://twitter.com/razaqultegar) untuk mengetahui apa yang sedang saya kerjakan. Ingin tahu kode editor, aplikasi, dan perangkat keras mana yang saya gunakan? [Ini dia](/uses).
 
-Saat ini saya diberi kepercayaan oleh teman-teman (satu sekolah dulu) untuk menjadi kepala pengembangan di tim pengembang yang bernama [DOTS](https://dotsgroup.id). Tim ini tidak akan pernah ada tanpa teknologi, karena hampir setiap hari kami menggunakan banyak sekali teknologi, bahasa pemograman, atau sejenisnya. Oleh sebab itu kami mencoba untuk memberikannya kembali sebanyak mungkin untuk bisa digunakan dan dimanfaatkan oleh masyarakat umum.
+Saat ini saya siap untuk menerima pekerjaan, baik untuk kontrak jangka panjang, jangka pendek, atau bahkan pekerja lepas setelah sebelumnya saya diberi kepercayaan oleh teman-teman (satu sekolah dulu) untuk menjadi kepala pengembangan di tim pengembang yang bernama [DOTS](https://dotsgroup.id).

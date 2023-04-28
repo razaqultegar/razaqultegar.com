@@ -16,7 +16,6 @@ Berikut adalah daftar beberapa pesan error yang saya temui, dari konfigurasi com
 1. zsh: laravel command not found
 1. php artisan serve warning require (../vendor/autoload.php): failed to open stream: no such file or directory in ../artisan
 1. error: Your requirements could not be resolved to an installable set of packages
-1. laravel 500 internal server error
 
 ## Pemecahan Masalah
 
@@ -57,10 +56,3 @@ Lalu ʻerror: Your requirements could not be resolved to an installable set of p
 ```bash
 sudo apt install php-zip php-xml php-mbstring
 ```
-
-Akhirnya, ada pemecahan masalah untuk pesan error `laravel 500 internal server error`, yakni:
-
-- Masuk ke direktori root proyek
-- Ubah file `.env-example` menjadi `.env`
-- Jalankan perintah `php artisan key: generate`
-- Setelah itu bersihkan cache dengan perintah `php artisan cache: clear && php artisan config: clear`

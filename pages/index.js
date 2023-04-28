@@ -33,12 +33,12 @@ const About = () => {
             Kerjaan
           </Link>{" "}
           <br />
-          <Link underline href="/about">
-            Tentang
+          <Link underline href="/uses">
+            Perlengkapan
           </Link>{" "}
           /{" "}
-          <Link underline href="https://github.com/razaqultegar" external>
-            GitHub
+          <Link underline href="/about">
+            Tentang
           </Link>
         </p>
       </article>
