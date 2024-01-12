@@ -3,14 +3,14 @@ import Link from "@components/link";
 
 const About = () => {
   return (
-    <Page description="Hi, I'm Razaqul Tegar. Cofounder and coo of Limbo Digital, for this moment. I also a former intern at Turing US.">
+    <Page description="Hi, saya Razaqul Tegar. Cofounder dari DOTS., untuk saat ini.">
       <article>
         <h1>Razaqul Tegar</h1>
 
         <p>
-          Mantan kepala pengembangan di tim pengembang{" "}
+          Kepala tim di agensi digital kreatif{" "}
           <Link underline href="https://dotsgroup.id" external>
-            DOTS
+            DOTS.
           </Link>
           , perokok aktif, kutu buku musiman, kerap berkegiatan di alam terbuka
           dan sesekali menangkap gerak dengan kamera ponsel.
