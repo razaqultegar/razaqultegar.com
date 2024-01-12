@@ -9,7 +9,7 @@ const About = () => {
 
         <p>
           Kepala tim di agensi digital kreatif{" "}
-          <Link underline href="https://dotsgroup.id" external>
+          <Link underline href="https://thedotscreative.com" external>
             DOTS.
           </Link>
           , perokok aktif, kutu buku musiman, kerap berkegiatan di alam terbuka
