@@ -64,11 +64,11 @@ export default async function JournalEntryPage({
       : null;
 
   return (
-    <main className="mx-auto max-w-145 px-6 pt-14 pb-20">
+    <main className="mx-auto w-full max-w-145 px-5 py-6 sm:px-0 sm:py-15">
       <InlineLink href="/jurnal">← Semua tulisan</InlineLink>
 
-      <h1 className="mt-6 text-xl font-bold tracking-tight">{entry.title}</h1>
-      <p className="text-ink/60 mt-1 text-sm">
+      <h1 className="mt-6 mb-1 text-2xl font-normal">{entry.title}</h1>
+      <p className="text-ink/60 text-sm">
         {new Date(entry.date).toLocaleDateString("id-ID", {
           day: "numeric",
           month: "long",
@@ -77,24 +77,34 @@ export default async function JournalEntryPage({
       </p>
 
       <div
-        className="journal-content mt-8 text-[15px]"
+        className="journal-content mt-8"
         dangerouslySetInnerHTML={{ __html: entry.contentHtml }}
       />
 
       {(olderEntry || newerEntry) && (
-        <nav className="border-ink/10 mt-12 flex items-center justify-between border-t pt-6 text-sm">
+        <nav className="border-ink/10 mt-12 grid grid-cols-2 gap-4 border-t pt-6">
           <div>
             {olderEntry ? (
-              <InlineLink href={`/jurnal/${olderEntry.slug}`}>
-                ← {olderEntry.title}
-              </InlineLink>
+              <>
+                <p className="text-ink/50 text-xs tracking-wide uppercase">
+                  Jurnal sebelumnya
+                </p>
+                <InlineLink href={`/jurnal/${olderEntry.slug}`}>
+                  <span className="text-sm">← {olderEntry.title}</span>
+                </InlineLink>
+              </>
             ) : null}
           </div>
           <div className="text-right">
             {newerEntry ? (
-              <InlineLink href={`/jurnal/${newerEntry.slug}`}>
-                {newerEntry.title} →
-              </InlineLink>
+              <>
+                <p className="text-ink/50 text-xs tracking-wide uppercase">
+                  Jurnal selanjutnya
+                </p>
+                <InlineLink href={`/jurnal/${newerEntry.slug}`}>
+                  <span className="text-sm">{newerEntry.title} →</span>
+                </InlineLink>
+              </>
             ) : null}
           </div>
         </nav>

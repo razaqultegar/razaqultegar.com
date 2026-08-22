@@ -15,31 +15,35 @@ export default function JournalPage() {
   const entries = getAllJournalEntries();
 
   return (
-    <main className="mx-auto max-w-145 px-6 pt-14 pb-20">
-      <h1 className="text-xl font-bold tracking-tight">Jurnal</h1>
-      <p className="text-ink/80 mt-4 text-[15px] leading-relaxed">
+    <main className="mx-auto w-full max-w-145 px-5 py-6 sm:px-0 sm:py-15">
+      <InlineLink href="/">← Kembali</InlineLink>
+
+      <h1 className="mt-6 mb-1 text-2xl font-normal">Jurnal</h1>
+      <p className="text-lg leading-6.5">
         Kumpulan tulisan singkat — kadang soal proyek yang lagi dikerjain,
         kadang cuma pikiran random yang kepengen dicatet. Nggak ada jadwal
         rutin, nulis kalau lagi pengen aja.
       </p>
 
       {entries.length === 0 ? (
-        <p className="text-ink/60 mt-10">Belum ada tulisan.</p>
+        <p className="text-ink/60 mt-8">Belum ada tulisan.</p>
       ) : (
-        <ul className="mt-10 space-y-6">
+        <ul className="mt-8 space-y-4">
           {entries.map((entry) => (
-            <li key={entry.slug} className="border-ink/10 border-b pb-6">
+            <li
+              key={entry.slug}
+              className="border-ink/10 flex items-baseline justify-between gap-4 border-b pb-4"
+            >
               <InlineLink href={`/jurnal/${entry.slug}`}>
-                <span className="text-base font-semibold">{entry.title}</span>
+                <span className="text-lg">{entry.title}</span>
               </InlineLink>
-              <p className="text-ink/60 mt-1 text-sm">
+              <span className="text-ink/60 shrink-0 text-sm">
                 {new Date(entry.date).toLocaleDateString("id-ID", {
                   day: "numeric",
                   month: "long",
                   year: "numeric",
                 })}
-              </p>
-              <p className="text-ink/80 mt-2 text-[15px]">{entry.excerpt}</p>
+              </span>
             </li>
           ))}
         </ul>
