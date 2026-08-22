@@ -64,9 +64,9 @@ body {
 
 .journal-content blockquote {
   border-left: 3px solid var(--color-rust);
-  padding-left: 1em;
+  padding-left: 1.25em;
   font-style: italic;
-  color: color-mix(in srgb, var(--color-ink) 80%, transparent);
+  color: color-mix(in srgb, var(--color-ink) 85%, transparent);
 }
 
 .journal-content ul,
@@ -101,6 +101,7 @@ body {
 }
 
 .journal-content pre {
+  position: relative;
   background: color-mix(in srgb, var(--color-ink) 92%, transparent);
   color: var(--color-paper);
   font-size: 15px;
@@ -113,6 +114,84 @@ body {
   background: transparent;
   padding: 0;
   color: inherit;
+}
+
+.journal-content pre[data-lang] {
+  padding-top: 2.75em;
+}
+
+.journal-content pre[data-lang]::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.65em 1em;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-paper) 12%, transparent);
+  background: color-mix(in srgb, black 15%, transparent);
+  color: color-mix(in srgb, var(--color-rust) 55%, white);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+.journal-content .hljs-comment,
+.journal-content .hljs-quote {
+  color: color-mix(in srgb, var(--color-paper) 55%, transparent);
+  font-style: italic;
+}
+
+.journal-content .hljs-keyword,
+.journal-content .hljs-selector-tag,
+.journal-content .hljs-literal,
+.journal-content .hljs-type,
+.journal-content .hljs-tag {
+  color: color-mix(in srgb, var(--color-rust) 55%, white);
+}
+
+.journal-content .hljs-string,
+.journal-content .hljs-attr,
+.journal-content .hljs-regexp,
+.journal-content .hljs-number,
+.journal-content .hljs-attribute {
+  color: #d9bb84;
+}
+
+.journal-content .hljs-title,
+.journal-content .hljs-title.function_,
+.journal-content .hljs-title.class_,
+.journal-content .hljs-name {
+  color: var(--color-paper);
+  font-weight: bold;
+}
+
+.journal-content .hljs-built_in,
+.journal-content .hljs-variable,
+.journal-content .hljs-params,
+.journal-content .hljs-symbol {
+  color: color-mix(in srgb, var(--color-paper) 85%, transparent);
+}
+
+.journal-content .hljs-deletion {
+  color: #e2807a;
+  background: color-mix(in srgb, #e2807a 15%, transparent);
+}
+
+.journal-content .hljs-addition {
+  color: #a8c98a;
+  background: color-mix(in srgb, #a8c98a 15%, transparent);
+}
+
+.journal-content .hljs-emphasis {
+  font-style: italic;
+}
+
+.journal-content .hljs-strong {
+  font-weight: bold;
 }
 
 .journal-content hr {

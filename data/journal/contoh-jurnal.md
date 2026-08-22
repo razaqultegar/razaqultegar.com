@@ -48,6 +48,10 @@ function halo(nama: string) {
 }
 ```
 
+```bash
+echo "halo dari bash"
+```
+
 Horizontal rule di bawah ini:
 
 ---
