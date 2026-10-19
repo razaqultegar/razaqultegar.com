@@ -1,6 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import UdahKelar from "@/components/sections/UdahKelar";
-import SentraLink from "@/components/sections/SentraLink";
+import Orderanku from "@/components/sections/Orderanku";
 import Dots from "@/components/sections/Dots";
 import Experience from "@/components/sections/Experience";
 import OpenSource from "@/components/sections/OpenSource";
@@ -9,15 +9,15 @@ import Gallery from "@/components/sections/Gallery";
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-145 px-5 py-6 sm:px-0 sm:py-15">
+    <>
       <Hero />
       <UdahKelar />
-      <SentraLink />
+      <Orderanku />
       <Dots />
       <Experience />
       <OpenSource />
       <Journal />
       <Gallery />
-    </main>
+    </>
   );
 }

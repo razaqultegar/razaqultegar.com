@@ -1,11 +1,11 @@
 import Section from "@/components/sections/Section";
 import InlineLink from "@/components/InlineLink";
 
-export default function SentraLink() {
+export default function Orderanku() {
   return (
-    <Section id="sentralink" title="SentraLink">
+    <Section id="orderanku" title="Orderanku">
       <p>
-        <InlineLink href="https://sentralink.id">SentraLink</InlineLink> itu
+        <InlineLink href="https://orderanku.co.id">Orderanku</InlineLink> itu
         platform all-in-one buat jualan produk digital, dibangun dengan cara
         kami sendiri. Sebagai CTO, saya pegang arah teknis produk dari nol:
         arsitektur sistem, pemilihan tech stack, sampai mastiin platform ini

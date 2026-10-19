@@ -26,27 +26,25 @@ export default function Hero() {
         </a>
 
         <p className="text-lg leading-6.5">
-          Saya kerja sehari-hari sebagai CTO di{" "}
-          <HeaderLink href="#sentralink">SentraLink</HeaderLink>, sekaligus
-          ngembangin <HeaderLink href="#udahkelar">UdahKelar</HeaderLink> —
-          produk kecil yang bantu tim developer nyatetin changelog tanpa ribet.
-          Di luar itu, saya juga ikut ngoprek bareng tim lepas di{" "}
-          <HeaderLink href="#dots">DOTS.</HeaderLink>, dan dulu sempet aktif
-          jadi <HeaderLink href="#pengalaman">Relawan TIK</HeaderLink> di dua
-          program kementerian. Sisa waktu biasanya abis buat{" "}
+          Saya pembuat <HeaderLink href="#udahkelar">UdahKelar</HeaderLink>, CTO
+          di <HeaderLink href="#orderanku">Orderanku</HeaderLink>, Project
+          Manager di <HeaderLink href="#dots">DOTS.</HeaderLink> (seblumnya
+          Limbo), pernah menjadi{" "}
+          <HeaderLink href="#pengalaman">Relawan TIK</HeaderLink> di dua
+          kementerian, dan masih nyempetin waktu buat ngoprek{" "}
           <HeaderLink href="#ngoprek-open-source">
-            ngoprek proyek kecil
-          </HeaderLink>{" "}
-          atau nulis di <HeaderLink href="#jurnal">jurnal</HeaderLink>.
+            proyek open-source
+          </HeaderLink>
+          .
         </p>
       </div>
 
       <p className="clear-both mt-4 text-lg leading-6.5">
-        Selain nulis di <HeaderLink href="#jurnal">jurnal</HeaderLink> soal apa
-        yang lagi dikerjain, saya juga suka{" "}
+        Saya juga suka nulis <HeaderLink href="#jurnal">jurnal</HeaderLink> soal
+        apa yang lagi dikerjain dan juga suka{" "}
         <HeaderLink href="#galeri">iseng jepret momen</HeaderLink> lewat kamera
-        hp. Saya nggak aktif di medsos pribadi, jadi kalau mau ngobrol, langsung
-        aja email ke{" "}
+        hp. Saya nggak aktif di medsos, jadi kalau mau ngobrol langsung aja
+        email ke{" "}
         <InlineLink href="mailto:hello@razaqultegar.com">
           hello@razaqultegar.com
         </InlineLink>
