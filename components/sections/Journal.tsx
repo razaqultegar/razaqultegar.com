@@ -8,7 +8,7 @@ export default function Journal() {
         Saya nulis lebih buat diri sendiri ketimbang buat pembaca. Isinya
         macem-macem: proses debugging yang bikin frustrasi sebelum akhirnya
         solve, refleksi soal kerjaan atau hidup, dan ke depannya mungkin bakal
-        lebih banyak cerita di luar urusan kerja. Nggak ada tema tetap — sekadar
+        lebih banyak cerita di luar urusan kerja. Nggak ada tema tetap, sekadar
         dokumentasi dari apa yang lagi ada di kepala.
       </p>
       <Link

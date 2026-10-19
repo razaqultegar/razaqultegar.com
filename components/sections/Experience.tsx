@@ -24,7 +24,7 @@ export default function Experience() {
       </p>
       <p>
         Dari pengalaman ini saya banyak belajar gimana teknologi bisa dipakai
-        buat nyelesain masalah yang lebih luas dari sekadar produk digital —
+        buat nyelesain masalah yang lebih luas dari sekadar produk digital,
         sampai ke level kebijakan publik dan pemberdayaan daerah.
       </p>
     </Section>

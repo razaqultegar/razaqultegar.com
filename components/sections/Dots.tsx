@@ -6,7 +6,7 @@ export default function Dots() {
     <Section id="dots" title="DOTS.">
       <p>
         Sebelum jadi DOTS., tim ini namanya{" "}
-        <strong className="font-semibold">Limbo</strong> — kumpulan freelancer
+        <strong className="font-semibold">Limbo</strong>, kumpulan freelancer
         yang kerja bareng sejak 2021 sampai 2023. Setelah ngelewatin beberapa
         tantangan internal, kami rebranding jadi{" "}
         <strong className="font-semibold">DOTS.</strong> di 2023 dan jalan
@@ -16,8 +16,8 @@ export default function Dots() {
       <p>
         Peran saya di sini juga berkembang: mulai dari{" "}
         <strong className="font-semibold">Senior Full Stack Developer</strong>,
-        sekarang jadi <strong className="font-semibold">Project Manager</strong>{" "}
-        — dulu sibuk ngoding, sekarang lebih banyak mikirin arah proyek dan
+        sekarang jadi <strong className="font-semibold">Project Manager</strong>
+        . Dulu sibuk ngoding, sekarang lebih banyak mikirin arah proyek dan
         koordinasi tim.
       </p>
       <div>

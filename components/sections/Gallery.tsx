@@ -17,7 +17,7 @@ export default function Gallery() {
     <Section id="galeri" title="Galeri">
       <p>
         Grid foto (bisa dari kerjaan, momen kantor, event, atau apapun).
-        Placeholder dulu — bakal diganti manual nanti.
+        Placeholder dulu, bakal diganti manual nanti.
       </p>
       <div className="columns-2 gap-4 sm:columns-3">
         {galleryItems.map((item, index) =>

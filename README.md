@@ -1,6 +1,6 @@
 # razaqultegar.com
 
-Razaqul Tegar's personal profile site — built with Next.js App Router, Tailwind CSS v4, and TypeScript.
+Razaqul Tegar's personal profile site, built with Next.js App Router, Tailwind CSS v4, and TypeScript.
 
 ## Tech Stack
 

@@ -11,7 +11,7 @@ Ini file demo, isinya cuma buat ngetes semua elemen markdown yang didukung di ha
 
 Paragraf biasa dengan **teks tebal**, _teks miring_, ~~teks dicoret~~, dan `inline code`.
 
-> Ini contoh blockquote — biasanya dipakai buat kutipan atau catatan tambahan.
+> Ini contoh blockquote, biasanya dipakai buat kutipan atau catatan tambahan.
 
 Daftar nggak berurut:
 

@@ -6,7 +6,7 @@ export default function OpenSource() {
     <Section id="ngoprek-open-source" title="Ngoprek &amp; Open Source">
       <p>
         Di luar kerjaan, saya suka bikin tools kecil buat nyelesain masalah
-        sendiri — kayak{" "}
+        sendiri, kayak{" "}
         <ExternalLink href="https://github.com/razaqultegar/dotfiles">
           dotfiles
         </ExternalLink>{" "}
