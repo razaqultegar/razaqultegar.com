@@ -6,14 +6,12 @@ export default function Section({
   children,
 }: {
   id: string;
-  title?: string;
+  title: string;
   children: ReactNode;
 }) {
   return (
     <section id={id} className="scroll-mt-6">
-      {title ? (
-        <h2 className="mt-10 mb-1 text-2xl font-normal">{title}</h2>
-      ) : null}
+      <h2 className="mt-10 mb-1 text-2xl font-normal">{title}</h2>
       <div className="space-y-4 text-lg leading-6.5">{children}</div>
     </section>
   );

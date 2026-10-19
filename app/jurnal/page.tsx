@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import InlineLink from "@/components/InlineLink";
-import { getAllJournalEntries } from "@/lib/journal";
+import { formatJournalDate, getAllJournalEntries } from "@/lib/journal";
 
 export const metadata: Metadata = {
   title: "Jurnal",
   description:
-    "Kumpulan catatan Razaqul Tegar — soal kerjaan, proyek yang lagi dikerjain, atau sekadar pikiran random.",
+    "Kumpulan catatan Razaqul Tegar: soal kerjaan, proyek yang lagi dikerjain, atau sekadar pikiran random.",
   alternates: {
     canonical: "/jurnal",
   },
@@ -15,14 +15,14 @@ export default function JournalPage() {
   const entries = getAllJournalEntries();
 
   return (
-    <main className="mx-auto w-full max-w-145 px-5 py-6 sm:px-0 sm:py-15">
+    <>
       <InlineLink href="/">← Kembali</InlineLink>
 
       <h1 className="mt-6 mb-1 text-2xl font-normal">Jurnal</h1>
       <p className="text-lg leading-6.5">
-        Kumpulan tulisan singkat — kadang soal proyek yang lagi dikerjain,
-        kadang cuma pikiran random yang kepengen dicatet. Nggak ada jadwal
-        rutin, nulis kalau lagi pengen aja.
+        Kumpulan tulisan singkat. Kadang soal proyek yang lagi dikerjain, kadang
+        cuma pikiran random yang kepengen dicatet. Nggak ada jadwal rutin, nulis
+        kalau lagi pengen aja.
       </p>
 
       {entries.length === 0 ? (
@@ -38,16 +38,12 @@ export default function JournalPage() {
                 <span className="text-lg">{entry.title}</span>
               </InlineLink>
               <span className="text-ink/60 shrink-0 text-sm">
-                {new Date(entry.date).toLocaleDateString("id-ID", {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                })}
+                {formatJournalDate(entry.date)}
               </span>
             </li>
           ))}
         </ul>
       )}
-    </main>
+    </>
   );
 }

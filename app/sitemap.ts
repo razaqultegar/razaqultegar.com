@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllJournalEntries } from "@/lib/journal";
-
-const siteUrl = "https://razaqultegar.com";
+import { siteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const journalEntries = getAllJournalEntries();

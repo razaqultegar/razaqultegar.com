@@ -38,11 +38,17 @@ function makeExcerpt(markdown: string, maxLength = 155): string {
   return `${truncated.slice(0, lastSpace > 0 ? lastSpace : maxLength).trim()}…`;
 }
 
-function readEntryFile(slug: string): {
-  title: string;
-  date: string;
-  content: string;
-} {
+export function formatJournalDate(date: string): string {
+  return new Date(date).toLocaleDateString("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function readEntryFile(
+  slug: string,
+): Pick<JournalEntry, "title" | "date"> & { content: string } {
   const fullPath = path.join(journalDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
@@ -126,8 +132,10 @@ function rehypeCodeLanguageBadge() {
     visit(tree, "element", (node) => {
       if (!isElement(node, "pre")) return;
 
-      const code = node.children.find((child) => isElement(child, "code"));
-      if (!code || !isElement(code, "code")) return;
+      const code = node.children.find((child): child is Element =>
+        isElement(child, "code"),
+      );
+      if (!code) return;
 
       const className = code.properties?.className;
       const classNames = Array.isArray(className) ? className : [];

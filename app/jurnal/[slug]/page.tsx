@@ -2,23 +2,26 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import InlineLink from "@/components/InlineLink";
 import {
+  formatJournalDate,
   getAllJournalEntries,
   getAllJournalSlugs,
   getJournalEntry,
+  type JournalListEntry,
 } from "@/lib/journal";
+
+type Props = { params: Promise<{ slug: string }> };
+
+function entryExists(slug: string): boolean {
+  return getAllJournalSlugs().includes(slug);
+}
 
 export function generateStaticParams() {
   return getAllJournalSlugs().map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const slugs = getAllJournalSlugs();
-  if (!slugs.includes(slug)) return {};
+  if (!entryExists(slug)) return {};
 
   const entry = getJournalEntry(slug);
 
@@ -42,39 +45,47 @@ export async function generateMetadata({
   };
 }
 
-export default async function JournalEntryPage({
-  params,
+function AdjacentEntryLink({
+  entry,
+  label,
+  direction,
 }: {
-  params: Promise<{ slug: string }>;
+  entry: JournalListEntry | null;
+  label: string;
+  direction: "older" | "newer";
 }) {
-  const { slug } = await params;
-  const slugs = getAllJournalSlugs();
+  return (
+    <div className={direction === "newer" ? "text-right" : undefined}>
+      {entry ? (
+        <>
+          <p className="text-ink/50 text-xs tracking-wide uppercase">{label}</p>
+          <InlineLink href={`/jurnal/${entry.slug}`}>
+            <span className="text-sm">
+              {direction === "older" ? `← ${entry.title}` : `${entry.title} →`}
+            </span>
+          </InlineLink>
+        </>
+      ) : null}
+    </div>
+  );
+}
 
-  if (!slugs.includes(slug)) {
-    notFound();
-  }
+export default async function JournalEntryPage({ params }: Props) {
+  const { slug } = await params;
+  if (!entryExists(slug)) notFound();
 
   const entry = getJournalEntry(slug);
   const allEntries = getAllJournalEntries();
   const currentIndex = allEntries.findIndex((e) => e.slug === slug);
-  const newerEntry = currentIndex > 0 ? allEntries[currentIndex - 1] : null;
-  const olderEntry =
-    currentIndex >= 0 && currentIndex < allEntries.length - 1
-      ? allEntries[currentIndex + 1]
-      : null;
+  const newerEntry = allEntries[currentIndex - 1] ?? null;
+  const olderEntry = allEntries[currentIndex + 1] ?? null;
 
   return (
-    <main className="mx-auto w-full max-w-145 px-5 py-6 sm:px-0 sm:py-15">
+    <>
       <InlineLink href="/jurnal">← Semua tulisan</InlineLink>
 
       <h1 className="mt-6 mb-1 text-2xl font-normal">{entry.title}</h1>
-      <p className="text-ink/60 text-sm">
-        {new Date(entry.date).toLocaleDateString("id-ID", {
-          day: "numeric",
-          month: "long",
-          year: "numeric",
-        })}
-      </p>
+      <p className="text-ink/60 text-sm">{formatJournalDate(entry.date)}</p>
 
       <div
         className="journal-content mt-8"
@@ -83,32 +94,18 @@ export default async function JournalEntryPage({
 
       {(olderEntry || newerEntry) && (
         <nav className="border-ink/10 mt-12 grid grid-cols-2 gap-4 border-t pt-6">
-          <div>
-            {olderEntry ? (
-              <>
-                <p className="text-ink/50 text-xs tracking-wide uppercase">
-                  Jurnal sebelumnya
-                </p>
-                <InlineLink href={`/jurnal/${olderEntry.slug}`}>
-                  <span className="text-sm">← {olderEntry.title}</span>
-                </InlineLink>
-              </>
-            ) : null}
-          </div>
-          <div className="text-right">
-            {newerEntry ? (
-              <>
-                <p className="text-ink/50 text-xs tracking-wide uppercase">
-                  Jurnal selanjutnya
-                </p>
-                <InlineLink href={`/jurnal/${newerEntry.slug}`}>
-                  <span className="text-sm">{newerEntry.title} →</span>
-                </InlineLink>
-              </>
-            ) : null}
-          </div>
+          <AdjacentEntryLink
+            entry={olderEntry}
+            label="Jurnal sebelumnya"
+            direction="older"
+          />
+          <AdjacentEntryLink
+            entry={newerEntry}
+            label="Jurnal selanjutnya"
+            direction="newer"
+          />
         </nav>
       )}
-    </main>
+    </>
   );
 }
