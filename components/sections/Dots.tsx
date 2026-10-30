@@ -8,24 +8,21 @@ export default function Dots() {
   return (
     <Section id="dots" title="DOTS.">
       <p>
-        Sebelum jadi DOTS., tim ini namanya{" "}
-        <strong className="font-semibold">Limbo</strong>, kumpulan freelancer
-        yang kerja bareng sejak 2021 sampai 2023. Setelah ngelewatin beberapa
-        tantangan internal, kami rebranding jadi{" "}
-        <strong className="font-semibold">DOTS.</strong> di 2023 dan jalan
-        sampai sekarang. Belum berbadan hukum resmi, jadi lebih pas disebut tim
+        Sebelum jadi DOTS., tim ini namanya Limbo, kumpulan freelancer yang
+        kerja bareng sejak 2021 sampai 2023. Setelah ngelewatin beberapa
+        tantangan internal, kami rebranding jadi DOTS. di 2023 dan bertahan
+        sampai hari ini. Belum berbadan hukum resmi, jadi lebih pas disebut tim
         lepas yang solid ketimbang agensi formal.
       </p>
       <p>
-        Peran saya di sini juga berkembang: mulai dari{" "}
-        <strong className="font-semibold">Senior Full Stack Developer</strong>,
-        sekarang jadi <strong className="font-semibold">Project Manager</strong>
-        . Dulu sibuk ngoding, sekarang lebih banyak mikirin arah proyek dan
-        koordinasi tim.
+        Di tim ini saya mulai sebagai Senior Full Stack Developer, lalu
+        pelan-pelan pindah ke kursi Project Manager. Porsi ngoding makin
+        sedikit, diganti ngatur arah proyek dan jaga koordinasi tim biar
+        semuanya tetap jalan.
       </p>
       <div>
         <p className="text-ink/70 mb-3 text-sm">
-          Beberapa klien yang pernah dikerjain:
+          Beberapa klien yang pernah kami tangani:
         </p>
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {clients.map((client) => (
@@ -43,16 +40,12 @@ export default function Dots() {
               />
             </li>
           ))}
-          <li className="group flex h-20 items-center justify-center gap-2 px-2">
-            <span className="text-rust text-5xl leading-none italic transition group-hover:-rotate-12">
-              &amp;
-            </span>
-            <span className="text-ink/60 group-hover:text-ink text-xs leading-tight tracking-widest uppercase transition">
-              masih
-              <br />
-              banyak
-              <br />
-              lagi
+          <li
+            title="dan masih banyak lagi"
+            className="flex h-20 items-center justify-center px-2"
+          >
+            <span className="text-ink hover:text-rust text-[44px] leading-none font-bold tracking-tighter italic opacity-70 transition hover:opacity-100">
+              dll.
             </span>
           </li>
         </ul>

@@ -5,11 +5,12 @@ export default function UdahKelar() {
   return (
     <Section id="udahkelar" title="UdahKelar">
       <p>
-        <InlineLink href="https://udahkelar.id">UdahKelar</InlineLink> itu tools
-        changelog & release notes buat developer dan startup Indonesia. Dibangun
-        dari nol khusus buat pasar lokal: bahasa santai, harga dalam Rupiah, dan
-        notifikasi realtime begitu update kelar dipublish, bukan email digest
-        yang telat kayak kebanyakan tools sejenis di luar sana.
+        Buat developer dan startup Indonesia yang butuh changelog & release
+        notes tanpa ribet, saya bikin{" "}
+        <InlineLink href="https://udahkelar.id">UdahKelar</InlineLink>. Fokusnya
+        pasar lokal, mulai dari bahasa yang santai, harga dalam Rupiah, sampai
+        notifikasi realtime begitu update dipublish, bukan email digest yang
+        telat seperti kebanyakan tools sejenis dari luar.
       </p>
     </Section>
   );

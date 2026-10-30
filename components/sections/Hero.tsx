@@ -28,7 +28,7 @@ export default function Hero() {
         <p className="text-lg leading-6.5">
           Saya pembuat <HeaderLink href="#udahkelar">UdahKelar</HeaderLink>, CTO
           di <HeaderLink href="#orderanku">Orderanku</HeaderLink>, Project
-          Manager di <HeaderLink href="#dots">DOTS.</HeaderLink> (seblumnya
+          Manager di <HeaderLink href="#dots">DOTS.</HeaderLink> (sebelumnya
           Limbo), pernah menjadi{" "}
           <HeaderLink href="#pengalaman">Relawan TIK</HeaderLink> di dua
           kementerian, dan masih nyempetin waktu buat ngoprek{" "}
@@ -40,11 +40,10 @@ export default function Hero() {
       </div>
 
       <p className="clear-both mt-4 text-lg leading-6.5">
-        Saya juga suka nulis <HeaderLink href="#jurnal">jurnal</HeaderLink> soal
-        apa yang lagi dikerjain dan juga suka{" "}
-        <HeaderLink href="#galeri">iseng jepret momen</HeaderLink> lewat kamera
-        hp. Saya nggak aktif di medsos, jadi kalau mau ngobrol langsung aja
-        email ke{" "}
+        Kadang saya nulis <HeaderLink href="#jurnal">jurnal</HeaderLink> soal
+        proyek yang lagi digarap dan{" "}
+        <HeaderLink href="#galeri">iseng jepret momen</HeaderLink> pakai kamera
+        hp. Nggak main medsos, jadi kalau mau ngobrol, email aja ke{" "}
         <InlineLink href="mailto:hello@razaqultegar.com">
           hello@razaqultegar.com
         </InlineLink>

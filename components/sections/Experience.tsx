@@ -5,27 +5,25 @@ export default function Experience() {
   return (
     <Section id="pengalaman" title="Pengalaman">
       <p>
-        Di luar kerjaan utama, saya juga pernah jadi{" "}
-        <strong className="font-semibold">Relawan TIK</strong> di dua
-        kementerian. Bareng{" "}
+        Selain urusan produk dan tim, saya pernah jadi Relawan TIK di dua
+        kementerian. Program Satu Juta Domain saya ikuti bareng{" "}
         <InlineLink href="https://komdigi.go.id">
           Kementerian Komunikasi dan Digital Republik Indonesia
         </InlineLink>{" "}
-        (dulu Kominfo, sekarang Komdigi), saya ikut program Satu Juta Domain.
-        Bareng{" "}
+        (dulu Kominfo, kini Komdigi). Sementara di{" "}
         <InlineLink href="https://kemendesa.go.id">
           Kementerian Desa dan Pembangunan Daerah Tertinggal Republik Indonesia
         </InlineLink>{" "}
-        (Kemendes PDT), saya ikut program Desa Melek IT lewat{" "}
+        (Kemendes PDT), saya terlibat di program Desa Melek IT lewat{" "}
         <InlineLink href="https://gedhe.or.id">
           Yayasan Gedhe Nusantara (Gedhe Foundation)
         </InlineLink>
         .
       </p>
       <p>
-        Dari pengalaman ini saya banyak belajar gimana teknologi bisa dipakai
-        buat nyelesain masalah yang lebih luas dari sekadar produk digital,
-        sampai ke level kebijakan publik dan pemberdayaan daerah.
+        Turun langsung ke program-program itu bikin saya lihat sisi lain
+        teknologi. Ternyata bukan sekadar bikin aplikasi, tapi juga bisa bantu
+        masyarakat desa melek digital dan ikut nyentuh ranah kebijakan publik.
       </p>
     </Section>
   );
