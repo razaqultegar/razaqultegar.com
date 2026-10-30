@@ -1,12 +1,13 @@
 import Section from "@/components/sections/Section";
 import ExternalLink from "@/components/ExternalLink";
+import GitHubContributions from "@/components/GitHubContributions";
+import { githubUsername } from "@/lib/github";
 
 export default function OpenSource() {
   return (
     <Section id="ngoprek-open-source" title="Ngoprek &amp; Open Source">
       <p>
-        Di luar kerjaan, saya suka bikin tools kecil buat nyelesain masalah
-        sendiri, kayak{" "}
+        Bikin tools kecil buat masalah sendiri udah jadi hobi. Contohnya{" "}
         <ExternalLink href="https://github.com/razaqultegar/dotfiles">
           dotfiles
         </ExternalLink>{" "}
@@ -15,7 +16,7 @@ export default function OpenSource() {
           download-organizer
         </ExternalLink>{" "}
         yang otomatis merapikan folder Downloads yang berantakan. Ada juga
-        proyek komunitas kayak{" "}
+        proyek komunitas seperti{" "}
         <ExternalLink href="https://github.com/razaqultegar/tamdes-web">
           tamdes-web
         </ExternalLink>
@@ -26,9 +27,10 @@ export default function OpenSource() {
         , sistem pendaftaran & pendataan anggota buat komunitas suporter The
         Jakmania Biro Purwokerto.
       </p>
+      <GitHubContributions />
       <p>
-        Semua proyek bisa dicek di{" "}
-        <ExternalLink href="https://github.com/razaqultegar">
+        Daftar lengkapnya ada di{" "}
+        <ExternalLink href={`https://github.com/${githubUsername}`}>
           GitHub
         </ExternalLink>
         .
