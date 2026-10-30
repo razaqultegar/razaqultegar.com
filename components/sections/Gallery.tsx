@@ -1,44 +1,21 @@
+import GalleryGrid from "@/components/GalleryGrid";
 import Section from "@/components/sections/Section";
-import { galleryItems } from "@/data/gallery";
-
-const placeholderHeights = [
-  "h-48",
-  "h-64",
-  "h-56",
-  "h-72",
-  "h-40",
-  "h-60",
-  "h-48",
-  "h-64",
-];
+import { getGalleryItems } from "@/lib/gallery";
 
 export default function Gallery() {
+  const items = getGalleryItems();
+
   return (
     <Section id="galeri" title="Galeri">
       <p>
-        Grid foto (bisa dari kerjaan, momen kantor, event, atau apapun).
-        Placeholder dulu, bakal diganti manual nanti.
+        Potongan momen yang sempat ketangkep kamera hp, dari suasana kerja,
+        event, sampai hal-hal kecil yang kebetulan lewat di depan mata.
       </p>
-      <div className="columns-2 gap-4 sm:columns-3">
-        {galleryItems.map((item, index) =>
-          item.src ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              key={item.alt}
-              src={item.src}
-              alt={item.alt}
-              className="mb-4 w-full break-inside-avoid rounded-lg"
-            />
-          ) : (
-            <div
-              key={item.alt}
-              className={`mb-4 flex ${placeholderHeights[index % placeholderHeights.length]} border-ink/30 break-inside-avoid items-center justify-center rounded-lg border border-dashed text-sm`}
-            >
-              {item.alt}
-            </div>
-          ),
-        )}
-      </div>
+      {items.length > 0 ? (
+        <GalleryGrid items={items} />
+      ) : (
+        <p className="text-ink/60 text-sm italic">Fotonya lagi dipilih dulu.</p>
+      )}
     </Section>
   );
 }
