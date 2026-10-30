@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeHighlight from "rehype-highlight";
 import rehypeStringify from "rehype-stringify";
-import { visit } from "unist-util-visit";
+import { SKIP, visit } from "unist-util-visit";
 import type { Root, Element } from "hast";
 
 const journalDirectory = path.join(process.cwd(), "data/journal");
@@ -127,10 +127,12 @@ function isElement(node: unknown, tagName: string): node is Element {
   );
 }
 
-function rehypeCodeLanguageBadge() {
+// Wraps each <pre> so the language label and copy button stay put while the
+// code scrolls horizontally.
+function rehypeCodeBlock() {
   return (tree: Root) => {
-    visit(tree, "element", (node) => {
-      if (!isElement(node, "pre")) return;
+    visit(tree, "element", (node, index, parent) => {
+      if (!isElement(node, "pre") || !parent || index === undefined) return;
 
       const code = node.children.find((child): child is Element =>
         isElement(child, "code"),
@@ -143,12 +145,32 @@ function rehypeCodeLanguageBadge() {
         (name): name is string =>
           typeof name === "string" && name.startsWith("language-"),
       );
-      if (!languageClass) return;
 
-      node.properties = {
-        ...node.properties,
-        dataLang: getLanguageLabel(languageClass.replace("language-", "")),
+      parent.children[index] = {
+        type: "element",
+        tagName: "div",
+        properties: {
+          className: ["code-block"],
+          dataLang: languageClass
+            ? getLanguageLabel(languageClass.replace("language-", ""))
+            : undefined,
+        },
+        children: [
+          {
+            type: "element",
+            tagName: "button",
+            properties: {
+              type: "button",
+              className: ["code-copy"],
+              ariaLabel: "Salin kode",
+              title: "Salin kode",
+            },
+            children: [],
+          },
+          node,
+        ],
       };
+      return [SKIP, index + 1];
     });
   };
 }
@@ -160,7 +182,7 @@ export function getJournalEntry(slug: string): JournalEntry {
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeHighlight)
-    .use(rehypeCodeLanguageBadge)
+    .use(rehypeCodeBlock)
     .use(rehypeStringify)
     .processSync(content);
 

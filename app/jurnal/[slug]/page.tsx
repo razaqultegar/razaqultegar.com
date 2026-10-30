@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import CopyCodeButtons from "@/components/CopyCodeButtons";
 import InlineLink from "@/components/InlineLink";
 import {
   formatJournalDate,
@@ -91,6 +92,7 @@ export default async function JournalEntryPage({ params }: Props) {
         className="journal-content mt-8"
         dangerouslySetInnerHTML={{ __html: entry.contentHtml }}
       />
+      <CopyCodeButtons />
 
       {(olderEntry || newerEntry) && (
         <nav className="border-ink/10 mt-12 grid grid-cols-2 gap-4 border-t pt-6">
