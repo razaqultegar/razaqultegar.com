@@ -1,5 +1,8 @@
+import Image from "next/image";
 import Section from "@/components/sections/Section";
 import { clients } from "@/data/clients";
+
+const logoHeight = { md: "h-14", lg: "h-18" };
 
 export default function Dots() {
   return (
@@ -28,11 +31,30 @@ export default function Dots() {
           {clients.map((client) => (
             <li
               key={client.name}
-              className="border-ink/20 text-ink/60 flex h-16 items-center justify-center rounded border border-dashed px-2 text-center text-xs"
+              className="flex h-20 items-center justify-center px-2"
             >
-              {client.name}
+              <Image
+                src={client.logo}
+                alt={client.name}
+                title={client.name}
+                width={160}
+                height={80}
+                className={`${client.size ? logoHeight[client.size] : "h-10"} w-auto max-w-full object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0`}
+              />
             </li>
           ))}
+          <li className="group flex h-20 items-center justify-center gap-2 px-2">
+            <span className="text-rust text-5xl leading-none italic transition group-hover:-rotate-12">
+              &amp;
+            </span>
+            <span className="text-ink/60 group-hover:text-ink text-xs leading-tight tracking-widest uppercase transition">
+              masih
+              <br />
+              banyak
+              <br />
+              lagi
+            </span>
+          </li>
         </ul>
       </div>
     </Section>
